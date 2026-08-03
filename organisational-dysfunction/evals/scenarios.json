@@ -152,6 +152,12 @@
       "should_trigger": true,
       "expected_refs": ["62-the-agenda-that-sabotaged-itself"]
     },
+    {
+      "id": "leadership-team-serial-reporting",
+      "prompt": "our exec team meets every other week and it's basically a round-robin: engineering gives an update, then product, then finance, then people, then sales. nobody really engages with anyone else's slot. anything that spans two functions ends up getting sorted in a slack DM or by the CEO afterwards, and she's now the bottleneck for half our decisions. everyone in the room is good at their job so I can't work out why we're so useless as a group. how do we fix this?",
+      "should_trigger": true,
+      "expected_refs": ["63-the-leadership-team-that-isnt"]
+    },
 
     {
       "id": "neg-reword-okrs",

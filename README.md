@@ -14,7 +14,7 @@ A small, curated shop of AI skills, plugins, and bundles — each a **self-conta
 
 | Release | What it is | Install path |
 |---|---|---|
-| [`organisational-dysfunction`](./organisational-dysfunction) | Diagnose org & team dysfunction as a problem of structure, not people — 61 named dysfunctions read through open sociotechnical systems theory. | `organisational-dysfunction` |
+| [`organisational-dysfunction`](./organisational-dysfunction) | Diagnose org & team dysfunction as a problem of structure, not people — 63 named dysfunctions read through open sociotechnical systems theory. | `organisational-dysfunction` |
 | _more coming_ | | |
 
 ## Installing
