@@ -158,6 +158,12 @@
       "should_trigger": true,
       "expected_refs": ["63-the-leadership-team-that-isnt"]
     },
+    {
+      "id": "code-review-personality-clash",
+      "prompt": "two of my devs have turned code review into a war. every PR between them ends up with passive-aggressive comments, one gets defensive and the other piles on, and now they avoid each other in standup. the team says it's just a personality clash and we've started assigning them to different parts of the codebase so their paths don't cross. it feels like a bad answer but I don't know what else to do. thoughts?",
+      "should_trigger": true,
+      "expected_refs": ["64-the-code-review-that-became-personal"]
+    },
 
     {
       "id": "neg-reword-okrs",
