@@ -34,7 +34,7 @@ SKILL_MD = SKILL_DIR / "SKILL.md"
 REFS_DIR = SKILL_DIR / "references"
 SCENARIOS = PLUGIN_ROOT / "evals" / "scenarios.json"
 
-DEFAULT_MODEL = "claude-opus-4-8"
+DEFAULT_MODEL = "claude-opus-5"
 
 # --- claude CLI --------------------------------------------------------------
 

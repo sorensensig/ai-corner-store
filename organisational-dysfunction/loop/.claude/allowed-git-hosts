@@ -1,0 +1,3 @@
+# Hosts this repo may push to — the core guard-git-push hook reads this.
+# One host per line, matched exactly against the remote URL host (no scheme, no path).
+github.com

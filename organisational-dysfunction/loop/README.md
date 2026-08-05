@@ -40,8 +40,8 @@ python3 run_loop.py --mode quant --iterations 5
 # Qualitative judge pass over the actual answers -> writes history/qual-suggestions.md for you:
 python3 run_loop.py --mode qual --limit 8
 
-# Pin a model (defaults to claude-opus-4-8):
-python3 run_loop.py --mode quant --iterations 5 --model claude-opus-4-8
+# Pin a model (defaults to claude-opus-5):
+python3 run_loop.py --mode quant --iterations 5 --model claude-opus-5
 ```
 
 ## Modes, and why they differ

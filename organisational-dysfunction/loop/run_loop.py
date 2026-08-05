@@ -20,7 +20,7 @@ Two modes:
                  review file for you to act on.
 
 Usage:
-  python3 run_loop.py --mode quant --iterations 5 [--model claude-opus-4-8]
+  python3 run_loop.py --mode quant --iterations 5 [--model claude-opus-5]
   python3 run_loop.py --mode qual  [--limit 8]
 
 Requires the local `claude` CLI (see harness.py). Note: this calls `claude -p` many times
