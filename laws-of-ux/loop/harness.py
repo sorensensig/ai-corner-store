@@ -18,11 +18,14 @@ This file is a library; run it via run_eval.py / run_loop.py, or directly:
     python3 harness.py eval --mode quant
 """
 
+import atexit
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 # --- paths -------------------------------------------------------------------
@@ -39,11 +42,49 @@ DEFAULT_MODEL = "claude-opus-5"
 # --- claude CLI --------------------------------------------------------------
 
 
+def _isolated_cwd() -> str:
+    """An empty scratch directory, guaranteed OUTSIDE this repo. Created once, reused.
+
+    Every probe runs the CLI here. `claude -p` inherits its parent's working directory
+    and can read files under it, so running probes from `loop/` handed the model this
+    repo — and `loop/README.md` documents every trap TOGETHER WITH ITS CORRECT ANSWER.
+
+    That is not hypothetical. On the first `--mode lift` run, the "unaided" control
+    replied: "this question is exactly the documented trap in `loop/README.md:45-48`",
+    quoted the answer back by line number, and cited a reference file it had never been
+    given. The control arm was reading the answer key, which makes a `wash` unprovable
+    and a `lift` equally unfalsifiable.
+
+    Isolating costs the skilled arm nothing: SKILL.md, the routed references and the
+    scenarios are all read by THIS process and inlined into the prompt text. No probe
+    has ever needed the child to touch the filesystem.
+    """
+    global _ISOLATED_DIR
+    if _ISOLATED_DIR is None:
+        d = Path(tempfile.mkdtemp(prefix="laws-of-ux-eval-")).resolve()
+        # Refuse to run from anywhere inside the repo, however TMPDIR is configured.
+        repo_root = PLUGIN_ROOT.parent
+        if d == repo_root or repo_root in d.parents:
+            raise RuntimeError(
+                f"refusing to run probes from {d}: the scratch dir must sit outside the repo, "
+                "or the control arm can read the scenarios and the README again."
+            )
+        _ISOLATED_DIR = str(d)
+        atexit.register(shutil.rmtree, _ISOLATED_DIR, True)
+    return _ISOLATED_DIR
+
+
+_ISOLATED_DIR = None
+
+
 def call_claude(prompt: str, model: str = DEFAULT_MODEL, timeout: int = 180) -> str:
     """Run `claude -p` headlessly, prompt on stdin, return stdout text.
 
     CLAUDECODE is stripped from the child env so this works when invoked from inside
     another Claude Code session (the nested-session guard otherwise refuses to launch).
+
+    Runs from an isolated scratch cwd — see _isolated_cwd() for why that is load-bearing
+    rather than tidiness.
     """
     child_env = {k: v for k, v in os.environ.items() if k != "CLAUDECODE"}
     try:
@@ -54,6 +95,7 @@ def call_claude(prompt: str, model: str = DEFAULT_MODEL, timeout: int = 180) -> 
             capture_output=True,
             timeout=timeout,
             env=child_env,
+            cwd=_isolated_cwd(),
         )
     except FileNotFoundError:
         sys.exit("ERROR: `claude` CLI not found on PATH. Install it or adjust call_claude().")
@@ -340,8 +382,47 @@ def run_lift(model: str, verbose: bool = True) -> dict:
     # Only scenarios where the cold model actually failed can demonstrate lift.
     contested = counts["lift"] + counts["no-help"]
     lift_rate = round(counts["lift"] / contested, 4) if contested else None
+
+    # contested == 0 is NOT a result. It means the base model passed every trap, so no
+    # scenario could demonstrate lift and the arm measured nothing. Reported as
+    # lift_rate: null next to a tidy counts block, it reads like a clean run — which is
+    # how the first execution of this arm was nearly recorded as "0 lift". A trap is a
+    # claim about a SPECIFIC model's failure mode and it expires silently when the
+    # default model moves (these were written for claude-opus-4-8).
+    warning = None
+    if contested == 0:
+        warning = (
+            f"NO CONTESTED SCENARIOS: the unaided model passed all {n} traps, so this run "
+            f"measured nothing about lift. lift_rate is undefined, not zero. Re-validate the "
+            f"traps against {model} — a trap that the base model no longer falls for is not a "
+            f"trap. Do not record this as evidence either for or against the corpus."
+        )
+        sys.stderr.write(f"\n!! {warning}\n\n")
+
     return {"mode": "lift", "model": model, "n": n, "counts": counts,
-            "contested": contested, "lift_rate": lift_rate, "rows": rows}
+            "contested": contested, "lift_rate": lift_rate,
+            "warning": warning, "rows": rows}
+
+
+def save_report(result: dict) -> Path:
+    """Persist the full result — per-scenario rows included — to history/.
+
+    README.md has always documented `history/` as "per-run reports (created on first
+    run)". Nothing wrote it: `rows` were computed, printed as one formatted line each,
+    and dropped when the process exited. Only variance_check.py ever created the
+    directory, and only for variance.json.
+
+    That is a real cost, not tidiness. A score with no artefact cannot be diffed against
+    the next run, so you cannot see WHICH scenario moved — and the first two runs of this
+    harness survive only because a console was captured by hand. Timestamped, so runs
+    accumulate rather than overwrite.
+    """
+    hist = HARNESS_DIR / "history"
+    hist.mkdir(exist_ok=True)
+    stamp = __import__("datetime").datetime.now().strftime("%Y-%m-%dT%H-%M-%S")
+    path = hist / f"{result['mode']}-{stamp}.json"
+    path.write_text(json.dumps(result, indent=2), encoding="utf-8")
+    return path
 
 
 if __name__ == "__main__":
@@ -350,3 +431,8 @@ if __name__ == "__main__":
     runner = {"quant": run_quant, "qual": run_qual, "lift": run_lift}.get(mode, run_quant)
     result = runner(model)
     print(json.dumps({k: v for k, v in result.items() if k != "rows"}, indent=2))
+    try:
+        print(f"\nreport: {save_report(result)}", file=sys.stderr)
+    except OSError as e:
+        # Never let bookkeeping lose a run that already cost real tokens.
+        sys.stderr.write(f"[warn] could not write history report: {e}\n")

@@ -8,7 +8,7 @@ only); drives the local `claude` CLI.
 | `../evals/scenarios.json` | 34 scenarios — 27 positives with the law(s) they should route to, 7 near-miss negatives |
 | `harness.py` | the eval core: triggering, routing, the judge rubric, and the lift control arm |
 | `variance_check.py` | run the quant eval N times to measure score stability |
-| `history/` | per-run reports (created on first run; gitignored) |
+| `history/` | per-run reports, one JSON per run with full per-scenario rows (gitignored) |
 
 ## The three measurements
 
@@ -52,19 +52,33 @@ grep for "Miller" would fire on an answer that names Miller precisely to correct
 
 ## Running it
 
-> Each run makes several `claude -p` calls per scenario and consumes tokens. `--mode lift`
-> is the most expensive — four calls per trap scenario (cold, cold-judge, skilled,
-> skilled-judge). Start with `quant`.
+> Each run makes several `claude -p` calls per scenario and consumes tokens. `lift` is the
+> most expensive *per scenario* — four calls each (cold, cold-judge, skilled,
+> skilled-judge) — but it runs only on the 6 traps, so **`quant` is nearly three times the
+> total spend**. Budget by the totals below, not by the per-scenario rate.
 
 ```bash
 cd loop
 
-python3 harness.py --mode quant     # triggering + routing, ~2 calls/scenario
-python3 harness.py --mode lift      # the control arm, ~4 calls/trap scenario
-python3 harness.py --mode qual      # judge rubric on real answers
+python3 harness.py --mode quant     # triggering + routing — 34 × 2 = ~68 calls
+python3 harness.py --mode lift      # the control arm     —  6 × 4 = ~24 calls
+python3 harness.py --mode qual      # judge rubric on real answers — 27 × 3
 
-python3 variance_check.py --runs 3  # score stability across repeat runs
+python3 variance_check.py --runs 3  # score stability — 3 × quant = ~204 calls
 ```
+
+Every probe runs from an empty scratch directory outside this repo. That is load-bearing,
+not hygiene: `claude -p` inherits its parent's working directory and can read files under
+it, so running from `loop/` handed the model this README — which documents every trap
+*and its answer*. The first `--mode lift` run was contaminated exactly that way; the
+"unaided" control quoted this file back by line number. Do not "simplify" that away.
+
+Each run writes its full result, per-scenario rows included, to `history/<mode>-<stamp>.json`.
+
+**Traps expire.** A trap is a claim about a *specific* model's failure mode. These were
+written against `claude-opus-4-8`; on `claude-opus-5` the base model passes `menu-length`
+unaided. When the default model moves, re-validate the traps before reading any lift
+number — and treat `contested: 0` as "measured nothing", never as "no lift".
 
 **Run `variance_check.py` before you believe any single score.** Two runs of an unchanged
 skill can differ, and a difference smaller than that spread is noise, not a result. Check
