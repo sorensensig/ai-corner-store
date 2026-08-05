@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        release: [organisational-dysfunction]
+        release: [organisational-dysfunction, laws-of-ux]
     steps:
       - uses: actions/checkout@v4
 
