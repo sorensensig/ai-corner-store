@@ -164,6 +164,12 @@
       "should_trigger": true,
       "expected_refs": ["64-the-code-review-that-became-personal"]
     },
+    {
+      "id": "workshop-toolkit-flat",
+      "prompt": "i facilitate a lot of internal workshops and i'm getting frustrated. i do everything right — icebreaker, post-its, rotation stations, dot voting to close, an energiser when the room dips — and it all runs smoothly, but people are just... polite. present but not really in it. the outputs are fine, nobody's engaged. i keep adding new techniques to my toolkit and it doesn't move the needle. what am i doing wrong?",
+      "should_trigger": true,
+      "expected_refs": ["65-the-facilitators-toolkit"]
+    },
 
     {
       "id": "neg-reword-okrs",
