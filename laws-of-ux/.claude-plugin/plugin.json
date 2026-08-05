@@ -1,0 +1,12 @@
+{
+  "name": "laws-of-ux",
+  "version": "0.1.0",
+  "description": "Treat human limits — working memory, attention, tolerance for choice — as hard design constraints. 21 psychological laws, each with what it says, what it constrains, and how it fails, applied to interfaces AND to configs, prompts, CLI output, docs, and the set of options an agent offers.",
+  "author": {
+    "name": "Sigurd Sæther Sørensen",
+    "email": "sorensensig@gmail.com"
+  },
+  "skills": [
+    "./skills/laws-of-ux"
+  ]
+}
