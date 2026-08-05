@@ -1,0 +1,277 @@
+{
+  "_readme": "Scenario set for the laws-of-ux skill. Three measured quantities: TRIGGERING (should the skill fire from its description alone?), ROUTING (does the index lead to the right law?), and LIFT (does the skill beat an unaided model?). Positives list every acceptable slug in expected_refs. Negatives are near-misses that deliberately share vocabulary with a law but need something else. Scenarios carrying a `trap` are the lift set: `trap` records what an unaided model reliably answers instead, and `trap_refs` the law it wrongly reaches for. A scenario only counts as lift if the unaided answer hits the trap AND the skilled answer reaches expected_refs.",
+  "scenarios": [
+    {
+      "id": "menu-length",
+      "prompt": "We're designing a navigation menu. How many items is too many before it becomes hard to use?",
+      "should_trigger": true,
+      "expected_refs": ["05-hicks-law"],
+      "trap": "Cites Miller's Law and a 7±2 cap on menu items. That is the canonical misapplication: Miller's limit governs what must be HELD in working memory, not what may be visible. A visible list is not held. Option-set size is Hick's Law.",
+      "trap_refs": ["12-millers-law"]
+    },
+    {
+      "id": "simplify-form",
+      "prompt": "This signup form has 14 fields and feels bloated. Simplify it.",
+      "should_trigger": true,
+      "expected_refs": ["19-teslers-law", "13-occams-razor"],
+      "trap": "Proposes deleting fields without asking where the work goes. Removing a field the system could infer is real simplification; removing one because it looks cluttered pushes the work onto the user. Tesler's check — where did the complexity go? — is the discriminator.",
+      "trap_refs": []
+    },
+    {
+      "id": "cta-ignored",
+      "prompt": "Nobody clicks our main call-to-action even though it's right there at the top.",
+      "should_trigger": true,
+      "expected_refs": ["20-von-restorff-effect"],
+      "trap": "Reaches for copywriting or colour changes on the button itself, without noticing that contrast is a property of the SET. If everything nearby is already emphasised, making this one louder cannot work.",
+      "trap_refs": []
+    },
+    {
+      "id": "too-many-config-options",
+      "prompt": "Our tool's config file has grown to about 40 options and new users say they don't know where to start.",
+      "should_trigger": true,
+      "expected_refs": ["05-hicks-law", "13-occams-razor", "19-teslers-law"],
+      "trap": "Suggests better documentation for the 40 options rather than treating the option count itself as the defect. Documentation does not reduce a logarithmic decision cost.",
+      "trap_refs": []
+    },
+    {
+      "id": "silent-agent",
+      "prompt": "Our CLI tool goes quiet for about 30 seconds while it works, then dumps the full result. Users say it feels broken.",
+      "should_trigger": true,
+      "expected_refs": ["02-doherty-threshold"],
+      "trap": "Suggests a spinner and stops there. The threshold is about holding attention — streaming partial results and stating intent up front buy back attention that a spinner does not.",
+      "trap_refs": []
+    },
+    {
+      "id": "error-log-noise",
+      "prompt": "Our service log tags nearly every line as ERROR and the on-call engineers have stopped reading it.",
+      "should_trigger": true,
+      "expected_refs": ["20-von-restorff-effect"],
+      "trap": "Treats it as a log-level configuration task only, missing that emphasis inflation destroys the channel it runs on — the same mechanism as five 'primary' buttons on one screen.",
+      "trap_refs": []
+    },
+    {
+      "id": "carry-values-between-steps",
+      "prompt": "Our checkout asks users to remember a reference code from step 2 and type it again at step 5.",
+      "should_trigger": true,
+      "expected_refs": ["12-millers-law"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "onboarding-abandon",
+      "prompt": "Half our users abandon onboarding partway through and never come back.",
+      "should_trigger": true,
+      "expected_refs": ["04-goal-gradient-effect", "21-zeigarnik-effect"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "cli-flag-explosion",
+      "prompt": "Running our build tool properly needs eleven flags and everyone copy-pastes the same incantation from a wiki.",
+      "should_trigger": true,
+      "expected_refs": ["19-teslers-law", "13-occams-razor"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "label-between-fields",
+      "prompt": "Testers keep typing their email into the phone field. The labels look fine to me.",
+      "should_trigger": true,
+      "expected_refs": ["08-law-of-proximity"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "cards-or-spacing",
+      "prompt": "Should I put these settings groups in bordered cards, or just separate them with more whitespace?",
+      "should_trigger": true,
+      "expected_refs": ["07-law-of-common-region", "08-law-of-proximity"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "legend-far-from-chart",
+      "prompt": "The chart legend has to sit below the plot for layout reasons, and people aren't connecting the colours to the series.",
+      "should_trigger": true,
+      "expected_refs": ["11-law-of-uniform-connectedness", "10-law-of-similarity"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "text-looks-clickable",
+      "prompt": "Users keep clicking a heading that isn't a link, because it's the same blue as our links.",
+      "should_trigger": true,
+      "expected_refs": ["10-law-of-similarity"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "redesign-backlash",
+      "prompt": "We shipped a redesign that tests better than the old one, and long-time users are furious.",
+      "should_trigger": true,
+      "expected_refs": ["06-jakobs-law"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "strict-phone-validation",
+      "prompt": "Should our phone number field reject input that has spaces or dashes in it?",
+      "should_trigger": true,
+      "expected_refs": ["17-postels-law"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "buried-instructions",
+      "prompt": "We have a long setup document and people consistently miss a critical step that's about halfway down.",
+      "should_trigger": true,
+      "expected_refs": ["18-serial-position-effect"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "fast-but-remembered-badly",
+      "prompt": "Our checkout is measurably faster than our competitor's, but in surveys people describe it as painful.",
+      "should_trigger": true,
+      "expected_refs": ["16-peak-end-rule"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "prototype-tested-well",
+      "prompt": "Our polished prototype tested brilliantly in research, but the shipped version gets complaints about the same flow.",
+      "should_trigger": true,
+      "expected_refs": ["01-aesthetic-usability-effect"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "what-to-polish",
+      "prompt": "We have limited time before launch. How do we decide which parts of the product to polish?",
+      "should_trigger": true,
+      "expected_refs": ["14-pareto-principle"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "scope-fills-sprint",
+      "prompt": "However long we give a piece of work, it seems to take exactly that long and no less.",
+      "should_trigger": true,
+      "expected_refs": ["15-parkinsons-law"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "agent-never-stops",
+      "prompt": "When I leave an AI coding agent running it just keeps finding more work to do until it runs out of budget.",
+      "should_trigger": true,
+      "expected_refs": ["15-parkinsons-law"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "small-touch-targets",
+      "prompt": "Our mobile toolbar buttons are 28px and users report a lot of mis-taps.",
+      "should_trigger": true,
+      "expected_refs": ["03-fitts-law"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "delete-next-to-save",
+      "prompt": "Our delete button sits right beside save, and we keep getting accidental deletions.",
+      "should_trigger": true,
+      "expected_refs": ["03-fitts-law"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "useless-notification",
+      "prompt": "We send a push notification when a background sync starts, but there's nothing the user can do about it.",
+      "should_trigger": true,
+      "expected_refs": ["21-zeigarnik-effect"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "ambiguous-hierarchy",
+      "prompt": "Our settings page has three levels of nesting and people describe the structure differently from how we built it.",
+      "should_trigger": true,
+      "expected_refs": ["09-law-of-pragnanz"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "should-we-add-toggle",
+      "prompt": "A customer asked for a toggle to change this behaviour. Should we add it?",
+      "should_trigger": true,
+      "expected_refs": ["13-occams-razor", "05-hicks-law"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "prompt-instruction-ignored",
+      "prompt": "My system prompt has about thirty rules and the model reliably ignores some of the ones in the middle.",
+      "should_trigger": true,
+      "expected_refs": ["18-serial-position-effect", "12-millers-law"],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "neg-brand-palette",
+      "prompt": "Help me pick a brand colour palette that feels warm and premium.",
+      "should_trigger": false,
+      "expected_refs": [],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "neg-css-bug",
+      "prompt": "My CSS grid layout collapses to one column at 900px and I can't work out why.",
+      "should_trigger": false,
+      "expected_refs": [],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "neg-hero-copy",
+      "prompt": "Write three options for the hero headline on our pricing page.",
+      "should_trigger": false,
+      "expected_refs": [],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "neg-team-size-seven",
+      "prompt": "Our engineering team has grown to seven people. Should we split it into two teams?",
+      "should_trigger": false,
+      "expected_refs": [],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "neg-slow-query",
+      "prompt": "This SQL query takes 400ms and I need it faster. Here's the execution plan.",
+      "should_trigger": false,
+      "expected_refs": [],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "neg-contrast-ratio",
+      "prompt": "What contrast ratio does WCAG AA require for body text?",
+      "should_trigger": false,
+      "expected_refs": [],
+      "trap": "",
+      "trap_refs": []
+    },
+    {
+      "id": "neg-support-response-time",
+      "prompt": "Our support team's first response time has slipped to two days and customers are complaining.",
+      "should_trigger": false,
+      "expected_refs": [],
+      "trap": "",
+      "trap_refs": []
+    }
+  ]
+}
