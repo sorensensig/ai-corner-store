@@ -7,3 +7,17 @@ __pycache__/
 
 # macOS
 .DS_Store
+
+# Machine-local Claude Code config. These are personal push policy and per-machine
+# settings — they must never be committed, least of all to a public repo. They sit
+# untracked in every clone, so without this any `git add -A` sweeps them in.
+.claude/allowed-git-hosts
+.claude/allowed-git-orgs
+.claude/settings.local.json
+**/.claude/allowed-git-hosts
+**/.claude/allowed-git-orgs
+**/.claude/settings.local.json
+
+# Worktrees created by automated routines. These are embedded git repositories;
+# committing one produces a broken directory that clones cannot resolve.
+**/.claude/worktrees/
