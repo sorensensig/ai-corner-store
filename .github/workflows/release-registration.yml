@@ -1,0 +1,22 @@
+name: release-registration
+
+# Fails when a release folder exists but is not registered everywhere it needs to be.
+#
+# Why a job and not a note in CONTRIBUTING: `laws-of-ux` merged as a complete, reviewed
+# release and was still invisible — absent from marketplace.json and from release.yml's
+# matrix, with its own README documenting an install command that could not work.
+# release.yml already carried the instruction in its header ("Adding a future release =
+# add its folder to the RELEASES list below"). It was read, and it still did not happen.
+#
+# Runs on every push and PR. No secrets, no network — it only reads files in the repo.
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Every release registered in all four places
+        run: bash scripts/check-release-registration.sh
