@@ -65,11 +65,41 @@ Stop here for these items — the maintainer reviews and merges. In the PR body,
 
 ### 6. Reconcile into kihub (runs every time, independent of steps 1–5)
 Propagate anything already **merged** into sorensensig `main` but **missing** from kihub — this is the "on-merge" step, implemented as a poll so no event trigger or secret is needed.
+
+> **Read this before touching step 6 — the destination is provisional.**
+> `Altinn/kihub` restructured on 2026-07-02 (`71be5fa`, "Start from scratch — new
+> architecture"), one day after the contribution PR was opened. Its `main` now has **no
+> `skills/` directory** and none of the `skill:validate` / `plugin:validate` toolchain, and
+> its README states the new model plainly: *"KI Hub indexes, enriches, reviews, and exposes
+> artifacts; it never stores their content (that lives in the sibling `ai-artifacts`
+> repository)."*
+>
+> So the open PR targets a superseded layout, and its `docs/README.skills.md` conflict is a
+> symptom of that rather than something to resolve in place. `ai-artifacts` is **not
+> published yet**, so there is nowhere better to send this today.
+>
+> **Interim policy (owner's decision): keep pushing updates onto the existing open PR.** The
+> branch stays current with upstream so the contribution can move across intact once
+> `ai-artifacts` exists, rather than needing a rebuild. When that repo is published, this
+> whole step re-targets to it and the kihub PR is closed or redirected.
+>
+> **Do not run kihub's `npm run build`.** It regenerates `docs/README.skills.md` from the
+> branch's stale architecture and deepens a conflict that will never be resolved on this
+> branch. `npm run skill:validate` is still worth running — it checks the skill folder
+> itself — but note it validates against the branch's own old toolchain, so a pass says the
+> skill is well-formed, **not** that the destination is still correct.
+
 - Clone `Altinn/kihub`. Compute references present in ai-corner-store `main` (at `organisational-dysfunction/skills/organisational-dysfunction/references/`) but absent from `Altinn/kihub`'s `skills/organisational-dysfunction/references/` (and not already covered by an open kihub PR). Note the paths differ: the source now nests the skill under its release folder; kihub keeps the skill at its repo root.
-- **If the skill isn't on kihub `main` yet** (its initial contribution PR is still open): the loop **cannot** safely propagate — pushing into another org's *open* PR is (correctly) refused by the safety classifier, and a fresh PR against `main` has no skill folder to attach to. Do **not** attempt it. Report the gap and recommend the maintainer either add the new references to the open PR themselves (a human/interactive push is fine) or merge it so a later run can open a standalone follow-up. Then finish — skip the rest of step 6.
-- **If the skill IS on kihub `main`** (base PR merged): branch off kihub `main`, **copy only the new `references/NN-slug.md` files** into the skill folder, sync kihub's `SKILL.md` with source (the router carries no repo-specific content), and run `npm ci` (once), `npm run skill:validate`, and `npm run build` (regenerates `docs/README.skills.md`).
+- **First, check whether the destination still exists.** Before propagating, confirm `skills/organisational-dysfunction/` is present on the PR's head branch. If a future restructure removes it there too, stop and open the tracking issue described below — do not invent a new location.
+- **If the skill isn't on kihub `main` yet** (its contribution PR is still open): **push the new references onto that PR's existing branch.** Do not open a second PR, and do not skip the step. Check out the open PR's head branch (`gh pr view <n> -R Altinn/kihub --json headRefName`), add the new `references/NN-slug.md` files, and push. The PR updates in place and its reviewers see one coherent changeset rather than a queue of follow-ups.
+  - This is only possible because the PR's head branch lives **on `Altinn/kihub` itself**, not on a fork — verify with `--json isCrossRepository` (expect `false`). If a future PR is ever raised from a fork, that branch is not writable here: fall back to reporting the gap.
+  - A previous version of this step refused outright, on the reasoning that "pushing into another org's open PR is refused by the safety classifier". That conflated an agent-side guard with a permissions boundary. The branch is writable, and this is the owner's stated intent — so propagate rather than report. The classifier may still object; if it does, report the gap rather than forcing it.
+  - **Push the commit and stop. Do not add a PR comment per propagation.** Routine updates ride in as commits, the same way `896d439` did. The only comment that should sit under that PR is the standing note explaining that the contribution will be re-targeted to `ai-artifacts` once it is published — a queue of "added #N" comments buries it and reads as activity on a PR that is deliberately parked.
+- **If the skill IS on kihub `main`** (contribution PR merged): open a **new** PR. Branch off kihub `main`, **copy only the new `references/NN-slug.md` files** into the skill folder, sync kihub's `SKILL.md` with source (the router carries no repo-specific content), and run `npm ci` (once) and `npm run skill:validate`. (This branch is currently unreachable — see the note at the top of this step — and is kept for the case where kihub's contribution model returns.)
 - **Preserve kihub's local README divergences — do not overwrite them.** kihub's `skills/organisational-dysfunction/README.md` is deliberately kihub-specific: its install/use instructions point to **`Altinn/kihub`** (`git clone https://github.com/Altinn/kihub`), *not* sorensensig. NEVER replace it with the source repo's root README, and never rewrite its install paths/commands to point at sorensensig. The *only* change you make to that file is **appending a dated Changelog entry** for the propagated dysfunction(s). Likewise never copy the source repo's root `README.md`, `.claude-plugin/marketplace.json`, `loop/`, or `evals/` into kihub — kihub keeps only the skill folder (SKILL.md + references + its own kihub-path README).
-- Commit, push the branch, and open a **new** PR to `Altinn/kihub` describing which dysfunctions were added and crediting the source series. **Then verify** the remote PR's changed-file list actually includes the new reference files before reporting success. If pushing a branch or opening the PR against `Altinn/kihub` is itself refused by the safety classifier (it is another org's repo), do not force it — report the gap so the maintainer can complete it interactively.
+- Commit and push. Put the detail in the **commit message** — which dysfunctions were added, that `SKILL.md` was synced, that validation passed. If you opened a *new* PR, its description credits the source series; if you updated an existing PR's branch, add no comment (see above). **Then verify** the remote PR's changed-file list actually includes the new reference files before reporting success.
+- **If propagation cannot complete for any reason** — the head branch is on a fork, the safety classifier refuses, kihub CI fails — do not force it, and do **not** report the gap only in this run's output. Open or update a single tracking issue on `sorensensig/ai-corner-store` titled `kihub propagation blocked`, stating which references are pending and what is blocking. Update the same issue on later runs rather than filing a new one, and close it once propagation succeeds.
+  - This exists because the previous "report the gap" instruction wrote into the run's completion output, which is **not** a channel the owner reads — the durable outputs are issues and PRs. A block that surfaces nowhere is indistinguishable from a run that had nothing to do, which is how this step sat inert from 2026-07-01 to 2026-08-05 without anyone noticing.
 - **Do NOT cut releases here.** Releases are cut automatically by the `.github/workflows/release.yml` GitHub Action the moment a release folder's version bump lands on sorensensig `main`. The Action tags per release as `<release>-v<version>` (e.g. `organisational-dysfunction-v0.2.0`), reading the version from `<release>/.claude-plugin/plugin.json` (idempotent, built-in token, no secret). The loop must never also create a release — that would duplicate the Action's work.
 - The source repo's GitHub **About** description is now the **store's**, not this one release's — do **not** overwrite it with an org-dysfunction count. Leave the store About alone (a stable store description). The dysfunction count lives in `organisational-dysfunction/README.md` and its `SKILL.md`, which step 3 already keeps current.
 
