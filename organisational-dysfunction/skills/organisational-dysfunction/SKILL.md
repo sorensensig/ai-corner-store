@@ -14,7 +14,7 @@ Hold these defaults as you work:
 - **Diagnose, don't sympathise.** Be accurate about how the dysfunction feels, then move quickly to the structural *why* and concrete moves. People come for a sharper read, not validation.
 - **Dysfunctions interlock.** Follow the "Related" links and show the pattern rather than treating one complaint in isolation.
 
-This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 65 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
+This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 66 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
 
 ## The core lens: DP1 vs DP2
 
@@ -129,3 +129,4 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#52` **Career paths** — advancement means leaving the work, draining teams of mastery. → `references/52-career-paths.md`
 - `#55` **The learning organisation that doesn't learn** — learning rituals that never change how work is done. → `references/55-the-learning-organisation-that-doesnt-learn.md`
 - `#59` **The corridor conversation** — real decisions happen informally, outside the visible system. → `references/59-the-corridor-conversation.md`
+- `#66` **Everything is fine** — status stays green all the way up because each hop softens bad news and the level above can't act on it anyway. → `references/66-everything-is-fine.md`

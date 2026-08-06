@@ -212,6 +212,12 @@
       "prompt": "give me a one-line definition of each stage of forming-storming-norming-performing for a glossary in our onboarding doc.",
       "should_trigger": false,
       "expected_refs": []
+    },
+    {
+      "id": "status-always-green",
+      "prompt": "we just had a programme blow up — six months late, found out three weeks before the go-live date. i went back through the reporting and it was green every single month. then i talked to two of the engineers and they said they'd been raising the integration risk since last autumn and it kept getting reworded on the way up. the steering group is now asking who failed to escalate. i don't think that's the right question but i can't articulate why. help?",
+      "should_trigger": true,
+      "expected_refs": ["66-everything-is-fine"]
     }
   ]
 }
