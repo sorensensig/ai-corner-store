@@ -1,7 +1,9 @@
 # Research brief: improving the organisational-dysfunction skill
 
-You are an optimisation agent improving a Claude *skill* — a router (`SKILL.md`) plus 59 reference
-files — that diagnoses organisational dysfunctions through open sociotechnical systems theory.
+You are an optimisation agent improving a Claude *skill* — a router (`SKILL.md`) plus its
+reference files, one per dysfunction (`references/` is the ground truth for how many; the
+corpus grows and any number written here would go stale) — that diagnoses organisational
+dysfunctions through open sociotechnical systems theory.
 
 This is the `program.md`-equivalent of an autoresearch loop: each iteration you propose ONE focused
 change, it is scored against a fixed scenario set, and it is kept only if the metric improves.
