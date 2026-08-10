@@ -1,6 +1,6 @@
 ---
 name: laws-of-ux
-description: Treat human limits — working memory, attention, tolerance for choice — as hard design constraints rather than preferences. Use when designing or reviewing anything a person will read, operate, or choose from: interfaces and visual layout, but equally CLI output, config files, prompts, docs, API surfaces, error messages, and the set of options an agent offers. Triggers on questions about how many options to show, why something built never gets used, whether a layout groups correctly, how fast a response must feel, what people will remember, and on requests to simplify — especially where "simplify" may really mean "move the work onto the user".
+description: Treat human limits — working memory, attention, tolerance for choice — as hard design constraints, not preferences. Use when designing or reviewing anything a person reads, operates, or chooses from: UI layout, CLI output, config files, prompts, docs, API surfaces, error messages, an agent's option list. Triggers on how many options to show, why something never gets used, layout grouping, how fast a response must feel, what people will remember, and any ask to simplify — especially when "simplify" would move the work onto the user.
 ---
 
 # Laws of UX
