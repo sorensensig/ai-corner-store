@@ -60,3 +60,18 @@ Add entries to `evals/scenarios.json`. For a positive, set `should_trigger: true
 acceptable reference slug (filename without `.md`) in `expected_refs`. For a near-miss, set
 `should_trigger: false` and `expected_refs: []`. The most valuable additions are tricky negatives
 and scenarios that currently route to the wrong place.
+
+## Measuring noise before trusting a delta
+
+`variance_check.py` runs the quant harness N times on the CURRENT skill with no
+change applied and reports per-metric spread. Run it before attributing any
+composite delta to a change — the keep rule's `NOISE_MARGIN` in `run_loop.py`
+(0.02, issue #17) was derived from exactly such a pair (0.9655 vs 0.9828,
+same config). Two rules of use:
+
+1. Measure OFF the ceiling. A variance run at composite 1.0 reports
+   stdev 0.0 structurally — nothing can score higher — and says nothing
+   about the metric (this happened once and looked like proof of stability).
+2. If the metric, model, or scenario set changes, re-derive the margin from
+   a fresh variance run; the stored `best` must also be re-baselined on the
+   new model or the margin will reject every candidate indefinitely (#15).
