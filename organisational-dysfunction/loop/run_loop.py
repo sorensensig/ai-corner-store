@@ -156,8 +156,19 @@ def quant_loop(model: str, iterations: int):
                       "trigger": trial["trigger_accuracy"], "routing": trial["routing_accuracy"],
                       "kept": improved, "rationale": change.get("rationale", "")})
 
-    H.SKILL_MD.write_text(best_text, encoding="utf-8")  # ensure best is on disk
-    print(f"\n=== Done. Best composite={best['composite']}. SKILL.md left at best version. ===")
+    # Auto-apply is GATED (#16): the eval set covers ~half the corpus, so a kept
+    # change can sharpen a measured cue while silently blunting an unmeasured one.
+    # Until coverage closes, persisting the winner needs an explicit --apply.
+    if "--apply" in sys.argv:
+        H.SKILL_MD.write_text(best_text, encoding="utf-8")  # ensure best is on disk
+        print(f"\n=== Done. Best composite={best['composite']}. SKILL.md left at best version. ===")
+    else:
+        H.SKILL_MD.write_text(original, encoding="utf-8")   # restore pre-run state
+        proposal = HISTORY_DIR / "proposed-SKILL.md"
+        proposal.write_text(best_text, encoding="utf-8")
+        print(f"\n=== Done. Best composite={best['composite']}. ===")
+        print(f"SKILL.md RESTORED to pre-run state (auto-apply gated by #16 coverage).")
+        print(f"Winning version written to {proposal} — review and re-run with --apply to persist.")
     print(f"History: {HISTORY_DIR/'history.jsonl'}")
 
 
