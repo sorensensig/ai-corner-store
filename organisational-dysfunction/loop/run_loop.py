@@ -139,8 +139,14 @@ def quant_loop(model: str, iterations: int):
             _log_history({"iter": i, "kept": False, "note": "stale-find rejected"})
             continue
         trial = H.run_quant(model)
-        improved = trial["composite"] > best["composite"]
-        print(f"  trial composite={trial['composite']} vs best={best['composite']} -> {'KEEP' if improved else 'REVERT'}")
+        # Keep only past a noise margin (#17): the same baseline double-measured
+        # 0.9655 vs 0.9828 with no change in between — same-config spread ~0.017,
+        # so any epsilon-keep rule ratchets on noise. Re-derive from
+        # variance_check.py OFF the score ceiling if the metric changes.
+        NOISE_MARGIN = 0.02
+        improved = trial["composite"] > best["composite"] + NOISE_MARGIN
+        print(f"  trial composite={trial['composite']} vs best={best['composite']} "
+              f"(margin {NOISE_MARGIN}) -> {'KEEP' if improved else 'REVERT'}")
         if improved:
             best, best_text = trial, H.read_skill_md()
             _save_report(f"iteration-{i}.json", trial)
