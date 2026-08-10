@@ -6,171 +6,235 @@
       "id": "standup-status-round",
       "prompt": "our daily standup has basically become everyone reading out what they did yesterday to the team lead, who nods and writes it down. nobody actually listens to anyone else because we're all on totally separate tickets. people keep asking if we can just kill it. is there a better format?",
       "should_trigger": true,
-      "expected_refs": ["01-the-daily-status-report", "07-individualism"]
+      "expected_refs": [
+        "01-the-daily-status-report",
+        "07-individualism"
+      ]
     },
     {
       "id": "retro-groundhog-day",
       "prompt": "every retro we raise the same 3 problems (slow approvals, unclear priorities, too many deps on the platform team) and every retro we write the same action items and nothing changes. the team is getting cynical about retros entirely. what am I doing wrong as a facilitator?",
       "should_trigger": true,
-      "expected_refs": ["03-the-powerless-retrospective"]
+      "expected_refs": [
+        "03-the-powerless-retrospective"
+      ]
     },
     {
       "id": "okrs-cascaded",
       "prompt": "leadership set the company OKRs and now each department head is 'cascading' them down to us. we're told we 'own' our team OKRs but honestly we're just rewording the VP's objectives in our own words. then we score them 0-1.0 every quarter and it feeds into reviews. feels hollow.",
       "should_trigger": true,
-      "expected_refs": ["18-okrs-imposed-from-above"]
+      "expected_refs": [
+        "18-okrs-imposed-from-above"
+      ]
     },
     {
       "id": "dora-dashboards",
       "prompt": "our CTO wants every team to hit elite DORA numbers this quarter. we built grafana dashboards for deploy freq and lead time and set targets. we got a bump for a month then it slid back and now he's asking for 'more discipline'. starting to feel like we're gaming numbers.",
       "should_trigger": true,
-      "expected_refs": ["24-dora-the-wrong-way-round", "14-local-optimisations"]
+      "expected_refs": [
+        "24-dora-the-wrong-way-round",
+        "14-local-optimisations"
+      ]
     },
     {
       "id": "frozen-middle",
       "prompt": "we did an agile transformation 18 months ago, teams supposedly have autonomy now, but decisions still take forever and just die somewhere in the middle. the middle managers are in meetings all day but nothing moves. leadership thinks they're resisting and wants to send them on a mindset course.",
       "should_trigger": true,
-      "expected_refs": ["15-the-frozen-middle"]
+      "expected_refs": [
+        "15-the-frozen-middle"
+      ]
     },
     {
       "id": "quiet-quitting",
       "prompt": "half my team has mentally checked out. they do exactly what's asked and not one thing more, log off at 4 on the dot. HR is calling it quiet quitting and wants me to have 'motivation conversations'. these used to be really engaged people.",
       "should_trigger": true,
-      "expected_refs": ["08-quiet-quitting", "48-its-just-a-job"]
+      "expected_refs": [
+        "08-quiet-quitting",
+        "48-its-just-a-job"
+      ]
     },
     {
       "id": "empowerment-without-authority",
       "prompt": "my manager keeps telling us we're 'empowered to make decisions' but every time we actually decide something it gets overturned upstairs or we need three sign-offs for anything that costs money. the word empowerment is starting to feel like a joke.",
       "should_trigger": true,
-      "expected_refs": ["36-empowerment", "16-fear-of-making-decisions"]
+      "expected_refs": [
+        "36-empowerment",
+        "16-fear-of-making-decisions"
+      ]
     },
     {
       "id": "people-resist-change",
       "prompt": "we're rolling out a new operating model and the consultants keep saying 'people naturally resist change' and we need a comms plan to get buy-in. but the people pushing back are our best engineers and their objections actually seem pretty reasonable to me?",
       "should_trigger": true,
-      "expected_refs": ["35-people-resist-change", "44-change-agents-of-the-status-quo"]
+      "expected_refs": [
+        "35-people-resist-change",
+        "44-change-agents-of-the-status-quo"
+      ]
     },
     {
       "id": "po-bottleneck",
       "prompt": "our product owner has become a total bottleneck — every decision routes through her, she writes all the stories, and if she's on holiday the team basically stalls. she's brilliant but it feels like we just recreated a project manager with a different title.",
       "should_trigger": true,
-      "expected_refs": ["38-the-product-owner-trap"]
+      "expected_refs": [
+        "38-the-product-owner-trap"
+      ]
     },
     {
       "id": "safe-scaling",
       "prompt": "leadership wants to roll out SAFe across 12 teams with PI planning, release train engineers, the whole thing. I came from a startup where small teams just shipped and I'm worried we're about to rebuild the exact hierarchy agile was supposed to remove. am I wrong?",
       "should_trigger": true,
-      "expected_refs": ["50-the-agile-scaling-trap"]
+      "expected_refs": [
+        "50-the-agile-scaling-trap"
+      ]
     },
     {
       "id": "burnout-resilience",
       "prompt": "we've had three people go off sick with burnout this year. the company response was to offer a mindfulness app subscription and a resilience webinar. nobody's talking about the fact that we're permanently understaffed and on-call is brutal.",
       "should_trigger": true,
-      "expected_refs": ["25-burned-by-design", "56-permanent-urgency"]
+      "expected_refs": [
+        "25-burned-by-design",
+        "56-permanent-urgency"
+      ]
     },
     {
       "id": "perf-review-individual",
       "prompt": "we just spent two years building genuinely collaborative teams and now it's annual review season — everyone gets an individual rating and ranking, stack-ranked against each other. you can already feel people starting to hoard credit again.",
       "should_trigger": true,
-      "expected_refs": ["41-the-performance-review", "54-pay-and-reward"]
+      "expected_refs": [
+        "41-the-performance-review",
+        "54-pay-and-reward"
+      ]
     },
     {
       "id": "bonus-undermines-team",
       "prompt": "finance just announced individual bonus targets for next year, each person gets personal KPIs. the teams we built around shared ownership are going to get torn apart by this the second people realise their bonus depends on their own number.",
       "should_trigger": true,
-      "expected_refs": ["54-pay-and-reward", "41-the-performance-review"]
+      "expected_refs": [
+        "54-pay-and-reward",
+        "41-the-performance-review"
+      ]
     },
     {
       "id": "local-optimisation",
       "prompt": "every department hits its own targets — support closes tickets fast, sales smashes quota, engineering ships features — but the actual customer experience is getting worse and worse and nobody owns the end to end. how does everyone win locally while we lose overall?",
       "should_trigger": true,
-      "expected_refs": ["14-local-optimisations"]
+      "expected_refs": [
+        "14-local-optimisations"
+      ]
     },
     {
       "id": "psych-safety-patch",
       "prompt": "we ran a psychological safety workshop because the engagement survey said people don't speak up. but two weeks later someone raised a real concern in a town hall and got visibly slapped down by a director. the workshop feels like a band-aid.",
       "should_trigger": true,
-      "expected_refs": ["17-psychological-safety-as-a-patch"]
+      "expected_refs": [
+        "17-psychological-safety-as-a-patch"
+      ]
     },
     {
       "id": "ai-into-broken-system",
       "prompt": "execs are convinced that dropping copilot and a bunch of AI agents into our delivery process will fix our velocity problem. but our process is a mess of handoffs and approvals — I feel like we're about to automate the chaos. how do I make that argument?",
       "should_trigger": true,
-      "expected_refs": ["21-deploying-ai-into-a-broken-system"]
+      "expected_refs": [
+        "21-deploying-ai-into-a-broken-system"
+      ]
     },
     {
       "id": "team-topologies-shapes",
       "prompt": "we reorganised into stream-aligned teams and platform teams straight out of Team Topologies, drew all the boxes, but nothing really changed — the same people approve the same things, authority didn't actually move anywhere. we just relabelled the org chart.",
       "should_trigger": true,
-      "expected_refs": ["29-team-topologies-the-wrong-way-round"]
+      "expected_refs": [
+        "29-team-topologies-the-wrong-way-round"
+      ]
     },
     {
       "id": "strategy-unclear",
       "prompt": "we keep telling teams to 'be autonomous and make their own calls' but when they ask what we're actually trying to achieve as a company they get three different answers from three execs. how can they self-direct toward a goal nobody can state clearly?",
       "should_trigger": true,
-      "expected_refs": ["10-the-companys-strategy-is-unclear"]
+      "expected_refs": [
+        "10-the-companys-strategy-is-unclear"
+      ]
     },
     {
       "id": "them-and-us",
       "prompt": "dev and ops here are basically at war. devs throw stuff over the wall, ops blocks releases, each side has a whole folklore about how the other is incompetent. management keeps doing 'one team' offsites that last about a week.",
       "should_trigger": true,
-      "expected_refs": ["46-them-and-us"]
+      "expected_refs": [
+        "46-them-and-us"
+      ]
     },
     {
       "id": "career-path-away-from-work",
       "prompt": "our best engineer just told me the only way to get promoted past senior here is to become a manager and stop coding. so all our deepest technical people are being pulled out of the work they're brilliant at. seems insane but it's the ladder.",
       "should_trigger": true,
-      "expected_refs": ["52-career-paths"]
+      "expected_refs": [
+        "52-career-paths"
+      ]
     },
     {
       "id": "learning-org-no-learning",
       "prompt": "we call ourselves a learning organisation — lunch and learns, a Udemy budget, brown bags. but honestly the way we actually build software hasn't changed in years, and the stuff people 'learn' never makes it into how we work. it's theatre.",
       "should_trigger": true,
-      "expected_refs": ["55-the-learning-organisation-that-doesnt-learn"]
+      "expected_refs": [
+        "55-the-learning-organisation-that-doesnt-learn"
+      ]
     },
     {
       "id": "corridor-decisions",
       "prompt": "the real decisions here never happen in the meetings. they get made in side chats and corridor conversations between a couple of senior people, and the rest of us find out after. the official governance is basically a rubber stamp.",
       "should_trigger": true,
-      "expected_refs": ["59-the-corridor-conversation", "13-hippos-and-dungeon-masters"]
+      "expected_refs": [
+        "59-the-corridor-conversation",
+        "13-hippos-and-dungeon-masters"
+      ]
     },
     {
       "id": "workshop-postits-lost",
       "prompt": "we ran a big strategy workshop, hundreds of post-its, and the facilitators went off and came back with a gorgeous synthesis deck. but half the team quietly feels like their points got merged away or reworded, and nobody really trusts the 'outcomes' we're now supposed to act on. what went wrong and how do we run these so people actually own the result?",
       "should_trigger": true,
-      "expected_refs": ["60-the-output-nobody-owned"]
+      "expected_refs": [
+        "60-the-output-nobody-owned"
+      ]
     },
     {
       "id": "job-enrichment-recycled",
       "prompt": "every couple of years HR rolls out a new role-enrichment / job-crafting programme — more variety, clearer goals, learning budgets, feedback loops. it perks people up for a few months then fades, and then we do the whole thing again under a new name. why doesn't it ever stick?",
       "should_trigger": true,
-      "expected_refs": ["61-rearranging-the-furniture"]
+      "expected_refs": [
+        "61-rearranging-the-furniture"
+      ]
     },
     {
       "id": "workshop-turned-sour",
       "prompt": "we ran a big all-hands workshop — great keynote, then really good breakout group work, everyone engaged. then we had a panel of senior leaders give feedback on what the groups produced and the whole room went cold: pointed questions, people clammed up, it ended with winners and losers instead of alignment. the facilitator was excellent so I don't get what went wrong. how do we run these so they don't collapse halfway?",
       "should_trigger": true,
-      "expected_refs": ["62-the-agenda-that-sabotaged-itself"]
+      "expected_refs": [
+        "62-the-agenda-that-sabotaged-itself"
+      ]
     },
     {
       "id": "leadership-team-serial-reporting",
       "prompt": "our exec team meets every other week and it's basically a round-robin: engineering gives an update, then product, then finance, then people, then sales. nobody really engages with anyone else's slot. anything that spans two functions ends up getting sorted in a slack DM or by the CEO afterwards, and she's now the bottleneck for half our decisions. everyone in the room is good at their job so I can't work out why we're so useless as a group. how do we fix this?",
       "should_trigger": true,
-      "expected_refs": ["63-the-leadership-team-that-isnt"]
+      "expected_refs": [
+        "63-the-leadership-team-that-isnt"
+      ]
     },
     {
       "id": "code-review-personality-clash",
       "prompt": "two of my devs have turned code review into a war. every PR between them ends up with passive-aggressive comments, one gets defensive and the other piles on, and now they avoid each other in standup. the team says it's just a personality clash and we've started assigning them to different parts of the codebase so their paths don't cross. it feels like a bad answer but I don't know what else to do. thoughts?",
       "should_trigger": true,
-      "expected_refs": ["64-the-code-review-that-became-personal"]
+      "expected_refs": [
+        "64-the-code-review-that-became-personal"
+      ]
     },
     {
       "id": "workshop-toolkit-flat",
       "prompt": "i facilitate a lot of internal workshops and i'm getting frustrated. i do everything right — icebreaker, post-its, rotation stations, dot voting to close, an energiser when the room dips — and it all runs smoothly, but people are just... polite. present but not really in it. the outputs are fine, nobody's engaged. i keep adding new techniques to my toolkit and it doesn't move the needle. what am i doing wrong?",
       "should_trigger": true,
-      "expected_refs": ["65-the-facilitators-toolkit"]
+      "expected_refs": [
+        "65-the-facilitators-toolkit"
+      ]
     },
-
     {
       "id": "neg-reword-okrs",
       "prompt": "can you reword these three OKRs to sound a bit punchier and more inspiring for the all-hands slide? here they are: ...",
@@ -217,19 +281,273 @@
       "id": "status-always-green",
       "prompt": "we just had a programme blow up — six months late, found out three weeks before the go-live date. i went back through the reporting and it was green every single month. then i talked to two of the engineers and they said they'd been raising the integration risk since last autumn and it kept getting reworded on the way up. the steering group is now asking who failed to escalate. i don't think that's the right question but i can't articulate why. help?",
       "should_trigger": true,
-      "expected_refs": ["66-everything-is-fine"]
+      "expected_refs": [
+        "66-everything-is-fine"
+      ]
     },
     {
       "id": "it-business-divide",
       "prompt": "we've done everything the consultants said to close the gap between product and engineering — shared planning, engineers embedded in the product teams, a joint quarterly kickoff. two years on and it's the same: product owns the roadmap, my org owns the technical decisions, and we each defend our own budget. the only person who can actually settle a trade-off between the two is the CEO, and she's swamped. our CPO and i get on fine, so i genuinely don't know what's left to fix.",
       "should_trigger": true,
-      "expected_refs": ["67-the-it-business-divide"]
+      "expected_refs": [
+        "67-the-it-business-divide"
+      ]
     },
     {
       "id": "bureaucracy-became-the-work",
       "prompt": "i lead a platform group of about thirty engineers and architects. i pulled a rough tally of where last quarter went and it's grim — timesheet coding against eleven project codes, a monthly portfolio board, a design authority forum, a change advisory board, plus writing up decisions we'd already taken so they'd be on record for audit. actual design and build was maybe a third of the time. we've been through two efficiency programmes that both merged some forums and simplified the templates, and within a couple of quarters the load was back where it started. leadership is now asking us to justify headcount using the same reporting that's eating the capacity. i'm out of ideas that aren't just another process improvement.",
       "should_trigger": true,
-      "expected_refs": ["68-the-bureaucracy-that-became-the-work"]
+      "expected_refs": [
+        "68-the-bureaucracy-that-became-the-work"
+      ]
+    },
+    {
+      "id": "buck-stops-nowhere",
+      "prompt": "my team knows exactly what we want to do with our own deployment pipeline. we've analysed it, we agree, it's our system. and yet last week we still put it on the steering group agenda 'to be safe'. nobody up there knows this system better than us. why do we keep doing this?",
+      "should_trigger": true,
+      "expected_refs": [
+        "02-passing-the-buck"
+      ]
+    },
+    {
+      "id": "workshop-goes-quiet",
+      "prompt": "one on one my designers are full of opinions, but in our planning workshops they all clam up and wait for whatever the department head hints at. then they complain in the corridor afterwards. how do i get real participation in the room?",
+      "should_trigger": true,
+      "expected_refs": [
+        "04-passivity-in-team-workshops"
+      ]
+    },
+    {
+      "id": "mandatory-storming",
+      "prompt": "our new agile coach says the friction in my newly formed team is 'just storming' and we have to let it run its course before they can perform. it's been four months and it's getting worse, not better. is storming actually a required phase?",
+      "should_trigger": true,
+      "expected_refs": [
+        "05-forming-storming-norming-performing"
+      ]
+    },
+    {
+      "id": "parity-before-shipping",
+      "prompt": "we're replacing a 15-year-old case management system and the team refuses to ship anything until they've mapped every behaviour of the old one. the goal has quietly become 'do exactly what the old system did'. we're eight months in with nothing live.",
+      "should_trigger": true,
+      "expected_refs": [
+        "06-analysis-paralysis"
+      ]
+    },
+    {
+      "id": "lead-of-the-self-managing-team",
+      "prompt": "we told the team they're self-organising but they also have a formal team lead with delivery responsibility. now nobody knows if 'the team decided' or 'Kim approved it', and it changes depending on who you ask. the lead does servant leadership stuff but everyone still watches their face before committing to anything.",
+      "should_trigger": true,
+      "expected_refs": [
+        "09-team-leads"
+      ]
+    },
+    {
+      "id": "flat-workshop",
+      "prompt": "i facilitated a really carefully designed workshop yesterday — good exercises, timeboxes, materials. it fell completely flat. people did the exercises politely and left. the boss was in the room and honestly the conclusion had kind of been decided already. why don't these sessions ever produce anything?",
+      "should_trigger": true,
+      "expected_refs": [
+        "11-workshops-not-working"
+      ]
+    },
+    {
+      "id": "comms-training-again",
+      "prompt": "every retro ends with 'we have a communication problem'. handoffs get missed, people are out of the loop, stuff arrives late. HR's answer is another round of communication training and a comms plan. we've done three of those. it never changes anything.",
+      "should_trigger": true,
+      "expected_refs": [
+        "12-communication-problems"
+      ]
+    },
+    {
+      "id": "scrum-snowglobe",
+      "prompt": "our scrum team runs beautifully — clean board, stable velocity, tidy backlog. but it feels like we're in a bubble. the rest of the org is on fire around us and none of it touches our curated backlog. is a perfectly protected team actually a good sign?",
+      "should_trigger": true,
+      "expected_refs": [
+        "19-the-agile-terrarium"
+      ]
+    },
+    {
+      "id": "faster-horse-org",
+      "prompt": "we work harder every year and respond slower. by the time our annual plan is approved the market's moved. every decision queues at the top. a competitor shipped in the time it took us to schedule the decision meeting about whether to start.",
+      "should_trigger": true,
+      "expected_refs": [
+        "20-built-for-yesterday"
+      ]
+    },
+    {
+      "id": "chewed-up-seat",
+      "prompt": "we've had three people burn out or leave from the same coordinator role in two years. each time we did a PIP or coaching for the person. the next one struggles the same way. at what point is it not about the individuals?",
+      "should_trigger": true,
+      "expected_refs": [
+        "22-fixing-people"
+      ]
+    },
+    {
+      "id": "checklist-spiral",
+      "prompt": "same categories of production errors keep recurring. after each incident we add a checklist item, a sign-off, or a training module. we now have 40-step release checklists and the error rate hasn't moved. leadership thinks people are just sloppy.",
+      "should_trigger": true,
+      "expected_refs": [
+        "23-the-error-factory"
+      ]
+    },
+    {
+      "id": "leadership-program-plateau",
+      "prompt": "we've invested enormously in leadership development — programmes, 360s, coaching for every manager. the managers are genuinely good people. teams still underperform, engagement is mediocre, and the response to every dip is another leadership framework. what are we missing?",
+      "should_trigger": true,
+      "expected_refs": [
+        "26-professional-leadership"
+      ]
+    },
+    {
+      "id": "dot-vote-losers",
+      "prompt": "we dot-voted the new team structure in a big workshop and moved on — felt very democratic. but the group that lost the vote has been dragging their feet ever since and the decision needs constant chasing. did we actually decide anything?",
+      "should_trigger": true,
+      "expected_refs": [
+        "27-tyranny-of-the-majority"
+      ]
+    },
+    {
+      "id": "codesign-rewritten",
+      "prompt": "we ran a genuinely great co-design week with the teams — eventstorming, real energy. then the architecture group reworked everything behind closed doors and the target picture that came out looks nothing like what we built together. the teams noticed. trust took a visible hit.",
+      "should_trigger": true,
+      "expected_refs": [
+        "28-involvement-theatre"
+      ]
+    },
+    {
+      "id": "consultant-report-dismissed",
+      "prompt": "we paid for an external review of our architecture. the report landed and my engineers' first move was to explain why every finding 'misses our context'. the only findings they accept are the ones they already knew. was the review a waste?",
+      "should_trigger": true,
+      "expected_refs": [
+        "30-the-external-verdict"
+      ]
+    },
+    {
+      "id": "office-mandate-fight",
+      "prompt": "we're fighting about return-to-office. leadership says collaboration needs proximity, people say they're more productive at home. but honestly, when everyone IS in the office they sit with headphones on metres apart working alone anyway. are we arguing about the wrong thing?",
+      "should_trigger": true,
+      "expected_refs": [
+        "31-working-alone-together"
+      ]
+    },
+    {
+      "id": "collab-gone-sour",
+      "prompt": "two of our teams were told to build the new intake flow 'together'. it started friendly. three months later one team is effectively setting all the terms and the other has gone quiet and just complies. credit lands unevenly. nobody planned this.",
+      "should_trigger": true,
+      "expected_refs": [
+        "32-the-collaboration-that-isnt"
+      ]
+    },
+    {
+      "id": "personas-not-people",
+      "prompt": "my engineers make product decisions all day and not one of them has ever talked to an actual user. everything arrives pre-digested — personas from UX, requirements from the PO, dashboards from analytics. they know ABOUT the customer, they've just never met one.",
+      "should_trigger": true,
+      "expected_refs": [
+        "33-the-customer-we-never-met"
+      ]
+    },
+    {
+      "id": "sunday-2147",
+      "prompt": "our director sends non-urgent mail on sunday nights with 'no need to reply before monday' in the footer. everyone replies within the hour anyway. the people getting promoted are noticeably the always-on ones. the stated policy says work-life balance.",
+      "should_trigger": true,
+      "expected_refs": [
+        "34-the-sunday-email"
+      ]
+    },
+    {
+      "id": "strategy-deck-thud",
+      "prompt": "leadership brought in a consultancy to write our three-year strategy. six months of interviews and offsites, beautiful deck, full authority. implementation died in the first quarter on questions the deck never anticipated. the people who have to execute it don't recognise the company in it.",
+      "should_trigger": true,
+      "expected_refs": [
+        "37-outsourcing-the-future"
+      ]
+    },
+    {
+      "id": "green-dashboards-wrong-game",
+      "prompt": "our improvement engine is world class — efficiency programmes, restructures, all our internal KPIs trend up. meanwhile frontline people keep flagging a tech shift our roadmap ignores, and their signals die somewhere in middle management. we're getting better and better at the wrong thing.",
+      "should_trigger": true,
+      "expected_refs": [
+        "39-doing-the-wrong-thing-right"
+      ]
+    },
+    {
+      "id": "sprint-cosplay-project",
+      "prompt": "we 'went product' last year — squads, sprints, demos. but every squad has locked scope and a hard deadline agreed above them. halfway in, a team discovered the problem is different than assumed, and the answer was 'deliver what was committed anyway'. so what exactly is product about this?",
+      "should_trigger": true,
+      "expected_refs": [
+        "40-the-project-in-product-clothing"
+      ]
+    },
+    {
+      "id": "pilot-cant-scale",
+      "prompt": "our pilot team for the new operating model was a huge success — engaged people, faster delivery, the works. the moment we proposed scaling it, resistance appeared everywhere: the other managers, HR, the architects. now the pilot is quietly sliding back to the old ways. why does this always happen to pilots?",
+      "should_trigger": true,
+      "expected_refs": [
+        "42-the-pilot-trap"
+      ]
+    },
+    {
+      "id": "nda-silence-on-ai",
+      "prompt": "our company champions responsible AI publicly and i think we mean it. but when someone asked at a panel about the actual environmental footprint of our AI stack, we couldn't answer — the vendor NDA literally prevents the people who know from saying. how do we square that with our sustainability commitments?",
+      "should_trigger": true,
+      "expected_refs": [
+        "43-the-ai-we-cannot-talk-about"
+      ]
+    },
+    {
+      "id": "by-the-book-plateau",
+      "prompt": "we do scrum absolutely by the book — every ceremony, on time, well run. we got a real improvement bump the first year, then plateaued, and now the same problems resurface quarterly wearing new labels. standups are status reports again. do we need a better process or is process not the lever?",
+      "should_trigger": true,
+      "expected_refs": [
+        "45-fixing-the-process"
+      ]
+    },
+    {
+      "id": "remote-fray",
+      "prompt": "our distributed team's tickets and ceremonies all run fine, but five-minute decisions take three days, small misunderstandings snowball, and we only found out a teammate was struggling when it blew up. the formal machinery works. something else doesn't.",
+      "should_trigger": true,
+      "expected_refs": [
+        "47-out-of-sight-out-of-sync"
+      ]
+    },
+    {
+      "id": "two-person-hub",
+      "prompt": "from the outside my team looks great. inside, every real decision happens in a slack thread between the same two people. their PRs sail through, everyone else's wait. the other five engineers have become spectators. it's stable, but is it healthy?",
+      "should_trigger": true,
+      "expected_refs": [
+        "49-the-pair-that-runs-everything"
+      ]
+    },
+    {
+      "id": "autonomous-teams-annual-budget",
+      "prompt": "we restructured into autonomous product teams — own roadmaps, own ways of working. then finance handed them the same centralised annual budget process: forecast 18 months out, write business cases to justify your existence, compete for a fixed pot. mid-year the money gets moved around over their heads. autonomy, but.",
+      "should_trigger": true,
+      "expected_refs": [
+        "51-budgets-are-bureaucracy"
+      ]
+    },
+    {
+      "id": "quiet-slide-back",
+      "prompt": "we set up self-managing teams eighteen months ago. performance lifted, then quietly slid back to old habits — nobody decided to roll back, it just happened. the teams keep colliding with HR's individual performance reviews and finance's project codes. the org chart says one thing, the machinery says another.",
+      "should_trigger": true,
+      "expected_refs": [
+        "53-designed-to-undermine"
+      ]
+    },
+    {
+      "id": "advisory-board-theatre",
+      "prompt": "we have an advisory board, conference keynotes, seats in two industry working groups. looking honestly at it: the board reviews features we already decided, the talks describe what we already built, the working-group papers never get implemented. we look like market shapers. are we?",
+      "should_trigger": true,
+      "expected_refs": [
+        "57-the-market-we-think-we-shape"
+      ]
+    },
+    {
+      "id": "five-year-values-quarterly-decisions",
+      "prompt": "our strategy talks about five-year capability building. every actual decision optimises the next quarter — capability investment deferred, tech debt piling up, people restructured instead of developed because development pays off on a timescale nobody's bonus measures. how do we break the loop?",
+      "should_trigger": true,
+      "expected_refs": [
+        "58-the-short-termism-machine"
+      ]
     }
   ]
 }
