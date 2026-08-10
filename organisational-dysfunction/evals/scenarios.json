@@ -224,6 +224,12 @@
       "prompt": "we've done everything the consultants said to close the gap between product and engineering — shared planning, engineers embedded in the product teams, a joint quarterly kickoff. two years on and it's the same: product owns the roadmap, my org owns the technical decisions, and we each defend our own budget. the only person who can actually settle a trade-off between the two is the CEO, and she's swamped. our CPO and i get on fine, so i genuinely don't know what's left to fix.",
       "should_trigger": true,
       "expected_refs": ["67-the-it-business-divide"]
+    },
+    {
+      "id": "bureaucracy-became-the-work",
+      "prompt": "i lead a platform group of about thirty engineers and architects. i pulled a rough tally of where last quarter went and it's grim — timesheet coding against eleven project codes, a monthly portfolio board, a design authority forum, a change advisory board, plus writing up decisions we'd already taken so they'd be on record for audit. actual design and build was maybe a third of the time. we've been through two efficiency programmes that both merged some forums and simplified the templates, and within a couple of quarters the load was back where it started. leadership is now asking us to justify headcount using the same reporting that's eating the capacity. i'm out of ideas that aren't just another process improvement.",
+      "should_trigger": true,
+      "expected_refs": ["68-the-bureaucracy-that-became-the-work"]
     }
   ]
 }
