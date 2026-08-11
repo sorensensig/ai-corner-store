@@ -14,7 +14,7 @@ A small, curated shop of AI skills, plugins, and bundles — each a **self-conta
 
 | Release | What it is | Install path |
 |---|---|---|
-| [`organisational-dysfunction`](./organisational-dysfunction) | Diagnose org & team dysfunction as a problem of structure, not people — 68 named dysfunctions read through open sociotechnical systems theory. | `organisational-dysfunction` |
+| [`organisational-dysfunction`](./organisational-dysfunction) | Diagnose org & team dysfunction as a problem of structure, not people — 69 named dysfunctions read through open sociotechnical systems theory. | `organisational-dysfunction` |
 | [`laws-of-ux`](./laws-of-ux) | Treat human limits — working memory, attention, tolerance for choice — as hard design constraints. 21 psychological laws, applied to interfaces *and* to configs, prompts, CLI output and the options a tool offers. | `laws-of-ux` |
 | _more coming_ | | |
 
