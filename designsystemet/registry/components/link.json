@@ -1,0 +1,174 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Link",
+  "slug": "link",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/link/link.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/link/overview",
+    "code": "https://designsystemet.no/en/components/docs/link/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/link/link.tsx",
+    "value": "Link"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/link/link.tsx (JSDoc)",
+    "value": "Link component, renders a native `a` element."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/link/link.tsx (JSDoc @example)",
+    "value": "<Link href='#'>Link</Link>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/link/link.tsx",
+    "value": {
+      "class": "ds-link",
+      "dataAttributes": []
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/link.css",
+    "value": [
+      "--ds-color-neutral-text-default",
+      "--ds-color-neutral-text-subtle",
+      "--ds-color-text-default",
+      "--ds-color-text-subtle",
+      "--ds-size-1",
+      "--dsc-link-background--active",
+      "--dsc-link-border-radius",
+      "--dsc-link-color",
+      "--dsc-link-color--active",
+      "--dsc-link-color--hover",
+      "--dsc-link-color--visited",
+      "--dsc-link-text-decoration-thickness",
+      "--dsc-link-text-decoration-thickness--hover"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/link/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Put trigger words early in link text; vague phrases must not be the entire link text",
+        "wcag": null,
+        "quote": "Use the important words (trigger words) early in the link text. \u201cGo to\u201d, \u201cClick here\u201d, \u201cLink to\u201d or \u201cRead more\u201d should never be the entire link text.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/link/overview"
+      },
+      {
+        "rule": "All links on the same page must have unique link text",
+        "wcag": null,
+        "quote": "All links on the same page must have unique link text.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/link/overview"
+      },
+      {
+        "rule": "A verb should appear early in the link text",
+        "wcag": null,
+        "quote": "A verb should appear early in the link text.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/link/overview"
+      },
+      {
+        "rule": "Use text, not an icon, to explain where a link leads, since text is clear for both sighted users and screen reader users",
+        "wcag": null,
+        "quote": "Instead, we always recommend using text to explain where the link leads. This makes the function clear both for users and for screen readers.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/link/overview"
+      },
+      {
+        "rule": "Link text must make sense on its own when read aloud by a screen reader, regardless of surrounding context",
+        "wcag": null,
+        "quote": "When writing link text, imagine it being read aloud by a screen reader. The text must make sense on its own, whether it appears in a sentence, menu or list.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/link/overview"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/link/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Button",
+        "note": "Use a button instead of a link when the user should perform an action on the same page, e.g. \"Save\" or \"Submit\"",
+        "quote": "Avoid link when the user should perform an action on the same page, for example \u201cSave\u201d or \u201cSubmit\u201d, use a button instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/link/overview"
+      },
+      {
+        "component": "Button",
+        "note": "Use a button instead of a link when the action changes the state of the solution, such as opening a dialog, starting a process or saving data",
+        "quote": "the action changes the state of the solution, such as opening a dialog, starting a process or saving data, use a button instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/link/overview"
+      },
+      {
+        "component": "Button",
+        "note": "Use a button, not a link, when the action itself performs the operation (e.g. \"Log in\" that submits a login form) rather than navigating to a URL",
+        "quote": "Use a button when \u201cLog in\u201d actually logs the user in, for example by submitting a login form.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/link/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/link/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "A link is often used inline as part of a text",
+        "quote": "A link is often used as part of a text.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/link/overview"
+      },
+      {
+        "rule": "An icon in a link can be placed left or right of the text; left is recommended",
+        "quote": "Links can have an icon placed either to the left or the right of the text. As a general rule, we recommend placing the icon on the left.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/link/overview"
+      },
+      {
+        "rule": "Neutral-coloured links are useful when placed in an area that has its own background colour",
+        "quote": "This can be useful when the link is placed in an area with its own background colour.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/link/overview"
+      },
+      {
+        "rule": "Avoid overusing links on a page, as this makes it harder for users to find their way forward",
+        "quote": "It is important not to overuse links, as this can make it harder for users to find their way forward.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/link/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

@@ -1,0 +1,178 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Switch",
+  "slug": "switch",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/switch/switch.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/switch/overview",
+    "code": "https://designsystemet.no/en/components/docs/switch/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/switch/switch.tsx",
+    "value": "Switch"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/switch/switch.tsx (JSDoc)",
+    "value": "Switch used to toggle options."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/switch/switch.tsx (JSDoc @example)",
+    "value": "<Switch label=\"I agree\" value=\"agree\" />"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/switch/switch.tsx",
+    "value": {
+      "class": null,
+      "dataAttributes": [
+        "data-field",
+        "data-position",
+        "data-size",
+        "data-variant"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/switch.css",
+    "value": []
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/switch/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Use role=\"switch\" so screen readers identify the toggle switch and its on/off state.",
+        "wcag": null,
+        "quote": "We use role=\"switch\" to inform screen readers that this is a toggle switch.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/switch/accessibility"
+      },
+      {
+        "rule": "This role tells screen reader users that the control is a switch that can be turned on and off.",
+        "wcag": null,
+        "quote": "This allows screen readers to tell the user that it is a switch and that it can be turned on and off.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/switch/accessibility"
+      },
+      {
+        "rule": "Do not add aria-checked, since it is unnecessary on a switch built as a checkbox input.",
+        "wcag": null,
+        "quote": "We do not add aria-checked because it is not necessary when the switch is an input with type=\"checkbox\" .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/switch/accessibility"
+      },
+      {
+        "rule": "Space toggles the switch on and off via keyboard.",
+        "wcag": null,
+        "quote": "Space toggles the switch on and off",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/switch/accessibility"
+      },
+      {
+        "rule": "Label text should make sense when read aloud with an on/off switch announced at the end (for screen reader users).",
+        "wcag": null,
+        "quote": "The text should make sense when you read it aloud and add an on/off switch at the end.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/switch/overview"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/switch/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Radio",
+        "note": "When users are answering questions in a form, use radio instead of switch.",
+        "quote": "users are answering questions in forms, use radio or checkbox instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/switch/overview"
+      },
+      {
+        "component": "Checkbox",
+        "note": "When users are answering questions in a form, use checkbox instead of switch.",
+        "quote": "users are answering questions in forms, use radio or checkbox instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/switch/overview"
+      },
+      {
+        "component": "Toggle group",
+        "note": "When users are switching between different content views (e.g. list vs graph), use toggleGroup instead of switch.",
+        "quote": "users are switching between different content views, such as list and graph, use toggleGroup instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/switch/overview"
+      },
+      {
+        "component": "Chip",
+        "note": "When content needs to be filtered, use chip instead of switch.",
+        "quote": "content needs to be filtered, use chip instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/switch/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/switch/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Use fieldset to group multiple switch components together.",
+        "quote": "Use fieldset to group multiple switch components together.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/switch/overview"
+      },
+      {
+        "rule": "By default, the switch is placed on the left and its label on the right.",
+        "quote": "As a rule, the switch is placed on the left and the label on the right.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/switch/overview"
+      },
+      {
+        "rule": "When switches are fixed on the right side of the interface, place the label on the left so switches align neatly on the right.",
+        "quote": "In some cases, switches are fixed on the right side of the interface. In those situations, it is best to place the label on the left, so all switches align neatly on the right.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/switch/overview"
+      },
+      {
+        "rule": "Build the switch using the ds-input classname on an input with type=\"checkbox\" and role=\"switch\".",
+        "quote": "Use the classname ds-input on <input> along with type=\"checkbox\" and role=\"switch\" .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/switch/code"
+      },
+      {
+        "rule": "For a valid form element, use ds-field together with a label.",
+        "quote": "For a valid form element, we recommend using <ds-field> together with a <label> .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/switch/code"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

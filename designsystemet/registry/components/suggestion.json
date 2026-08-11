@@ -1,0 +1,166 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "EXPERIMENTAL_Suggestion",
+  "slug": "suggestion",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/suggestion/suggestion.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/suggestion/overview",
+    "code": "https://designsystemet.no/en/components/docs/suggestion/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/suggestion/suggestion.tsx",
+    "value": "EXPERIMENTAL_Suggestion"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/suggestion/suggestion.tsx (JSDoc)",
+    "value": null
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/suggestion/suggestion.tsx (JSDoc @example)",
+    "value": null
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/suggestion/suggestion.tsx",
+    "value": {
+      "class": "ds-suggestion",
+      "dataAttributes": [
+        "data-creatable",
+        "data-multiple"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/suggestion.css",
+    "value": [
+      "--ds-body-sm-font-size",
+      "--ds-border-radius-full",
+      "--ds-border-radius-md",
+      "--ds-border-radius-sm",
+      "--ds-border-width-default",
+      "--ds-color-base-contrast-default",
+      "--ds-color-base-default",
+      "--ds-color-base-hover",
+      "--ds-color-neutral-border-default",
+      "--ds-color-neutral-border-subtle",
+      "--ds-color-neutral-surface-default",
+      "--ds-color-surface-active",
+      "--ds-color-surface-hover",
+      "--ds-color-text-default",
+      "--ds-icon-size",
+      "--ds-line-height-sm",
+      "--ds-shadow-md",
+      "--ds-size-1",
+      "--ds-size-2",
+      "--ds-size-3",
+      "--ds-size-5",
+      "--ds-size-6",
+      "--ds-size-8",
+      "--ds-size-9",
+      "--dsc-button-size",
+      "--dsc-input-stroke-width",
+      "--dsc-suggestion-border-color",
+      "--dsc-suggestion-border-style",
+      "--dsc-suggestion-border-width",
+      "--dsc-suggestion-chip-background",
+      "--dsc-suggestion-chip-background--hover",
+      "--dsc-suggestion-chip-border-color",
+      "--dsc-suggestion-chip-border-radius",
+      "--dsc-suggestion-chip-border-style",
+      "--dsc-suggestion-chip-border-width",
+      "--dsc-suggestion-chip-color",
+      "--dsc-suggestion-chip-font-size",
+      "--dsc-suggestion-chip-gap",
+      "--dsc-suggestion-chip-height",
+      "--dsc-suggestion-chip-icon-size",
+      "--dsc-suggestion-chip-icon-url",
+      "--dsc-suggestion-chip-input-size",
+      "--dsc-suggestion-chip-padding",
+      "--dsc-suggestion-chip-spacing",
+      "--dsc-suggestion-clear-background--active",
+      "--dsc-suggestion-clear-background--hover",
+      "--dsc-suggestion-clear-border-radius",
+      "--dsc-suggestion-clear-gap",
+      "--dsc-suggestion-clear-icon-url",
+      "--dsc-suggestion-clear-padding",
+      "--dsc-suggestion-clear-size",
+      "--dsc-suggestion-create-icon-url",
+      "--dsc-suggestion-create-text",
+      "--dsc-suggestion-empty-text",
+      "--dsc-suggestion-list-background",
+      "--dsc-suggestion-list-border-radius",
+      "--dsc-suggestion-list-box-shadow",
+      "--dsc-suggestion-list-color",
+      "--dsc-suggestion-list-gap",
+      "--dsc-suggestion-list-offset",
+      "--dsc-suggestion-list-padding",
+      "--dsc-suggestion-list-placement",
+      "--dsc-suggestion-option-activedecendant-outline-width",
+      "--dsc-suggestion-option-background--hover",
+      "--dsc-suggestion-option-background--selected",
+      "--dsc-suggestion-option-border-radius",
+      "--dsc-suggestion-option-checkmark-border",
+      "--dsc-suggestion-option-checkmark-border-color",
+      "--dsc-suggestion-option-checkmark-size",
+      "--dsc-suggestion-option-checkmark-url",
+      "--dsc-suggestion-option-gap",
+      "--dsc-suggestion-option-padding",
+      "--dsc-suggestion-toggle-icon-url"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": [
+      {
+        "slug": "skjema-validering",
+        "name": "Skjemavalidering (form validation and errors)",
+        "docs": "https://designsystemet.no/en/patterns/errors/"
+      }
+    ]
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": [
+      "alert",
+      "error-summary",
+      "field",
+      "fieldset",
+      "validation-message"
+    ]
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/e-x-p-e-r-i-m-e-n-t-a-l_-suggestion/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/e-x-p-e-r-i-m-e-n-t-a-l_-suggestion/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/e-x-p-e-r-i-m-e-n-t-a-l_-suggestion/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

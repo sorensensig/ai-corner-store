@@ -1,0 +1,212 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Heading",
+  "slug": "heading",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/heading/heading.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/heading/overview",
+    "code": "https://designsystemet.no/en/components/docs/heading/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/heading/heading.tsx",
+    "value": "Heading"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/heading/heading.tsx (JSDoc)",
+    "value": "Use `Heading` to render h1-6 elements with heading text styles."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/heading/heading.tsx (JSDoc @example)",
+    "value": "<Heading data-size='lg' level={2}>Heading</Heading>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/heading/heading.tsx",
+    "value": {
+      "class": "ds-heading",
+      "dataAttributes": [
+        "data-size"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/heading.css",
+    "value": [
+      "--ds-heading-2xl-font-size",
+      "--ds-heading-2xl-font-weight",
+      "--ds-heading-2xl-letter-spacing",
+      "--ds-heading-2xl-line-height",
+      "--ds-heading-2xs-font-size",
+      "--ds-heading-2xs-font-weight",
+      "--ds-heading-2xs-letter-spacing",
+      "--ds-heading-2xs-line-height",
+      "--ds-heading-lg-font-size",
+      "--ds-heading-lg-font-weight",
+      "--ds-heading-lg-letter-spacing",
+      "--ds-heading-lg-line-height",
+      "--ds-heading-md-font-size",
+      "--ds-heading-md-font-weight",
+      "--ds-heading-md-letter-spacing",
+      "--ds-heading-md-line-height",
+      "--ds-heading-sm-font-size",
+      "--ds-heading-sm-font-weight",
+      "--ds-heading-sm-letter-spacing",
+      "--ds-heading-sm-line-height",
+      "--ds-heading-xl-font-size",
+      "--ds-heading-xl-font-weight",
+      "--ds-heading-xl-letter-spacing",
+      "--ds-heading-xl-line-height",
+      "--ds-heading-xs-font-size",
+      "--ds-heading-xs-font-weight",
+      "--ds-heading-xs-letter-spacing",
+      "--ds-heading-xs-line-height"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/heading/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Use correct heading levels (h1-h6) for proper semantic structure",
+        "wcag": null,
+        "quote": "Make sure to use correct heading levels (h1-h6) to ensure proper semantic structure.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/heading/overview"
+      },
+      {
+        "rule": "Starting headings with keywords makes scanning and locating information easier",
+        "wcag": null,
+        "quote": "Starting headings with keywords makes it easier for everyone to scan the page and locate relevant information.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/heading/overview"
+      },
+      {
+        "rule": "The h1 must describe the entire page; subheadings must be unique and indicate their section's content",
+        "wcag": null,
+        "quote": "The main page heading \u2014 the <h1> element \u2014 must describe the entire page, while each subheading should be unique and clearly indicate what the following section contains.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/heading/overview"
+      },
+      {
+        "rule": "Use headings in the correct order (h1-h6) for a clear, predictable structure",
+        "wcag": null,
+        "quote": "Use headings in the correct order ( h1 - h6 ) to create a clear and predictable structure.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/heading/accessibility"
+      },
+      {
+        "rule": "Coherent, logical heading hierarchy is essential since many users navigate by skimming headings",
+        "wcag": null,
+        "quote": "Many users navigate by skimming the headings, and it is therefore essential that the hierarchy is coherent and provides a logical division of the content.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/heading/accessibility"
+      },
+      {
+        "rule": "A tidy heading structure helps assistive technologies present the page correctly",
+        "wcag": null,
+        "quote": "A tidy heading structure also makes it easier for assistive technologies to present the page correctly.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/heading/accessibility"
+      },
+      {
+        "rule": "Avoid skipping heading levels in the hierarchy",
+        "wcag": null,
+        "quote": "Avoid skipping levels in the hierarchy.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/heading/accessibility"
+      },
+      {
+        "rule": "Jumping heading levels (e.g. h2 to h4) makes content organisation harder to understand, unlike natural progressions (e.g. h2 to h3)",
+        "wcag": null,
+        "quote": "Moving from <h2> to <h3> is natural, while jumping from <h2> to <h4> can make it harder to understand how the content is organised.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/heading/accessibility"
+      },
+      {
+        "rule": "Be consistent with heading structure across pages and sections in your solution",
+        "wcag": null,
+        "quote": "Be consistent across pages and sections in your solution.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/heading/accessibility"
+      },
+      {
+        "rule": "A given heading level's structure (e.g. table of contents at h2) should apply everywhere",
+        "wcag": null,
+        "quote": "If a table of contents uses <h2> in one place, the same structure should apply everywhere.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/heading/accessibility"
+      },
+      {
+        "rule": "Visual style and semantic HTML should match for the corresponding heading level",
+        "wcag": null,
+        "quote": "Both the visual style and the semantic HTML should be the same for the corresponding heading level.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/heading/accessibility"
+      },
+      {
+        "rule": "Consistent heading structure helps users build a stable mental model of content organisation",
+        "wcag": null,
+        "quote": "This helps users build a stable mental model of how the content is organised.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/heading/accessibility"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/heading/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/heading/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Heading is used to establish structure and hierarchy in content",
+        "quote": "Heading is used to establish structure and hierarchy in content.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/heading/overview"
+      },
+      {
+        "rule": "Use headings to divide information into clear, logical sections",
+        "quote": "Use headings to divide information into clear, logical sections.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/heading/overview"
+      },
+      {
+        "rule": "Headings and subheadings should be short and clear, giving readers an accurate idea of the content they introduce",
+        "quote": "Headings and subheadings should be short and clear, giving readers an accurate idea of the content they introduce.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/heading/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

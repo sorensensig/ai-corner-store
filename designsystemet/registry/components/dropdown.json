@@ -1,0 +1,212 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Dropdown",
+  "slug": "dropdown",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/dropdown/dropdown.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/dropdown/overview",
+    "code": "https://designsystemet.no/en/components/docs/dropdown/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/dropdown/dropdown.tsx",
+    "value": "Dropdown"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/dropdown/dropdown.tsx (JSDoc)",
+    "value": "Dropdown component, used to display a list of options."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/dropdown/dropdown.tsx (JSDoc @example)",
+    "value": "<Dropdown.TriggerContext>\n  <Dropdown.Trigger>Dropdown trigger</Dropdown.Trigger>\n  <Dropdown placement='bottom-end'>\n    <Dropdown.Heading>Dropdown</Dropdown.Heading>\n    <Dropdown.List>\n      <Dropdown.Item>\n        <Dropdown.Button>Option</Dropdown.Button>\n      </Dropdown.Item>\n    </Dropdown.List>\n  </Dropdown>\n</Dropdown.TriggerContext>\n\n@example without TriggerContext\n<Button popovertarget=\"my-dropdown\">Trigger</Button>\n<Dropdown id=\"my-dropdown\">\n  <Dropdown.Heading>Heading</Dropdown.Heading>\n  <Dropdown.List>\n    <Dropdown.Item>\n      <Dropdown.Button>Item</Dropdown.Button>\n    </Dropdown.Item>\n  </Dropdown.List>\n</Dropdown>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/dropdown/dropdown.tsx",
+    "value": {
+      "class": "ds-dropdown",
+      "dataAttributes": []
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/dropdown.css",
+    "value": [
+      "--ds-border-radius-md",
+      "--ds-border-width-default",
+      "--ds-color-neutral-border-subtle",
+      "--ds-color-neutral-surface-default",
+      "--ds-color-neutral-text-default",
+      "--ds-font-weight-regular",
+      "--ds-size-12",
+      "--ds-size-2",
+      "--ds-size-3",
+      "--ds-size-4",
+      "--dsc-dropdown-arrow-size",
+      "--dsc-dropdown-background",
+      "--dsc-dropdown-border-color",
+      "--dsc-dropdown-border-style",
+      "--dsc-dropdown-border-width",
+      "--dsc-dropdown-item-padding",
+      "--dsc-dropdown-item-size",
+      "--dsc-dropdown-padding",
+      "--dsc-dropdown-placement"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/dropdown/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Dropdown does not create a semantic menu itself; it provides the foundation for building one yourself",
+        "wcag": null,
+        "quote": "Dropdown does not create a semantic menu, but provides the foundation for building one yourself.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/overview"
+      },
+      {
+        "rule": "The Popover API gives built-in accessibility for open/closed state and keyboard navigation.",
+        "wcag": null,
+        "quote": "There is built-in accessibility in the Popover API for open and closed state, as well as keyboard navigation.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
+      },
+      {
+        "rule": "Enter or Space opens or closes the menu.",
+        "wcag": null,
+        "quote": "Enter or Space opens or closes the menu",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
+      },
+      {
+        "rule": "Enter or Space selects the highlighted item.",
+        "wcag": null,
+        "quote": "Enter or Space selects the highlighted item",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
+      },
+      {
+        "rule": "Esc closes the menu.",
+        "wcag": null,
+        "quote": "Esc closes the menu",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
+      },
+      {
+        "rule": "Dropdown does not include built-in keyboard handling because usage patterns vary.",
+        "wcag": null,
+        "quote": "Because of the different usage patterns for Dropdown , we do not include built-in keyboard handling.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
+      },
+      {
+        "rule": "If building a menu, you must implement your own keyboard interactions for navigation within it.",
+        "wcag": null,
+        "quote": "If you are creating a menu, you must implement your own keyboard interactions to enable navigation within the menu.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
+      },
+      {
+        "rule": "Refer to the W3C Menu and Menubar Pattern for accessible menu implementation.",
+        "wcag": null,
+        "quote": "See the \"Menu and Menubar Pattern\" at W3C .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
+      },
+      {
+        "rule": "Without custom logic, Dropdown.List items are Tab-navigable and the dropdown closes with Escape.",
+        "wcag": null,
+        "quote": "If you use Dropdown without adding your own logic, any focusable elements inside Dropdown.List can be navigated using the Tab key, and you can close the Dropdown with the Escape key.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/dropdown/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Button",
+        "note": "Use a visible Button instead of Dropdown when the action is primary or frequently used.",
+        "quote": "Avoid dropdown when an action is primary or frequently used; use a visible button instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/dropdown/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Dropdown is built internally on top of Popover.",
+        "quote": "Dropdown uses Popover internally.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/code"
+      },
+      {
+        "rule": "Use Dropdown to offer multiple secondary options compactly, that should still remain easily accessible.",
+        "quote": "Use dropdown when you want to offer multiple options without taking up much space in the interface the options are secondary but should still be easily accessible",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/overview"
+      },
+      {
+        "rule": "Use Dropdown for actions or navigation that do not need to be visible at all times.",
+        "quote": "Use Dropdown for actions or navigation that do not need to be visible at all times",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/overview"
+      },
+      {
+        "rule": "Keep the number of items in a dropdown manageable.",
+        "quote": "Keep the number of items manageable",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/overview"
+      },
+      {
+        "rule": "Use headings to group related items in a dropdown.",
+        "quote": "Use headings to group related items",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/overview"
+      },
+      {
+        "rule": "Avoid nesting multiple levels of dropdowns (nested menus).",
+        "quote": "Avoid multiple levels of dropdowns (nested menus)",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/overview"
+      },
+      {
+        "rule": "RovingFocus is offered as a utility component for keyboard navigation",
+        "quote": "We offer RovingFocus , which is a utility component for keyboard navigation.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

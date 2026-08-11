@@ -1,0 +1,178 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Search",
+  "slug": "search",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/search/search.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/search/overview",
+    "code": "https://designsystemet.no/en/components/docs/search/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/search/search.tsx",
+    "value": "Search"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/search/search.tsx (JSDoc)",
+    "value": "Search component, use to display different variations of a search input"
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/search/search.tsx (JSDoc @example)",
+    "value": "<Search>\n  <Search.Input aria-label='S\u00f8k' />\n  <Search.Clear />\n  <Search.Button />\n</Search>\n\n@example with icon\n<Search>\n  <Search.Input aria-label='S\u00f8k' />\n  <Search.Clear />\n</Search>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/search/search.tsx",
+    "value": {
+      "class": "ds-search",
+      "dataAttributes": []
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/search.css",
+    "value": [
+      "--ds-border-radius-default",
+      "--ds-icon-size",
+      "--ds-size-1",
+      "--ds-size-2",
+      "--ds-size-9",
+      "--dsc-button-size",
+      "--dsc-search-clear-icon-url",
+      "--dsc-search-clear-padding",
+      "--dsc-search-clear-size",
+      "--dsc-search-magnifying-icon-size",
+      "--dsc-search-magnifying-icon-url",
+      "--dsc-search-padding-inline"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/search/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Placeholder text should be used cautiously since it disappears once typing starts and can confuse users",
+        "wcag": null,
+        "quote": "Placeholder text should be used with caution, as it disappears when users start typing and may cause confusion.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/search/overview"
+      },
+      {
+        "rule": "Placeholder text must meet accessibility contrast requirements, which can make it hard to distinguish from entered text",
+        "wcag": null,
+        "quote": "It must also meet accessibility contrast requirements, which may make it difficult to distinguish from entered text.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/search/overview"
+      },
+      {
+        "rule": "Screen readers handle placeholder text inconsistently, so information should be given via a label or description instead",
+        "wcag": null,
+        "quote": "Screen readers handle placeholder text inconsistently, so information should instead be provided through a label or description.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/search/overview"
+      },
+      {
+        "rule": "Use a visible label above the search field when the search purpose isn't obvious or when it's part of a form",
+        "wcag": null,
+        "quote": "You should use a label above the search field when it is not obvious what users are expected to search for, or when the search field is part of a form.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/search/overview"
+      },
+      {
+        "rule": "Pressing Esc clears the search field for a consistent cross-browser experience",
+        "wcag": null,
+        "quote": "Pressing Esc clears the search field to provide a consistent experience across browsers.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/search/accessibility"
+      },
+      {
+        "rule": "Tab navigation moves focus between the input field, clear button and search button",
+        "wcag": null,
+        "quote": "Tab navigation allows users to move between the input field, the clear button and the search button.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/search/accessibility"
+      },
+      {
+        "rule": "Enter submits the search when the input field has focus",
+        "wcag": null,
+        "quote": "Enter submits the search when the input field has focus.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/search/accessibility"
+      },
+      {
+        "rule": "Placeholder text must not be the only description, since screen readers handle it differently and it can confuse users",
+        "wcag": null,
+        "quote": "Placeholder text should not be used as the only description, as screen readers handle it differently and it can create confusion.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/search/accessibility"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/search/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/search/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Search should complement navigation, not replace it, and should be avoided when content is easy to navigate without it",
+        "quote": "Avoid search when the content is easy to navigate without search it replaces good navigation \u2014 search should complement navigation, not be the only method",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/search/overview"
+      },
+      {
+        "rule": "The width of the search field should reflect the typical length of search terms users enter",
+        "quote": "The width of the search field should reflect the length of the search terms users typically enter.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/search/overview"
+      },
+      {
+        "rule": "A main site search field should be wider so users can see several words at once",
+        "quote": "A main search field for a website should be wider so users can see several words at once.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/search/overview"
+      },
+      {
+        "rule": "The field should not be so short that entered text becomes hidden, to avoid forcing scrolling within the field",
+        "quote": "To avoid forcing users to scroll within the field, ensure it is not so short that parts of the text become hidden.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/search/overview"
+      },
+      {
+        "rule": "Connect a label to Search.Input when a labeled search field is needed",
+        "quote": "If you want a label on the search field, add a label that you connect with Search.Input .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/search/code"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

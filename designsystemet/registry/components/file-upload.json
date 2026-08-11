@@ -1,0 +1,131 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "FileUpload",
+  "slug": "file-upload",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/file-upload/file-upload.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/file-upload/overview",
+    "code": "https://designsystemet.no/en/components/docs/file-upload/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/file-upload/file-upload.tsx",
+    "value": "FileUpload"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/file-upload/file-upload.tsx (JSDoc)",
+    "value": "FileUpload component to present a file upload area."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/file-upload/file-upload.tsx (JSDoc @example)",
+    "value": "<Field>\n <Label>Upload file</Label>\n <FileUpload>\n   <CloudUpIcon aria-hidden='true' />\n   <Field.Description>Drop file here</Field.Description>\n   <Field.Description>\n     File must be in csv format and less than 2MB\n   </Field.Description>\n   <Button asChild data-variant='secondary'>\n     <span>Upload file</span>\n   </Button>\n   <input type=\"file\" />\n </FileUpload>\n</Field>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/file-upload/file-upload.tsx",
+    "value": {
+      "class": "ds-file-upload",
+      "dataAttributes": [
+        "data-variant"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/file-upload.css",
+    "value": [
+      "--ds-border-radius-md",
+      "--ds-color-background-default",
+      "--ds-color-background-tinted",
+      "--ds-color-base-active",
+      "--ds-color-base-contrast-default",
+      "--ds-color-base-contrast-subtle",
+      "--ds-color-base-default",
+      "--ds-color-base-hover",
+      "--ds-color-border-default",
+      "--ds-color-border-strong",
+      "--ds-color-border-subtle",
+      "--ds-color-danger-border-default",
+      "--ds-color-neutral-background-default",
+      "--ds-color-neutral-background-tinted",
+      "--ds-color-neutral-base-active",
+      "--ds-color-neutral-base-contrast-default",
+      "--ds-color-neutral-base-contrast-subtle",
+      "--ds-color-neutral-base-default",
+      "--ds-color-neutral-base-hover",
+      "--ds-color-neutral-border-default",
+      "--ds-color-neutral-border-strong",
+      "--ds-color-neutral-border-subtle",
+      "--ds-color-neutral-surface-active",
+      "--ds-color-neutral-surface-default",
+      "--ds-color-neutral-surface-hover",
+      "--ds-color-neutral-surface-tinted",
+      "--ds-color-neutral-text-default",
+      "--ds-color-neutral-text-subtle",
+      "--ds-color-surface-active",
+      "--ds-color-surface-default",
+      "--ds-color-surface-hover",
+      "--ds-color-surface-tinted",
+      "--ds-color-text-default",
+      "--ds-color-text-subtle",
+      "--ds-size-2",
+      "--ds-size-4",
+      "--ds-size-6",
+      "--ds-size-8",
+      "--dsc-file-upload-background",
+      "--dsc-file-upload-background--hover",
+      "--dsc-file-upload-border-color",
+      "--dsc-file-upload-border-radius",
+      "--dsc-file-upload-border-style",
+      "--dsc-file-upload-border-style--hover",
+      "--dsc-file-upload-border-width",
+      "--dsc-file-upload-color",
+      "--dsc-file-upload-icon-color",
+      "--dsc-file-upload-icon-size",
+      "--dsc-file-upload-icon-url",
+      "--dsc-file-upload-icon-url--readonly",
+      "--dsc-file-upload-padding"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/file-upload/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/file-upload/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/file-upload/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

@@ -1,11 +1,11 @@
 {
   "name": "ai-corner-store",
   "owner": {
-    "name": "Sigurd S\u00e6ther S\u00f8rensen",
+    "name": "Sigurd Sæther Sørensen",
     "email": "sorensensig@gmail.com"
   },
   "metadata": {
-    "description": "A small, curated shop of AI skills, plugins, and bundles \u2014 each a self-contained release you can install on its own. One folder per release."
+    "description": "A small, curated shop of AI skills, plugins, and bundles — each a self-contained release you can install on its own. One folder per release."
   },
   "plugins": [
     {
@@ -15,6 +15,10 @@
     {
       "name": "organisational-dysfunction",
       "source": "./organisational-dysfunction"
+    },
+    {
+      "name": "designsystemet",
+      "source": "./designsystemet"
     }
   ]
 }

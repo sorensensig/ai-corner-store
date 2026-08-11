@@ -1,0 +1,140 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Paragraph",
+  "slug": "paragraph",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/paragraph/paragraph.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/paragraph/overview",
+    "code": "https://designsystemet.no/en/components/docs/paragraph/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/paragraph/paragraph.tsx",
+    "value": "Paragraph"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/paragraph/paragraph.tsx (JSDoc)",
+    "value": "Use `Paragraph` to display text with paragraph text styles. Renders a native `p` element."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/paragraph/paragraph.tsx (JSDoc @example)",
+    "value": "<Paragraph data-size='lg'>Paragraph</Paragraph>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/paragraph/paragraph.tsx",
+    "value": {
+      "class": "ds-paragraph",
+      "dataAttributes": [
+        "data-size",
+        "data-variant"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/paragraph.css",
+    "value": [
+      "--ds-body-lg-font-size",
+      "--ds-body-lg-font-weight",
+      "--ds-body-lg-letter-spacing",
+      "--ds-body-lg-line-height",
+      "--ds-body-md-font-size",
+      "--ds-body-md-font-weight",
+      "--ds-body-md-letter-spacing",
+      "--ds-body-md-line-height",
+      "--ds-body-sm-font-size",
+      "--ds-body-sm-font-weight",
+      "--ds-body-sm-letter-spacing",
+      "--ds-body-sm-line-height",
+      "--ds-body-xl-font-size",
+      "--ds-body-xl-font-weight",
+      "--ds-body-xl-letter-spacing",
+      "--ds-body-xl-line-height",
+      "--ds-body-xs-font-size",
+      "--ds-body-xs-font-weight",
+      "--ds-body-xs-letter-spacing",
+      "--ds-body-xs-line-height",
+      "--ds-line-height-lg",
+      "--ds-line-height-sm"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/paragraph/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/paragraph/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/paragraph/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Keep paragraphs focused and well structured, breaking up long blocks of text into smaller sections for scannability",
+        "quote": "Keep paragraphs focused and well structured, and break up long blocks of text into smaller sections to make the content easier to scan and understand.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/paragraph/overview"
+      },
+      {
+        "rule": "Line length and spacing should support good readability",
+        "quote": "Ensure that line length and spacing support good readability.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/paragraph/overview"
+      },
+      {
+        "rule": "Body text should be clear, concise, and written in plain language",
+        "quote": "Body text should be clear, concise, and written in plain language.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/paragraph/overview"
+      },
+      {
+        "rule": "Start with the most important information so users can quickly understand the context",
+        "quote": "Start with the most important information so users can quickly understand the context.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/paragraph/overview"
+      },
+      {
+        "rule": "Each paragraph should cover one topic or idea at a time",
+        "quote": "Each paragraph should cover one topic or idea at a time.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/paragraph/overview"
+      },
+      {
+        "rule": "Complex information should be divided into several paragraphs to avoid cognitive overload",
+        "quote": "When explaining complex information, divide it into several paragraphs to avoid cognitive overload and make the content easier for everyone to follow.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/paragraph/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

@@ -1,0 +1,259 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Table",
+  "slug": "table",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/table/table.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/table/overview",
+    "code": "https://designsystemet.no/en/components/docs/table/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/table/table.tsx",
+    "value": "Table"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/table/table.tsx (JSDoc)",
+    "value": "Table component, used to display tabular data. Renders a native HTML table element."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/table/table.tsx (JSDoc @example)",
+    "value": "<Table>\n  <Table.Head>\n    <Table.Row>\n      <Table.HeaderCell>Name</Table.HeaderCell>\n      <Table.HeaderCell>Age</Table.HeaderCell>\n    </Table.Row>\n  </Table.Head>\n  <Table.Body>\n    <Table.Row>\n      <Table.Cell>John</Table.Cell>\n      <Table.Cell>25</Table.Cell>\n    </Table.Row>\n  </Table.Body>\n  <Table.Foot>\n    <Table.Row>\n      <Table.Cell>Total</Table.Cell>\n      <Table.Cell>2</Table.Cell>\n    </Table.Row>\n  </Table.Foot>\n</Table>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/table/table.tsx",
+    "value": {
+      "class": "ds-table",
+      "dataAttributes": [
+        "data-border",
+        "data-hover",
+        "data-sticky-header",
+        "data-zebra"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/table.css",
+    "value": [
+      "--ds-border-radius-md",
+      "--ds-border-width-default",
+      "--ds-color-border-subtle",
+      "--ds-color-surface-default",
+      "--ds-color-surface-hover",
+      "--ds-color-surface-tinted",
+      "--ds-color-text-default",
+      "--ds-font-weight-semibold",
+      "--ds-icon-size",
+      "--ds-size-1",
+      "--ds-size-2",
+      "--ds-size-3",
+      "--dsc-table-background",
+      "--dsc-table-background--hover",
+      "--dsc-table-background--zebra",
+      "--dsc-table-border-color",
+      "--dsc-table-border-radius",
+      "--dsc-table-border-style",
+      "--dsc-table-border-width",
+      "--dsc-table-color",
+      "--dsc-table-divider-border-color",
+      "--dsc-table-divider-border-style",
+      "--dsc-table-divider-border-width",
+      "--dsc-table-header-background",
+      "--dsc-table-header-background--hover",
+      "--dsc-table-header-background--sorted",
+      "--dsc-table-header-background--sticky",
+      "--dsc-table-padding",
+      "--dsc-table-sort-size",
+      "--dsc-table-vertical-align"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/table/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Table cells must not be merged, and each cell should contain only one interactive element",
+        "wcag": null,
+        "quote": "Table cells should not be merged, and each cell should contain only one interactive element.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/accessibility"
+      },
+      {
+        "rule": "Use row and/or column headers so screen reader users can navigate the table",
+        "wcag": null,
+        "quote": "For screen reader users to navigate the content, it is important to use row and/or column headers ( <Table.HeaderCell> ).",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/accessibility"
+      },
+      {
+        "rule": "Mark headers with scope=\"row\" or scope=\"col\" to indicate what they apply to",
+        "wcag": null,
+        "quote": "Use scope=\"row\" and scope=\"col\" to indicate whether the header applies to a row or a column.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/accessibility"
+      },
+      {
+        "rule": "Headers may be visually hidden if space is limited",
+        "wcag": null,
+        "quote": "If space is limited, you may visually hide one or more headers.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/accessibility"
+      },
+      {
+        "rule": "Tables must always include a caption describing what the table shows, since screen readers read it first",
+        "wcag": null,
+        "quote": "Tables must always include a caption element that provides a brief description of what the table shows. Screen readers will read the caption, allowing users to decide whether they want to continue reading the table.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/accessibility"
+      },
+      {
+        "rule": "Empty cells must use Table.Cell so screen readers can navigate the table correctly",
+        "wcag": null,
+        "quote": "Empty cells must use Table.Cell . This is important to ensure that screen readers can navigate the table correctly.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/accessibility"
+      },
+      {
+        "rule": "Make sure sorting can be changed using the keyboard",
+        "wcag": null,
+        "quote": "Make sure you can change the sorting using the keyboard.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/accessibility"
+      },
+      {
+        "rule": "Test sorting with a screen reader to confirm sortable state, sort direction, and that focus isn't lost when sorting changes",
+        "wcag": null,
+        "quote": "Test with a screen reader to verify that you hear what is sortable, the sorting types, and that focus is not lost when sorting changes.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/accessibility"
+      },
+      {
+        "rule": "Tables are challenging on mobile; common adaptations are horizontal scroll or converting to a list view",
+        "wcag": null,
+        "quote": "Tables can be challenging on mobile, as there is no universal design that works well in all contexts. The most common approaches are a table that scrolls horizontally or converting the table into a list view.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/accessibility"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/table/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "List",
+        "note": "Prefer a list view over a table when the content is better suited to a list",
+        "quote": "the information is better suited to a list or card view",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/overview"
+      },
+      {
+        "component": "Card",
+        "note": "Prefer a card view over a table when the content is better suited to cards",
+        "quote": "the information is better suited to a list or card view",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/table/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Use table to compare information, present clearly structured row/column data, or support sorting",
+        "quote": "Use table when the goal is to help users compare information easily the data needs a clear structure with rows and columns the content can benefit from sorting",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/overview"
+      },
+      {
+        "rule": "Avoid table for page layout, when content is very limited without need for comparison, or when large data sets become hard to read on mobile",
+        "quote": "Avoid using table when the purpose is to create layout or visually organise content on a page the information is better suited to a list or card view the content is very limited, for example only one column or very few data points without a need for comparison the table becomes difficult to read on mobile because the data set is large",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/overview"
+      },
+      {
+        "rule": "Use table to structure and present data clearly in rows and columns",
+        "quote": "Use table to structure and present data clearly in rows and columns.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/overview"
+      },
+      {
+        "rule": "Content should be left-aligned except numbers, which should be right-aligned for easier comparison",
+        "quote": "Content in tables should be left-aligned, except for numbers, which should be right-aligned to make comparison easier.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/overview"
+      },
+      {
+        "rule": "Use Table.HeaderCell (not Table.Cell) for cells that describe the content of their row or column",
+        "quote": "Use <Table.HeaderCell> for header cells, not <Table.Cell> . A cell counts as a header when it describes the content of the same row or column.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/overview"
+      },
+      {
+        "rule": "In rows with several actions, a menu can be used to save space when the actions don't need to be visible at all times",
+        "quote": "In table rows with several actions, you can use a menu to save space if the actions do not need to be visible at all times.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/overview"
+      },
+      {
+        "rule": "When numbers are meant to be compared, align them to the right within the cell",
+        "quote": "When numbers appear in a table and are meant to be compared, align them to the right within the cell.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/overview"
+      },
+      {
+        "rule": "Avoid long texts in table cells; keep content short and concise so it's easy to scan across rows and columns",
+        "quote": "Avoid long texts in table cells. Keep content short and concise so it is easy to scan across rows and columns.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/overview"
+      },
+      {
+        "rule": "If more information is needed than fits in a cell, consider linking to a detail page",
+        "quote": "If you need to show more information, consider linking to a detail page.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/overview"
+      },
+      {
+        "rule": "Use headers to tell users what type of content they'll find in rows and columns",
+        "quote": "Use headers to tell users what type of content they will find in the rows and columns.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/overview"
+      },
+      {
+        "rule": "Content in cells should generally be left-aligned; exceptions are numbers, currency, and sometimes form elements and buttons",
+        "quote": "As a general rule, content in cells should be left-aligned to make it easier to read and scan. The exception is numbers and currency and sometimes form elements and buttons.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/table/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

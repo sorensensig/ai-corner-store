@@ -1,0 +1,118 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Fieldset",
+  "slug": "fieldset",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/fieldset/fieldset.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/fieldset/overview",
+    "code": "https://designsystemet.no/en/components/docs/fieldset/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/fieldset/fieldset.tsx",
+    "value": "Fieldset"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/fieldset/fieldset.tsx (JSDoc)",
+    "value": "Fieldset component, used to wrap a form field. Uses native `fieldset` element."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/fieldset/fieldset.tsx (JSDoc @example)",
+    "value": "<Fieldset>\n  <Fieldset.Legend>Skriv inn dine svar</Fieldset.Legend>\n  <Fieldset.Description>\n    Gi en kort beskrivelse i begge feltene\n  </Fieldset.Description>\n  <Field>\n    <Label>Kort beskrivelse</Label>\n    <Input />\n  </Field>\n</Fieldset>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/fieldset/fieldset.tsx",
+    "value": {
+      "class": "ds-fieldset",
+      "dataAttributes": []
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/fieldset.css",
+    "value": [
+      "--ds-color-neutral-text-subtle",
+      "--ds-opacity-disabled",
+      "--ds-size-4",
+      "--dsc-fieldset-description-color",
+      "--dsc-fieldset-gap"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": [
+      {
+        "slug": "skjema-validering",
+        "name": "Skjemavalidering (form validation and errors)",
+        "docs": "https://designsystemet.no/en/patterns/errors/"
+      }
+    ]
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": [
+      "alert",
+      "error-summary",
+      "field",
+      "suggestion",
+      "validation-message"
+    ]
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/fieldset/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Avoid repeating the same text in both label and legend",
+        "wcag": null,
+        "quote": "Avoid using the same text in both `<label>` and `<legend>`",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/fieldset/overview"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/fieldset/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Radio",
+        "note": "Groups radio or checkbox components, even a group of one",
+        "quote": "you have a group or list of multiple radio or checkbox components",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/fieldset/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/fieldset/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Start with a legend explaining what the fields below relate to",
+        "quote": "start with a `<legend>` that explains what the fields below relate to",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/fieldset/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

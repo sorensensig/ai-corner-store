@@ -1,0 +1,91 @@
+{
+  "_note": "Authored plugin data, not a twin. Feeds find_equivalent so an agent porting foreign markup lands on the right Designsystemet component instead of guessing. Aliases are matched case- and punctuation-insensitively, substring both ways. known_without_twin cleared 2026-08-11: registry is complete at 45 components; date-picker is the one live docs-name without a package component.",
+  "aliases": {
+    "alert": [
+      "mui alert",
+      "material alert",
+      "bootstrap alert",
+      "chakra alert",
+      "antd alert",
+      "banner",
+      "callout",
+      "notice",
+      "flash message",
+      "infobox",
+      "info box",
+      "notification banner",
+      "govuk notification banner",
+      "varsel",
+      "melding"
+    ],
+    "suggestion": [
+      "autocomplete",
+      "mui autocomplete",
+      "material autocomplete",
+      "combobox",
+      "combo box",
+      "typeahead",
+      "type ahead",
+      "react select",
+      "select2",
+      "downshift",
+      "searchable select",
+      "filterable select",
+      "datalist",
+      "accessible autocomplete",
+      "kombinasjonsboks",
+      "sokefelt med forslag",
+      "designsystemet combobox"
+    ],
+    "error-summary": [
+      "error summary",
+      "govuk error summary",
+      "validation summary",
+      "error list",
+      "form errors",
+      "feiloppsummering"
+    ],
+    "validation-message": [
+      "helper text",
+      "form helper text",
+      "error text",
+      "field error",
+      "invalid feedback",
+      "form text",
+      "hint error",
+      "feilmelding"
+    ],
+    "field": [
+      "form group",
+      "form control",
+      "form field",
+      "input wrapper",
+      "form item"
+    ],
+    "fieldset": [
+      "field set",
+      "radio group",
+      "checkbox group",
+      "form section",
+      "gruppe"
+    ],
+    "skjema-validering": [
+      "form validation",
+      "form validation pattern",
+      "error pattern",
+      "validation pattern",
+      "how to show errors",
+      "skjemavalidering",
+      "validering"
+    ],
+    "date-picker": [
+      "datepicker",
+      "date picker",
+      "datovelger",
+      "MUI DatePicker"
+    ]
+  },
+  "known_without_twin": {
+    "date-picker": "The docs list Date picker, but the pinned package (1.18.0) ships no DatePicker component and there is no twin. Do not import one; compose Textfield or use a native input, and see the skjema-validering pattern for form wiring."
+  }
+}

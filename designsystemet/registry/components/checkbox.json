@@ -1,0 +1,251 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Checkbox",
+  "slug": "checkbox",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/checkbox/checkbox.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/checkbox/overview",
+    "code": "https://designsystemet.no/en/components/docs/checkbox/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/checkbox/checkbox.tsx",
+    "value": "Checkbox"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/checkbox/checkbox.tsx (JSDoc)",
+    "value": "Checkbox used to select multiple options."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/checkbox/checkbox.tsx (JSDoc @example)",
+    "value": "<Checkbox label=\"I agree\" value=\"agree\" />"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/checkbox/checkbox.tsx",
+    "value": {
+      "class": null,
+      "dataAttributes": [
+        "data-field",
+        "data-position",
+        "data-size",
+        "data-variant"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/checkbox.css",
+    "value": []
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/checkbox/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Users must be able to move focus to Checkbox with Tab",
+        "wcag": null,
+        "quote": "It must be possible to move focus to the Checkbox by pressing Tab on the keyboard.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/accessibility"
+      },
+      {
+        "rule": "Users must be able to check and uncheck Checkbox with Space",
+        "wcag": null,
+        "quote": "It must also be possible to check and uncheck it by pressing Space .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/accessibility"
+      },
+      {
+        "rule": "A Checkbox must always have an accessible name",
+        "wcag": null,
+        "quote": "A Checkbox must always have an accessible name.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/accessibility"
+      },
+      {
+        "rule": "In special cases, aria-label or aria-labelledby may be used instead of a visible label",
+        "wcag": null,
+        "quote": "In special cases, it may make sense to omit the <label> and instead use aria-label or aria-labelledby .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/accessibility"
+      },
+      {
+        "rule": "Avoid using the disabled attribute where possible, for accessibility reasons",
+        "wcag": null,
+        "quote": "Avoid using if possible for accessibility purposes",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/code"
+      },
+      {
+        "rule": "Should avoid disabling checkbox because the disabled state can be hard to perceive and some users won't understand why an option isn't clickable",
+        "wcag": null,
+        "quote": "We should avoid disabling ( disabled ) checkbox, because it can be difficult to perceive. Some users will not understand what the option means or why it is not clickable.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      },
+      {
+        "rule": "Better to remove irrelevant checkbox options than to disable them",
+        "wcag": null,
+        "quote": "If a checkbox or group of checkbox options is not relevant, it is usually better to remove them rather than disable them.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      },
+      {
+        "rule": "If possible, explain to users why options are unavailable",
+        "wcag": null,
+        "quote": "If possible, give users an explanation of why options are unavailable.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      },
+      {
+        "rule": "Avoid using readOnly whenever possible because read-only fields can confuse users who don't understand why they can't change the content",
+        "wcag": null,
+        "quote": "We avoid using readOnly whenever possible because such fields can be confusing. Not all users will understand why they cannot change the content.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      },
+      {
+        "rule": "Read-only checkbox fields remain part of the tab order and their value is still included when the form is submitted",
+        "wcag": null,
+        "quote": "Although they cannot be changed, fields with readOnly are still part of the tab order, and the information is included when the form is submitted.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      },
+      {
+        "rule": "A read-only checkbox stops onClick and onChange but remains focusable",
+        "wcag": null,
+        "quote": "If you set readonly on checkbox we ensure that it behaves as if it has read-only access by stopping onClick and onChange . The user will still be able to focus on the element.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/code"
+      },
+      {
+        "rule": "Horizontal checkbox lists can be challenging for users who need to enlarge text",
+        "wcag": null,
+        "quote": "For users who need to enlarge the text, horizontal lists can be challenging.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/checkbox/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Radio",
+        "note": "Use Radio instead of Checkbox when the user should choose only one option",
+        "quote": "the user should choose only one option; use a radio instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      },
+      {
+        "component": "Select",
+        "note": "Use Select (or Suggestion) instead of Checkbox when the user must choose from more than seven options",
+        "quote": "the user must choose from more than seven options; use a select or suggestion instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      },
+      {
+        "component": "Suggestion",
+        "note": "Use Suggestion (or Select) instead of Checkbox when the user must choose from more than seven options",
+        "quote": "the user must choose from more than seven options; use a select or suggestion instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      },
+      {
+        "component": "Switch",
+        "note": "Use Switch instead of Checkbox when something should be turned on or off",
+        "quote": "something should be turned on or off; use a switch instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/checkbox/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "A consent checkbox must always require an active action and must never be preselected, to ensure consent is voluntary",
+        "quote": "A checkbox for consent must always require an active action, and you should never preselect the box. This ensures that the consent is given voluntarily.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      },
+      {
+        "rule": "Checkbox is most often used in groups where the user can select more than one option",
+        "quote": "Most of the time, checkbox is used in groups where the user can select more than one option.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      },
+      {
+        "rule": "When checkboxes are grouped, the error message should be shown collectively for the whole group",
+        "quote": "When checkboxes are used in groups, the error message should be shown collectively for the entire group.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      },
+      {
+        "rule": "It may be appropriate to emphasise options with a larger click area (outline) around the checkbox in some cases",
+        "quote": "In some cases, it may be appropriate to emphasise options by using a larger click area around the checkbox.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      },
+      {
+        "rule": "Use fieldset for grouping multiple checkbox choices",
+        "quote": "Use fieldset for grouping multiple choices.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/code"
+      },
+      {
+        "rule": "Checkbox is a composite component built from field, label, validation message, and input",
+        "quote": "Checkbox is a composite component that uses field , label , validation message , and input to create a checkbox.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/code"
+      },
+      {
+        "rule": "Use useCheckboxGroup to create a parent checkbox that can select or clear all options in the group",
+        "quote": "Use useCheckboxGroup to create a parent checkbox that can select or clear all options in the group.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/code"
+      },
+      {
+        "rule": "Sort answer options alphabetically unless there is a good reason to do otherwise",
+        "quote": "Sort the answer options alphabetically unless there is a good reason to do otherwise.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      },
+      {
+        "rule": "Response options should preferably be placed vertically for easier scanning and reading",
+        "quote": "Preferably place the response options vertically. This makes it easier to scan the list and read the options.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/checkbox/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

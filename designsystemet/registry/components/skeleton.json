@@ -1,0 +1,130 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Skeleton",
+  "slug": "skeleton",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/skeleton/skeleton.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/skeleton/overview",
+    "code": "https://designsystemet.no/en/components/docs/skeleton/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/skeleton/skeleton.tsx",
+    "value": "Skeleton"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/skeleton/skeleton.tsx (JSDoc)",
+    "value": "Skeleton is used to represent a draft of page while the content loads."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/skeleton/skeleton.tsx (JSDoc @example)",
+    "value": "<Skeleton variant=\"circle\" />\n<Skeleton variant=\"text\" />\n<Skeleton variant=\"rectangle\" />"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/skeleton/skeleton.tsx",
+    "value": {
+      "class": "ds-skeleton",
+      "dataAttributes": [
+        "data-text",
+        "data-variant"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/skeleton.css",
+    "value": [
+      "--ds-border-radius-full",
+      "--ds-border-radius-lg",
+      "--ds-color-neutral-surface-tinted",
+      "--dsc-skeleton-animation",
+      "--dsc-skeleton-animation-duration",
+      "--dsc-skeleton-background"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/skeleton/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "When prefers-reduced-motion is set to reduce, skeleton still animates (at a slower 1.6s duration) rather than disabling the animation, since it is not decorative.",
+        "wcag": null,
+        "quote": "When the user has prefers-reduced-motion set to reduce , the skeleton will use a 1.6-second animation. The animation is not decorative, so we do not disable it.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skeleton/accessibility"
+      },
+      {
+        "rule": "The skeleton element should be marked aria-hidden=\"true\" so it is hidden from assistive technology.",
+        "wcag": null,
+        "quote": "Add the class name ds-skeleton to a <span> with aria-hidden=\"true\" .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skeleton/code"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/skeleton/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Spinner",
+        "note": "Use spinner instead of skeleton when indicating the system is working on a task the user must wait for.",
+        "quote": "Avoid skeleton when you need to indicate that the system is working on a task the user must wait for, use a spinner instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skeleton/overview"
+      },
+      {
+        "component": "Spinner",
+        "note": "Skeleton is an alternative to spinner for indicating loading, giving a preview of the content's eventual shape.",
+        "quote": "Skeleton is an alternative to spinner when you want to indicate that content is loading.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skeleton/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/skeleton/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Choose the skeleton variant based on the type of content being loaded, such as headings, text blocks or images.",
+        "quote": "Choose the skeleton variant based on the type of content being loaded, such as headings, text blocks or images.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skeleton/overview"
+      },
+      {
+        "rule": "Skeletons should mimic the structure of the actual content so the transition to the fully loaded content feels smooth.",
+        "quote": "Try to mimic the structure of the actual content to make the transition to the fully loaded content feel smooth.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skeleton/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

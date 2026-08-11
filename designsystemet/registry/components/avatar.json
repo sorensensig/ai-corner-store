@@ -1,0 +1,224 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Avatar",
+  "slug": "avatar",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/avatar/avatar.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/avatar/overview",
+    "code": "https://designsystemet.no/en/components/docs/avatar/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/avatar/avatar.tsx",
+    "value": "Avatar"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/avatar/avatar.tsx (JSDoc)",
+    "value": "Avatars are used to represent people or entities."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/avatar/avatar.tsx (JSDoc @example)",
+    "value": "<Avatar aria-label=\"John Doe\" initials=\"JD\" />\n\n@example\n<Avatar aria-label=\"John Doe\">\n <img src='\u2026' alt='John Doe' />\n</Avatar>\n\n@example\n<Avatar aria-label=\"John Doe\">\n <Icon />\n</Avatar>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/avatar/avatar.tsx",
+    "value": {
+      "class": "ds-avatar",
+      "dataAttributes": [
+        "data-initials",
+        "data-tooltip",
+        "data-variant"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/avatar.css",
+    "value": [
+      "--ds-body-lg-font-size",
+      "--ds-body-md-font-size",
+      "--ds-body-sm-font-size",
+      "--ds-body-xs-font-size",
+      "--ds-border-radius-full",
+      "--ds-border-radius-sm",
+      "--ds-color-base-contrast-default",
+      "--ds-color-base-default",
+      "--ds-font-weight-medium",
+      "--ds-size-1",
+      "--dsc-avatar-background",
+      "--dsc-avatar-color",
+      "--dsc-avatar-font-size",
+      "--dsc-avatar-icon-url",
+      "--dsc-avatar-padding",
+      "--dsc-avatar-size"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/avatar/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Informative avatars must have an accessible name (e.g. via aria-label); if multiple avatars appear together, each name must be unique.",
+        "wcag": "1.3.1",
+        "quote": "Informative avatar must have an accessible name. The accessible name can be provided using aria-label . If multiple avatars are displayed together, each name must be unique.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/accessibility"
+      },
+      {
+        "rule": "Decorative avatars must be hidden from screen readers when purely decorative and not conveying information.",
+        "wcag": "1.1.1",
+        "quote": "Decorative avatar must be hidden from screen readers. This applies when the avatar is purely decorative and does not convey information.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/accessibility"
+      },
+      {
+        "rule": "A decorative avatar can be hidden when it appears alongside text that already identifies the person, e.g. inside a button.",
+        "wcag": "1.1.1",
+        "quote": "Example: If an avatar is shown inside a button with the text \u201cOla Nordmann\u201d, the avatar can be hidden because the name already identifies the person.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/accessibility"
+      },
+      {
+        "rule": "Clickable avatars must have an accessible name; avoid using just initials or the word \"Avatar\".",
+        "wcag": "4.1.2",
+        "quote": "Clickable avatar must have an accessible name. The accessible name can be provided using aria-label . Example: \u201cProfile for Ola Nordmann\u201d. Avoid: just initials or \u201cAvatar\u201d.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/accessibility"
+      },
+      {
+        "rule": "The avatar must have an accessible name.",
+        "wcag": null,
+        "quote": "Ensure the avatar has an accessible name .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/code"
+      },
+      {
+        "rule": "If you add an image or icon as content inside the avatar, set aria-hidden=\"true\" to avoid duplicate information.",
+        "wcag": null,
+        "quote": "If you add an image or icon as content inside the avatar, make sure to set aria-hidden=\"true\" to avoid duplicate information.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/code"
+      },
+      {
+        "rule": "You must add an aria-label to the avatar yourself to explain who or what it represents.",
+        "wcag": null,
+        "quote": "You must add an aria-label to the avatar yourself to explain who or what the avatar represents.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/code"
+      },
+      {
+        "rule": "Non-text children (like an image or icon) added inside Avatar automatically receive aria-hidden=\"true\" to avoid duplicate information.",
+        "wcag": null,
+        "quote": "If you add anything other than text as a child inside <Avatar> (like an image or icon), it will automatically receive aria-hidden=\"true\" to avoid duplicate information.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/code"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/avatar/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Icon",
+        "note": "Use icons or other visual symbols instead of avatar when representing anything other than a person or an entity, such as a document.",
+        "quote": "Avoid avatar when representing anything other than a person or an entity, such as a document. Use icons or other visual symbols instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/avatar/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Use avatar when representing a person or an entity.",
+        "quote": "Use avatar when representing a person or an entity",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/overview"
+      },
+      {
+        "rule": "Avoid avatar when it is used purely for decoration without function or meaning.",
+        "quote": "it is used purely for decoration without function or meaning",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/overview"
+      },
+      {
+        "rule": "Avatar can be round or square; use the chosen shape consistently throughout the solution.",
+        "quote": "Avatar can be round or square. Use them consistently throughout your solution.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/overview"
+      },
+      {
+        "rule": "Avatar should help make the user interface more recognisable and easier to navigate without distracting or taking up unnecessary space.",
+        "quote": "Avatar should help make the user interface more recognisable and easier to navigate without distracting or taking up unnecessary space.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/overview"
+      },
+      {
+        "rule": "Use the same avatar shape consistently throughout the solution.",
+        "quote": "Use the same avatar shape consistently throughout the solution.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/overview"
+      },
+      {
+        "rule": "Avatar should usually be combined with text, unless it is entirely clear who or what it represents.",
+        "quote": "The avatar should usually be combined with text, unless it is entirely clear who or what it represents.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/overview"
+      },
+      {
+        "rule": "Only use an avatar when it actually adds value to the user experience, e.g. to show who authored something or who is responsible.",
+        "quote": "Only use an avatar when it actually adds value to the user experience, for example to show who authored something or who is responsible.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/overview"
+      },
+      {
+        "rule": "Avatar should not contain text inside the component, except when using initials.",
+        "quote": "Avatar should not contain text inside the component, except when using initials.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/overview"
+      },
+      {
+        "rule": "Other text, such as full names, roles or organisations, should be placed outside the avatar to ensure good readability.",
+        "quote": "Other text, such as full names, roles or organisations, should be placed outside the avatar to ensure good readability.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/overview"
+      },
+      {
+        "rule": "The Avatar component should be able to be composed into other components.",
+        "quote": "The component should be able to be composed into other components.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/avatar/code"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

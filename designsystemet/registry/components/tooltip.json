@@ -1,0 +1,196 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Tooltip",
+  "slug": "tooltip",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/tooltip/tooltip.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/tooltip/overview",
+    "code": "https://designsystemet.no/en/components/docs/tooltip/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/tooltip/tooltip.tsx",
+    "value": "Tooltip"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/tooltip/tooltip.tsx (JSDoc)",
+    "value": "Tooltip component that displays a small piece of information when hovering or focusing on an element."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/tooltip/tooltip.tsx (JSDoc @example)",
+    "value": "<Tooltip content='This is a tooltip'>\n <button>Hover me</button>\n</Tooltip>\n\n@example\n<Tooltip content='This is a tooltip'>\n Hover me\n</Tooltip>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/tooltip/tooltip.tsx",
+    "value": {
+      "class": null,
+      "dataAttributes": [
+        "data-autoplacement",
+        "data-placement",
+        "data-tooltip"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/tooltip.css",
+    "value": [
+      "--ds-border-radius-default",
+      "--ds-color-neutral-background-default",
+      "--ds-color-neutral-text-default",
+      "--ds-line-height-sm",
+      "--ds-size-1",
+      "--ds-size-2",
+      "--ds-tooltip",
+      "--dsc-tooltip-arrow-size",
+      "--dsc-tooltip-background",
+      "--dsc-tooltip-border-radius",
+      "--dsc-tooltip-color",
+      "--dsc-tooltip-padding",
+      "--dsc-tooltip-placement",
+      "--dsc-tooltip-transition-delay",
+      "--dsc-tooltip-transition-duration"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/tooltip/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Tooltip must not be used as a substitute for alt text or title attributes",
+        "wcag": null,
+        "quote": "Tooltip should never be used as a replacement for alt text or title .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tooltip/overview"
+      },
+      {
+        "rule": "Tooltip is less suitable on touch devices since it normally relies on hover or focus, which touch does not support",
+        "wcag": null,
+        "quote": "On touch devices, Tooltip is less suitable because it is normally triggered by hover or focus , which are not supported on these devices.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tooltip/accessibility"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/tooltip/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Popover",
+        "note": "Use popover instead of tooltip when the explanation is longer than four words",
+        "quote": "the explanation is longer than four words, use popover instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tooltip/overview"
+      },
+      {
+        "component": "Popover",
+        "note": "Use popover instead of tooltip when the content contains links or other interactive elements",
+        "quote": "the content contains links or other interactive elements, use popover instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tooltip/overview"
+      },
+      {
+        "component": "Popover",
+        "note": "Use popover instead of tooltip when richer content such as longer text, images, or buttons is needed",
+        "quote": "If richer content is needed - for example longer text, images, or buttons - use a popover instead.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tooltip/overview"
+      },
+      {
+        "component": "Popover",
+        "note": "The Tooltip `open` prop is deprecated for overriding open state; use Popover instead",
+        "quote": "This should not be used on Tooltip. Use a Popover instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tooltip/code"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/tooltip/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Tooltip provides brief supplementary information without distracting from the main content",
+        "quote": "Tooltip provides brief supplementary information without distracting from the main content.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tooltip/overview"
+      },
+      {
+        "rule": "Tooltip is not intended for information essential to completing a task",
+        "quote": "Tooltip is not intended for information that is essential for completing a task.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tooltip/overview"
+      },
+      {
+        "rule": "Important content should appear as body text or help text on the page, not in a tooltip",
+        "quote": "Important content should instead appear as body text or help text on the page.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tooltip/overview"
+      },
+      {
+        "rule": "Use tooltip when a symbol needs explanation, an interactive element's action needs clarifying, or keyboard shortcuts need to be shown",
+        "quote": "Use tooltip when a symbol needs a brief explanation the action of an interactive element needs to be clarified keyboard shortcuts need to be shown",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tooltip/overview"
+      },
+      {
+        "rule": "Avoid using tooltip when the text is already visible on the page",
+        "quote": "Avoid using tooltip when the text is already visible on the page",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tooltip/overview"
+      },
+      {
+        "rule": "Consider whether the tooltip should be placed above, below, or beside the element",
+        "quote": "Consider whether the tooltip should be placed above, below, or beside the element.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tooltip/overview"
+      },
+      {
+        "rule": "A tooltip should not contain more than one sentence or more than four words, to avoid obstructing other important elements on screen",
+        "quote": "A tooltip should not contain more than one sentence or more than four words, to avoid obstructing other important elements on the screen.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tooltip/overview"
+      },
+      {
+        "rule": "Tooltip should not repeat text that is already present on the page",
+        "quote": "Tooltip should not repeat text that is already present on the page.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tooltip/overview"
+      },
+      {
+        "rule": "Tooltip content should provide additional help or clarification that is not immediately obvious",
+        "quote": "It should provide additional help or clarification that is not immediately obvious.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tooltip/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

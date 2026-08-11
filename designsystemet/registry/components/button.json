@@ -1,0 +1,140 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Button",
+  "slug": "button",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/button/button.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/button/overview",
+    "code": "https://designsystemet.no/en/components/docs/button/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/button/button.tsx",
+    "value": "Button"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/button/button.tsx (JSDoc)",
+    "value": "Button used for interaction"
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/button/button.tsx (JSDoc @example)",
+    "value": "<Button>Click me</Button>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/button/button.tsx",
+    "value": {
+      "class": "ds-button",
+      "dataAttributes": [
+        "data-icon",
+        "data-variant"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/button.css",
+    "value": [
+      "--ds-border-radius-default",
+      "--ds-border-width-default",
+      "--ds-color-base-active",
+      "--ds-color-base-contrast-default",
+      "--ds-color-base-default",
+      "--ds-color-base-hover",
+      "--ds-color-border-strong",
+      "--ds-color-surface-active",
+      "--ds-color-surface-hover",
+      "--ds-color-text-subtle",
+      "--ds-font-weight-medium",
+      "--ds-line-height-sm",
+      "--ds-opacity-disabled",
+      "--ds-size-12",
+      "--ds-size-2",
+      "--ds-size-4",
+      "--dsc-button-background",
+      "--dsc-button-background--active",
+      "--dsc-button-background--hover",
+      "--dsc-button-border-color",
+      "--dsc-button-border-radius",
+      "--dsc-button-border-style",
+      "--dsc-button-border-width",
+      "--dsc-button-color",
+      "--dsc-button-color--active",
+      "--dsc-button-color--hover",
+      "--dsc-button-gap",
+      "--dsc-button-padding",
+      "--dsc-button-size"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/button/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "An icon-only button needs an accessible label",
+        "wcag": null,
+        "quote": "When the button has no text, you must add an accessible label describing what it does.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/button/overview"
+      },
+      {
+        "rule": "An icon next to text must be hidden from screen readers",
+        "wcag": null,
+        "quote": "When using an icon together with text, the icon should have `aria-hidden` so screen readers don't read unnecessary content.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/button/overview"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/button/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Link",
+        "note": "Use Link for navigation",
+        "quote": "navigating to other pages or out of the service, use Link instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/button/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/button/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Only one primary button per page",
+        "quote": "There should be only one primary button per page.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/button/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

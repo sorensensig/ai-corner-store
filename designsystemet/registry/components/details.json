@@ -1,0 +1,245 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Details",
+  "slug": "details",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/details/details.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/details/overview",
+    "code": "https://designsystemet.no/en/components/docs/details/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/details/details.tsx",
+    "value": "Details"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/details/details.tsx (JSDoc)",
+    "value": "Details component, contains `Details.Summary` and `Details.Content` components."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/details/details.tsx (JSDoc @example)",
+    "value": "<Details>\n <Details.Summary>Header</Details.Summary>\n <Details.Content>Content</Details.Content>\n</Details>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/details/details.tsx",
+    "value": {
+      "class": "ds-details",
+      "dataAttributes": [
+        "data-variant"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/details.css",
+    "value": [
+      "--ds-border-radius-md",
+      "--ds-border-width-default",
+      "--ds-color-border-subtle",
+      "--ds-color-surface-default",
+      "--ds-color-surface-hover",
+      "--ds-color-surface-tinted",
+      "--ds-color-text-default",
+      "--ds-icon-size",
+      "--ds-size-14",
+      "--ds-size-2",
+      "--ds-size-4",
+      "--ds-size-5",
+      "--dsc-details-background",
+      "--dsc-details-border-block-style",
+      "--dsc-details-border-block-wdith",
+      "--dsc-details-border-block-width",
+      "--dsc-details-border-color",
+      "--dsc-details-icon-gap",
+      "--dsc-details-icon-size",
+      "--dsc-details-icon-url",
+      "--dsc-details-padding",
+      "--dsc-details-size",
+      "--dsc-details-summary-background",
+      "--dsc-details-summary-background--hover",
+      "--dsc-details-summary-background--open",
+      "--dsc-details-summary-color"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/details/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Details is based on the native HTML <details> element, which provides good accessibility and semantics without extra JavaScript.",
+        "wcag": null,
+        "quote": "The name comes from the built-in HTML <details> element, which provides good accessibility and semantics without additional JavaScript.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      },
+      {
+        "rule": "Large amounts of text can be demanding for users, so details lets them decide what is relevant to read.",
+        "wcag": null,
+        "quote": "Large amounts of text can be demanding for many users. Details allows users to decide for themselves what is relevant to read.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      },
+      {
+        "rule": "Hidden content risks going unnoticed by users entirely.",
+        "wcag": null,
+        "quote": "When content is hidden, there is a risk that users will not notice it at all.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      },
+      {
+        "rule": "Nesting details makes it hard for users to understand what is open and closed.",
+        "wcag": null,
+        "quote": "Nested lists can make it difficult for users to understand what is open and what is closed, especially when several levels can be expanded at once.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      },
+      {
+        "rule": "Headings strongly affect whether users find, read, and can access the content.",
+        "wcag": null,
+        "quote": "Headings can strongly influence whether users find what they need, whether the content is read, and whether it is considered accessible to all.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      },
+      {
+        "rule": "Details is implemented as a native <details> element.",
+        "wcag": null,
+        "quote": "Details is a native <details> element.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/code"
+      },
+      {
+        "rule": "A Firefox/Android Talkback bug is polyfilled so state and role are announced correctly.",
+        "wcag": null,
+        "quote": "We polyfill a bug in Firefox when used with Android Talkback screen reader to announce state and role correctly.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/code"
+      },
+      {
+        "rule": "The component builds on the semantic HTML elements <details> and <summary>.",
+        "wcag": null,
+        "quote": "For the Details component, we use u-details (github.io) , which builds on the semantic HTML elements <details> and <summary> .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/accessibility"
+      },
+      {
+        "rule": "Space or Enter opens or closes the Details.",
+        "wcag": null,
+        "quote": "Press Space or Enter to open or close the Details.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/accessibility"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/details/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "ErrorSummary",
+        "note": "Use error summary instead of details when you need to summarise error messages.",
+        "quote": "Avoid details when you need to show important content that everyone should see you need to display an action button you need to summarise error messages, use error summary instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/details/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Use details for information relevant only to some users, for examples/FAQs, and where reading is optional.",
+        "quote": "Use details when you want to provide information that is only relevant to some users you want to give examples or answer frequently asked questions it should be up to the user whether they choose to read the content",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      },
+      {
+        "rule": "Details can be placed inside a card to give the content a framed appearance.",
+        "quote": "You can use details inside a card to give the content a framed appearance.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      },
+      {
+        "rule": "Details inside a card gives the content a framed appearance; works well when it doesn't span the full page width or holds a single line",
+        "quote": "You can use details inside a card to give the content a framed appearance. This works well when details does not span the full width of the page, or when it contains only a single line.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      },
+      {
+        "rule": "Avoid using details just to make a page look tidier.",
+        "quote": "However, you should not use details to hide content just to make the page look tidier.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      },
+      {
+        "rule": "Do not nest one details inside another.",
+        "quote": "Do not place one details inside another.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      },
+      {
+        "rule": "The heading must clearly describe what the details contains.",
+        "quote": "Make sure the heading clearly describes what the details contains.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      },
+      {
+        "rule": "Vague headings like \"Show more\" or \"Read more here\" are not good enough.",
+        "quote": "\u201cShow more\u201d or \u201cRead more here\u201d are not good enough headings.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      },
+      {
+        "rule": "When there are many expandable sections, add a main or thematic heading above the whole list.",
+        "quote": "If you have many expandable sections, consider adding a main heading or thematic heading above the entire list.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      },
+      {
+        "rule": "Keep the content inside details short so it relates easily to the heading.",
+        "quote": "Keep the content inside details short so it is easy to relate to the heading.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      },
+      {
+        "rule": "If content is too long, split it into several details.",
+        "quote": "If the content is too long, divide it into several details.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      },
+      {
+        "rule": "For very large amounts of content, prefer separate pages over details.",
+        "quote": "For very large amounts of content, it may be better to create separate pages.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/details/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

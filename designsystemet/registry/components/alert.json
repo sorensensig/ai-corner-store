@@ -1,0 +1,148 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Alert",
+  "slug": "alert",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/alert/alert.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/alert/overview",
+    "code": "https://designsystemet.no/en/components/docs/alert/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/alert/alert.tsx",
+    "value": "Alert"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/alert/alert.tsx (JSDoc)",
+    "value": "Alerts are used to inform users about important information, warnings, errors, or success."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/alert/alert.tsx (JSDoc @example)",
+    "value": "<Alert data-color='info'>Dette er en informasjonsmelding</Alert>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/alert/alert.tsx",
+    "value": {
+      "class": "ds-alert",
+      "dataAttributes": [
+        "data-color"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/alert.css",
+    "value": [
+      "--ds-border-radius-md",
+      "--ds-border-width-default",
+      "--ds-color-border-default",
+      "--ds-color-info-border-default",
+      "--ds-color-info-surface-tinted",
+      "--ds-color-info-text-default",
+      "--ds-color-info-text-subtle",
+      "--ds-color-surface-tinted",
+      "--ds-color-text-default",
+      "--ds-color-text-subtle",
+      "--ds-icon-size",
+      "--ds-size-2",
+      "--ds-size-6",
+      "--dsc-alert-background",
+      "--dsc-alert-border-color",
+      "--dsc-alert-border-radius",
+      "--dsc-alert-border-style",
+      "--dsc-alert-border-width",
+      "--dsc-alert-color",
+      "--dsc-alert-icon-color",
+      "--dsc-alert-icon-size",
+      "--dsc-alert-icon-url",
+      "--dsc-alert-padding-block",
+      "--dsc-alert-padding-inline-end",
+      "--dsc-alert-spacing"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": [
+      {
+        "slug": "skjema-validering",
+        "name": "Skjemavalidering (form validation and errors)",
+        "docs": "https://designsystemet.no/en/patterns/errors/"
+      }
+    ]
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": [
+      "error-summary",
+      "field",
+      "fieldset",
+      "suggestion",
+      "validation-message"
+    ]
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/alert/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Use role='alert' for critical messages that require immediate attention; use role='status' for less critical messages",
+        "wcag": null,
+        "quote": "Use `role=\"alert\"` for critical messages that require immediate attention.",
+        "quote2": "Use `role=\"status\"` for less critical messages.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/alert/code"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/alert/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "ValidationMessage",
+        "note": "Use for a single form field error instead of Alert",
+        "quote": "you need to notify the user about an error in a single form field, use the component's own error message",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/alert/overview"
+      },
+      {
+        "component": "ErrorSummary",
+        "note": "Use to summarise multiple errors instead of Alert",
+        "quote": "to summarise multiple errors",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/alert/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/alert/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Avoid multiple alerts on the same page",
+        "quote": "Avoid multiple alerts on the same page, as it can confuse the user and make it difficult to understand what is important.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/alert/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

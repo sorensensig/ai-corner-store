@@ -1,0 +1,160 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "SkipLink",
+  "slug": "skip-link",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/skip-link/skip-link.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/skip-link/overview",
+    "code": "https://designsystemet.no/en/components/docs/skip-link/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/skip-link/skip-link.tsx",
+    "value": "SkipLink"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/skip-link/skip-link.tsx (JSDoc)",
+    "value": "SkipLink component, used to display a skip link within the page. Place it at the top of the page to allow users to skip to the main content."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/skip-link/skip-link.tsx (JSDoc @example)",
+    "value": "<SkipLink href='#main-content'>Skip to main content</SkipLink>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/skip-link/skip-link.tsx",
+    "value": {
+      "class": "ds-skip-link",
+      "dataAttributes": []
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/skip-link.css",
+    "value": [
+      "--ds-color-surface-hover",
+      "--ds-color-text-default",
+      "--ds-size-4",
+      "--ds-size-5",
+      "--dsc-skiplink-background",
+      "--dsc-skiplink-color",
+      "--dsc-skiplink-padding"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/skip-link/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Users must be able to skip repeated content such as menus, links, and page headers when navigating by keyboard",
+        "wcag": null,
+        "quote": "When navigating with a keyboard, users must be able to skip content that appears on multiple pages, such as menus, links, and the page header.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skip-link/overview"
+      },
+      {
+        "rule": "The skip link should visually stand out from the rest of the content when focused",
+        "wcag": null,
+        "quote": "The skip link should visually stand out from the rest of the content when focused, so users who can see but navigate with a keyboard can easily recognise it before moving on.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skip-link/overview"
+      },
+      {
+        "rule": "Skip link text should clearly describe what the shortcut does, using simple direct wording",
+        "wcag": null,
+        "quote": "Make sure the text clearly describes what the shortcut does. Use simple and direct wording, such as \u201cSkip to main content\u201d.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skip-link/overview"
+      },
+      {
+        "rule": "Avoid adding a skip link when there are only a few tab stops before the main content, as it may add unnecessary focusable elements",
+        "wcag": null,
+        "quote": "If there are only a few tab stops before the main content \u2014 for example, if the page only contains a single \u201cHome\u201d link at the top \u2014 adding a skip link may be unnecessary. In such cases, it could introduce more focusable elements than needed.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skip-link/overview"
+      },
+      {
+        "rule": "It is safe to ignore automated accessibility test warnings that a skip link is missing from a landmark like <nav>",
+        "wcag": null,
+        "quote": "Be aware that some automated accessibility tests may warn that a skip link is missing from a landmark, such as a <nav> . This warning does not apply to skip links, so you can safely ignore it.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skip-link/accessibility"
+      },
+      {
+        "rule": "The skip link must behave predictably, moving focus to the start of the content rather than to the first paragraph under the heading",
+        "wcag": null,
+        "quote": "Make sure that the skip link behaves predictably. A skip link with the text \u201cSkip to content\u201d should move the user\u2019s focus to the start of the content, not to the beginning of the first paragraph under the heading.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skip-link/accessibility"
+      },
+      {
+        "rule": "Pressing Enter on the skip link follows it and jumps to the target",
+        "wcag": null,
+        "quote": "Enter follows the link and jumps to the target",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skip-link/accessibility"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/skip-link/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/skip-link/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "A skip link should be one of the first elements the keyboard focus reaches when navigating with the keyboard",
+        "quote": "A skip link should be one of the first elements the keyboard focus reaches when navigating with the keyboard.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skip-link/overview"
+      },
+      {
+        "rule": "Place the skip link as the first focusable element on the page",
+        "quote": "Place the skip link as the first focusable element on the page.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skip-link/overview"
+      },
+      {
+        "rule": "If the page includes a cookie banner or similar message, the skip link should be placed immediately after that element in the code",
+        "quote": "If the page includes a cookie banner or similar message, place the skip link immediately after that element in the code.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skip-link/overview"
+      },
+      {
+        "rule": "Add the class ds-skip-link to an <a> tag pointing to the main content, and the target should be focusable via tabindex=\"-1\"",
+        "quote": "Add the class name ds-skip-link to an <a> tag that points to the main content of the page. The target should be able to receive focus with tabindex=\"-1\" .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/skip-link/code"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

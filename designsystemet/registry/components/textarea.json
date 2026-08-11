@@ -1,0 +1,147 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Textarea",
+  "slug": "textarea",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/textarea/textarea.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/textarea/overview",
+    "code": "https://designsystemet.no/en/components/docs/textarea/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/textarea/textarea.tsx",
+    "value": "Textarea"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/textarea/textarea.tsx (JSDoc)",
+    "value": "Native HTML textarea element."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/textarea/textarea.tsx (JSDoc @example)",
+    "value": "<Textarea />"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/textarea/textarea.tsx",
+    "value": {
+      "class": "ds-input",
+      "dataAttributes": []
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/textarea.css",
+    "value": []
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/textarea/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Avoid disabling a textarea if possible, since it can be difficult for users to understand why the field cannot be used.",
+        "wcag": null,
+        "quote": "Avoid disabling a textarea if possible. It can be difficult for users to understand why the field cannot be used.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/textarea/overview"
+      },
+      {
+        "rule": "readOnly can be confusing since a text field is normally expected to be editable; use it only when truly necessary.",
+        "wcag": null,
+        "quote": "Since a text field is normally expected to be editable, readOnly can be confusing. Use it only when it is truly necessary. In many cases, it is better to display the information as plain text rather than in a readOnly field.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/textarea/overview"
+      },
+      {
+        "rule": "If readOnly is used, you must explain to the user why the content cannot be edited.",
+        "wcag": null,
+        "quote": "Important: If you choose to use readOnly , you must explain to the user why the content cannot be edited.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/textarea/overview"
+      },
+      {
+        "rule": "Fields with the readonly attribute remain part of the tab order.",
+        "wcag": null,
+        "quote": "Fields with the readonly attribute remain part of the tab order.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/textarea/overview"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/textarea/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Textfield",
+        "note": "Use textfield instead of textarea when short answers are expected.",
+        "quote": "Avoid using textarea when short answers are expected, use textfield instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/textarea/overview"
+      },
+      {
+        "component": "Radio",
+        "note": "For structured/fixed-choice answers, break the question into smaller parts and use components like Radio instead of a free-text textarea.",
+        "quote": "Be aware that some users find free-text fields challenging. In certain cases, it may be better to break the question into smaller, more structured parts and let users answer with components such as Radio .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/textarea/overview"
+      },
+      {
+        "component": "Textfield",
+        "note": "Textarea should also follow the general guidelines defined for textfield.",
+        "quote": "In addition to these recommendations, follow the general guidelines for textfield",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/textarea/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/textarea/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "The height of the textarea should reflect the expected amount of text.",
+        "quote": "The height of the textarea should reflect the expected amount of text.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/textarea/overview"
+      },
+      {
+        "rule": "Textarea should expand in height when users need more space.",
+        "quote": "Textarea should expand in height when users need more space.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/textarea/overview"
+      },
+      {
+        "rule": "A textarea should not be wider than 50-75 characters including spaces.",
+        "quote": "A textarea should not be wider than 50-75 characters including spaces.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/textarea/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

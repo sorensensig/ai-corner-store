@@ -1,0 +1,145 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "ErrorSummary",
+  "slug": "error-summary",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/error-summary/error-summary.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/error-summary/overview",
+    "code": "https://designsystemet.no/en/components/docs/error-summary/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/error-summary/error-summary.tsx",
+    "value": "ErrorSummary"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/error-summary/error-summary.tsx (JSDoc)",
+    "value": "ErrorSummary component, used to display a list of errors."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/error-summary/error-summary.tsx (JSDoc @example)",
+    "value": "<ErrorSummary>\n  <ErrorSummary.Heading>Heading</ErrorSummary.Heading>\n  <ErrorSummary.List>\n    <ErrorSummary.Item>\n      <ErrorSummary.Link href='#'>Error 1</ErrorSummary.Link>\n    </ErrorSummary.Item>\n    <ErrorSummary.Item>\n      <ErrorSummary.Link href='#'>Error 2</ErrorSummary.Link>\n    </ErrorSummary.Item>\n  </ErrorSummary.List>\n</ErrorSummary>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/error-summary/error-summary.tsx",
+    "value": {
+      "class": null,
+      "dataAttributes": []
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/error-summary.css",
+    "value": [
+      "--ds-border-radius-md",
+      "--ds-color-danger-surface-tinted",
+      "--ds-color-danger-text-default",
+      "--ds-color-neutral-text-default",
+      "--ds-font-size-plus-1",
+      "--ds-size-2",
+      "--ds-size-6",
+      "--ds-size-8",
+      "--dsc-errorsummary-background",
+      "--dsc-errorsummary-border-radius",
+      "--dsc-errorsummary-heading-color",
+      "--dsc-errorsummary-link-color",
+      "--dsc-errorsummary-padding"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": [
+      {
+        "slug": "skjema-validering",
+        "name": "Skjemavalidering (form validation and errors)",
+        "docs": "https://designsystemet.no/en/patterns/errors/"
+      }
+    ]
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": [
+      "alert",
+      "field",
+      "fieldset",
+      "suggestion",
+      "validation-message"
+    ]
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/error-summary/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "The summary takes focus when it appears or its content changes",
+        "wcag": null,
+        "quote": "The summary automatically receives focus when it becomes visible and when its content changes.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/error-summary/overview"
+      },
+      {
+        "rule": "Every error message must link directly to its field",
+        "wcag": null,
+        "quote": "Error messages must link directly to the relevant field.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/error-summary/overview"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/error-summary/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Alert",
+        "note": "Use Alert for system-level messages instead",
+        "quote": "you need to display system-level messages; use alert instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/error-summary/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/error-summary/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "The summary should contain every error message present on the page",
+        "quote": "Error summary should contain all error messages present on the page",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/error-summary/overview"
+      },
+      {
+        "rule": "Summary messages should be phrased exactly the same as the field-level messages",
+        "quote": "error messages in the summary should be phrased exactly the same as the error messages displayed at the relevant fields",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/error-summary/overview"
+      },
+      {
+        "rule": "Where one error covers several fields, link to the first",
+        "quote": "If the error applies to several fields, for example when two fields are validated together, link to the first instance of the error.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/error-summary/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

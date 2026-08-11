@@ -1,0 +1,157 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "ToggleGroup",
+  "slug": "toggle-group",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/toggle-group/toggle-group.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/toggle-group/overview",
+    "code": "https://designsystemet.no/en/components/docs/toggle-group/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/toggle-group/toggle-group.tsx",
+    "value": "ToggleGroup"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/toggle-group/toggle-group.tsx (JSDoc)",
+    "value": "Display a group of buttons that can be toggled between."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/toggle-group/toggle-group.tsx (JSDoc @example)",
+    "value": "<ToggleGroup aria-label=\"Label\" onChange={(value) => console.log(value)}>\n  <ToggleGroup.Item value='1'>Toggle 1</ToggleGroup.Item>\n  <ToggleGroup.Item value='2'>Toggle 2</ToggleGroup.Item>\n  <ToggleGroup.Item value='3'>Toggle 3</ToggleGroup.Item>\n</ToggleGroup>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/toggle-group/toggle-group.tsx",
+    "value": {
+      "class": "ds-toggle-group",
+      "dataAttributes": [
+        "data-variant"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/toggle-group.css",
+    "value": [
+      "--ds-border-radius-default",
+      "--ds-border-width-default",
+      "--ds-color-base-active",
+      "--ds-color-base-contrast-default",
+      "--ds-color-base-default",
+      "--ds-color-base-hover",
+      "--ds-color-border-default",
+      "--ds-color-border-subtle",
+      "--ds-color-surface-active",
+      "--ds-color-surface-default",
+      "--ds-color-surface-hover",
+      "--ds-color-surface-tinted",
+      "--ds-color-text-default",
+      "--ds-size-12",
+      "--dsc-button-background",
+      "--dsc-button-background--active",
+      "--dsc-button-background--hover",
+      "--dsc-button-border-color",
+      "--dsc-button-color",
+      "--dsc-button-color--active",
+      "--dsc-button-color--hover",
+      "--dsc-togglegroup-background",
+      "--dsc-togglegroup-border-color",
+      "--dsc-togglegroup-border-radius",
+      "--dsc-togglegroup-border-style",
+      "--dsc-togglegroup-border-width",
+      "--dsc-togglegroup-button-size",
+      "--dsc-togglegroup-color",
+      "--dsc-togglegroup-label",
+      "--dsc-togglegroup-spacing"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": [
+      {
+        "slug": "required-and-optional-fields",
+        "name": "Required and optional form fields",
+        "docs": "https://designsystemet.no/en/patterns/required-and-optional-fields"
+      }
+    ]
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": [
+      "Fieldset",
+      "Label",
+      "Tag",
+      "Textfield"
+    ]
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/toggle-group/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Icon-only toggles need a tooltip to convey meaning",
+        "wcag": null,
+        "quote": "Use tooltip to clarify the actions when using icons alone.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/toggle-group/overview"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/toggle-group/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Radio",
+        "note": "Use Radio when the options are answers in a form",
+        "quote": "the options represent answers in a form",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/toggle-group/overview"
+      },
+      {
+        "component": "Switch",
+        "note": "Use Switch for an on/off setting",
+        "quote": "the choice is an on/off setting",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/toggle-group/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/toggle-group/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "At least two options, few enough to fit on one line",
+        "quote": "A toggle group should have at least two options, but not so many that they no longer fit horizontally.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/toggle-group/overview"
+      },
+      {
+        "rule": "The group needs a label explaining what the options refer to",
+        "quote": "Include a label for the group that explains what the options refer to.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/toggle-group/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

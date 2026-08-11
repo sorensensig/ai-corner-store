@@ -1,0 +1,149 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Divider",
+  "slug": "divider",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/divider/divider.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/divider/overview",
+    "code": "https://designsystemet.no/en/components/docs/divider/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/divider/divider.tsx",
+    "value": "Divider"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/divider/divider.tsx (JSDoc)",
+    "value": "Divider component, used to separate content. Uses `hr` element."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/divider/divider.tsx (JSDoc @example)",
+    "value": "<Divider />"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/divider/divider.tsx",
+    "value": {
+      "class": "ds-divider",
+      "dataAttributes": []
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/divider.css",
+    "value": [
+      "--ds-border-width-default",
+      "--ds-color-neutral-border-subtle",
+      "--dsc-divider-border-color",
+      "--dsc-divider-border-style",
+      "--dsc-divider-border-width"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/divider/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Apply aria-hidden=\"true\" to the divider to avoid noise for screen reader users.",
+        "wcag": null,
+        "quote": "Apply aria-hidden=\"true\" to avoid noise in screen readers.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/divider/code"
+      },
+      {
+        "rule": "Divider is a purely visual element and is not announced by screen readers.",
+        "wcag": null,
+        "quote": "Divider is a purely visual element, and it is not announced by screen readers.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/divider/accessibility"
+      },
+      {
+        "rule": "Avoid using a divider solely for visual effect without functional meaning.",
+        "wcag": null,
+        "quote": "However, avoid using a divider solely for visual effect without functional meaning.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/divider/accessibility"
+      },
+      {
+        "rule": "Since a divider represents a thematic separation, you must also use elements a screen reader can interpret to communicate that separation accessibly.",
+        "wcag": null,
+        "quote": "A divider represents a thematic separation of content. To communicate this separation in an accessible way, you must also use elements that a screen reader can interpret.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/divider/accessibility"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/divider/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/divider/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Use divider when you want a clear separation between sections of content and whitespace alone does not provide sufficient separation.",
+        "quote": "Use divider when you want to create a clear separation between sections of content whitespace alone does not provide sufficient separation",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/divider/overview"
+      },
+      {
+        "rule": "Avoid divider when natural spacing or other visual elements already provide enough separation, since too many dividers create visual clutter.",
+        "quote": "Avoid divider when natural spacing or other visual elements provide enough separation too many divider elements create a cluttered visual appearance",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/divider/overview"
+      },
+      {
+        "rule": "Divider is used to break content into smaller sections for readability, and can also separate related content that still benefits from visual distinction.",
+        "quote": "Divider is used to break content into smaller sections, making it easier to read and understand. It can also be used to separate content that is related but still benefits from a visual distinction.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/divider/overview"
+      },
+      {
+        "rule": "Use divider to mark a boundary between content that is not logically connected, such as different sections in an article or different functional areas on a page.",
+        "quote": "Use the component to mark a boundary between content that is not logically connected, such as different sections in an article or different functional areas on a page.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/divider/accessibility"
+      },
+      {
+        "rule": "Use divider to visually clarify structure, not simply to fill empty space or decorate the page.",
+        "quote": "Use it to visually clarify the structure, not simply to fill empty space or \u201cdecorate\u201d the page.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/divider/accessibility"
+      },
+      {
+        "rule": "The accessible structural elements to pair with a divider can include a heading, a list, <section> elements, or elements with role=\"group\".",
+        "quote": "This can include a heading , a list , <section> elements , or elements with role=\"group\" .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/divider/accessibility"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}
