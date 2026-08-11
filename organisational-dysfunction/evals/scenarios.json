@@ -548,6 +548,14 @@
       "expected_refs": [
         "58-the-short-termism-machine"
       ]
+    },
+    {
+      "id": "informal-network-decides",
+      "prompt": "something i can't say out loud at work: the process is basically decoration. a platform request through the official intake sat for six weeks; a colleague mentioned it over coffee to someone who reports to the CTO and it was resourced in two days. the people who thrive here are the ones who work those channels. i'm not good at it and i'm starting to think i'm just not cut out for this place. is this a me problem?",
+      "should_trigger": true,
+      "expected_refs": [
+        "69-playing-politics"
+      ]
     }
   ]
 }
