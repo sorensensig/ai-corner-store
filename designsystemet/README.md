@@ -1,19 +1,26 @@
-# designsystemet — build with Digdir's Designsystemet correctly on the first attempt
+# designsystemet
 
-A Claude Code plugin for anyone building Norwegian public-sector services with
-[Designsystemet](https://designsystemet.no). It closes the gap A/B trials showed no
-model closes alone: agents produce plausible, WCAG-silently-broken markup unless the
-system's real contracts travel with the task.
+> **Experimental.** Interfaces and registry content may change without notice.
 
-**What's in it, and why each piece earned its place** (all claims trial-backed, see
-the evidence note at the bottom):
+A Claude Code plugin for building Norwegian public-sector services with
+[Designsystemet](https://designsystemet.no).
+
+## Why
+
+Agents writing Designsystemet code make confident, hard-to-spot mistakes: props
+that don't exist, imports that break at build time, and — worst — forms that look
+right but fail WCAG because the accessibility wiring the components leave to the
+consumer never gets written. This plugin puts the system's real contracts in the
+agent's hands and blocks the mistakes that can be blocked.
+
+## What's in it
 
 | Piece | What it does |
 |---|---|
-| **Skill** | Injects the form/validation cluster's quote-verified rules (the part agents miss most) and points at the rest. |
-| **Twins registry (bundled)** | 44 component + 3 pattern contracts: extracted layer regenerated from source, authored layer quote-verified against designsystemet.no and human-reviewed (`reviewedAgainst: 1.18.0`; 5 twins touched by the 2026-08-12 docs drift carry `needsReview` until re-ratified). Served by the `designsystemet-twins` MCP server (`list_twins`, `get_component`, `get_pattern`, `find_equivalent`). |
-| **Guard hook** | PreToolUse deny on writes that break a contract — invented props, raw hex for tokens, deprecated imports, validation UI without its accessibility wiring. The reason is fed back so the model fixes it. |
-| **/ds-check** | Explicit audit of an existing codebase against the contracts; surfaces the `tokens` and `migrate` CLIs. |
+| **Skill** | Teaches the form/validation rules agents miss most; points at the lookup tools for everything else. |
+| **Registry + MCP server** | A contract ("twin") for every component and pattern, served by four tools: `list_twins`, `get_component`, `get_pattern`, `find_equivalent`. |
+| **Guard hook** | Blocks writes that break a contract — invented props, raw hex instead of tokens, error states without `aria-invalid` — and feeds the reason back so the agent fixes it. |
+| **/ds-check** | On-demand audit of existing code against the contracts. |
 
 ## Install
 
@@ -21,7 +28,7 @@ the evidence note at the bottom):
 /plugin install designsystemet
 ```
 
-Or per client, shadcn-style — the MCP server alone works anywhere MCP does:
+The MCP server alone works in any MCP client:
 
 ```json
 {
@@ -34,37 +41,38 @@ Or per client, shadcn-style — the MCP server alone works anywhere MCP does:
 }
 ```
 
+## Core concepts
+
+**Twins.** A twin is the machine-readable counterpart of one component or
+pattern: a JSON contract carrying its real export name, design tokens,
+accessibility rules, and composition rules. Components alone don't make a
+correct form, so patterns (e.g. `skjema-validering`) are twins too.
+
+**Provenance.** Every field in a twin says where it came from. `extracted`
+fields are regenerated from the component source and cannot drift. `authored`
+fields carry rules that exist only as prose in the documentation; each one is
+backed by a verbatim quote, machine-verified to appear on the cited docs page,
+and human-reviewed (`reviewedAgainst` records the package version of the
+sign-off). What the docs don't state, the twins don't claim.
+
+**llms.txt.** The registry's index file, following the
+[llms.txt](https://llmstxt.org) convention: one file from which an agent
+discovers every contract instead of scraping rendered documentation.
+
 ## Configuration
 
 | Env var | Default | Meaning |
 |---|---|---|
-| `DESIGNSYSTEMET_TWINS` | bundled `registry/` | Point at a newer or local twins directory (e.g. a checkout of the upstream registry) to override the pinned snapshot. |
+| `DESIGNSYSTEMET_TWINS` | bundled `registry/` | Point at a newer or local twin directory to override the pinned snapshot. |
 | `DESIGNSYSTEMET_PYTHON` | `python3` | Interpreter for the guard hook. |
 
-The bundled registry is **pinned** to the package version it was reviewed against
-(`@digdir/designsystemet-react` 1.18.0). When upstream hosts the registry publicly,
-point `DESIGNSYSTEMET_TWINS` at it — or update the plugin, which re-pins.
+The bundled registry is pinned to `@digdir/designsystemet-react` **1.18.0**, the
+version its rules were reviewed against.
 
-## Provenance model (the part to trust)
+## Research
 
-Every authored rule in a twin carries a verbatim quote from designsystemet.no, and the
-quote is machine-verified to exist on the cited page at merge time. Rules keep the
-docs' own modality — "should" stays should. What the docs don't state, the twins
-don't claim (`null`, never invented). Extracted fields (props, imports, emitted DOM)
-regenerate from the component source and cannot drift.
-
-## Evidence
-
-Built from a pre-registered A/B programme (2026-08, claude-sonnet-5, N=8–9/arm,
-complex form task): twins raised first-attempt conformance from ~50% (live docs) to
-100% at cost-neutral-or-better per conforming solution; the true-null arm never uses
-Designsystemet unprompted; two live-docs trials shipped stale or invented APIs that
-reading the docs did not correct. Ledger: sorensensig/claude-stack#74.
-
-## Status
-
-- v0.2.x — interim home in ai-corner-store; moves to kihub when it can take
-  contributions. Registry pinned at 1.18.0.
-- Roadmap (tracked on the ledger): non-React twin tracks (web components / CSS-only —
-  real consumer: Mattilsynet's CSS-layer sub-system), update-checker in `/ds-check`,
-  federation kit for agency sub-systems, pattern starter code ("blocks").
+The design is evidence-driven: each piece exists because pre-registered A/B
+trials on complex form tasks showed agents fail without it — including the
+finding that reading the live documentation alone still ships inaccessible
+validation. Twins raised first-attempt conformance from roughly half to all
+trials at equal-or-lower cost per correct solution.

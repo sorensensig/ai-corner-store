@@ -1,5 +1,5 @@
 {
-  "_note": "Authored plugin data, not a twin. Feeds find_equivalent so an agent porting foreign markup lands on the right Designsystemet component instead of guessing. Aliases are matched case- and punctuation-insensitively, substring both ways. known_without_twin cleared 2026-08-11: registry is complete at 45 components; date-picker is the one live docs-name without a package component.",
+  "_note": "Alias table for find_equivalent: maps foreign component names, generic UI vocabulary and Norwegian terms to Designsystemet slugs. not_in_package lists names agents look for that the pinned package does not ship, with what to use instead.",
   "aliases": {
     "alert": [
       "mui alert",
@@ -85,7 +85,7 @@
       "MUI DatePicker"
     ]
   },
-  "known_without_twin": {
-    "date-picker": "The docs list Date picker, but the pinned package (1.18.0) ships no DatePicker component and there is no twin. Do not import one; compose Textfield or use a native input, and see the skjema-validering pattern for form wiring."
+  "not_in_package": {
+    "date-picker": "Documented on designsystemet.no, but @digdir/designsystemet-react 1.18.0 ships no DatePicker export — do not import one. Compose Textfield or a native date input; see the skjema-validering pattern for form wiring."
   }
 }

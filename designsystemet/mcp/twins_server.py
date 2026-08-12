@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
-"""twins_server.py — MCP server over the Designsystemet structured twins.
+"""MCP server that lets an agent look up Designsystemet contracts instead of guessing.
 
-    MCP client (Claude Code)
-        <── JSON-RPC 2.0 / newline-delimited stdio ──>
-    THIS SCRIPT
-        <── filesystem reads ──>
-    twins/  (components/*.json, patterns/*.json, llms.txt)
+A twin is the machine-readable contract of one component or pattern: a JSON file
+carrying its real export name, tokens, accessibility rules and composition rules,
+sourced from the component's code and documentation. This server reads the twin
+files from disk and exposes four lookup tools over MCP (JSON-RPC 2.0 on stdio):
 
-Tools: list_twins, get_component, get_pattern, find_equivalent.
+    list_twins        inventory of every component and pattern
+    get_component     one component's contract
+    get_pattern       one pattern's contract
+    find_equivalent   map a foreign/unknown name to the Designsystemet component
 
-Stdlib only, Python 3.9+ — must start in any environment without a pip install.
-
-Twin root resolution, first hit wins:
-  1. --twins <path>
-  2. $DESIGNSYSTEMET_TWINS
-  3. ./twins or ./fork/twins relative to the working directory
+Stdlib only, Python 3.9+. The twin directory is taken from --twins, then
+$DESIGNSYSTEMET_TWINS, then ./twins or ./fork/twins.
 """
 
 import json
@@ -25,7 +23,7 @@ from pathlib import Path
 
 PROTOCOL_VERSION = "2025-06-18"
 SERVER_NAME = "designsystemet-twins"
-SERVER_VERSION = "0.2.2"  # kept in step with .claude-plugin/plugin.json
+SERVER_VERSION = "0.3.0"  # kept in step with .claude-plugin/plugin.json
 
 TRANSLATION_RULE = (
     "Map each element to its Designsystemet equivalent and emit that component's real "
@@ -94,7 +92,7 @@ def load_equivalents():
     try:
         return json.loads(p.read_text(encoding="utf-8"))
     except (OSError, ValueError):
-        return {"aliases": {}, "known_without_twin": {}}
+        return {"aliases": {}, "not_in_package": {}}
 
 
 # ---------------------------------------------------------------------------
@@ -144,8 +142,7 @@ def tool_get_component(args):
     twin = load_twin("components", slug)
     if twin is None:
         known = [s for k, s, _ in all_twins() if k == "components"]
-        pattern_refs = load_equivalents().get("known_without_twin", {})
-        hint = pattern_refs.get(slug)
+        hint = load_equivalents().get("not_in_package", {}).get(slug)
         return {
             "error": "No component twin for slug %r." % slug,
             "known_component_slugs": known,
@@ -220,7 +217,7 @@ def tool_find_equivalent(args):
             entry["fetch_with"] = "get_pattern" if twin.get("kind") == "pattern" else "get_component"
         else:
             entry["kind"] = kind
-            entry["note"] = equiv.get("known_without_twin", {}).get(
+            entry["note"] = equiv.get("not_in_package", {}).get(
                 slug, "Named by a pattern twin; no dedicated twin in the published registry."
             )
         matches.append(entry)

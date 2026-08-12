@@ -69,9 +69,8 @@ These hold across every component, so they are worth carrying rather than fetchi
    CLI rather than reimplementing it — `designsystemet tokens create` / `tokens build` for
    themes, `designsystemet migrate` across a breaking version.
 
-   *Written from a real failure rather than caution: a session that built a demo site by
-   hand-copying build output shipped pages with correct class names, no stylesheet, and the
-   browser's serif default. Both bugs were invisible in the markup and obvious on screen.*
+   *Hand-copied build output produces pages with correct class names, no stylesheet, and
+   the browser's default serif — invisible in the markup, obvious on screen.*
 
 ## Component and pattern facts
 

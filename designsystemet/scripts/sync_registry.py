@@ -1,19 +1,14 @@
 #!/usr/bin/env python3
 """Rebuild the bundled registry snapshot from a designsystemet fork checkout.
 
-The bundle is NOT a plain copy — three transforms, each of which shipped a silent
-failure when done by hand (see PR #39):
-
-  1. kebab-case filenames (Alert.json -> alert.json) — the twins server's slug
-     discipline; CamelCase files resolve to nothing.
-  2. strip EXPERIMENTAL_ prefixes and dots from names.
+Not a plain copy — four transforms:
+  1. kebab-case filenames (Alert.json -> alert.json), matching the server's slugs
+  2. strip EXPERIMENTAL_ prefixes and dots from filenames
   3. inject the guard's assertion specs into the pattern twins from the fork's
-     rubrics — the public registry ships without them, but the assertions ARE
-     the guard's checklist, so the bundle must carry them.
-  4. rewrite llms.txt link targets to the kebab-cased filenames — a verbatim
-     copy links components/Alert.json in a bundle that ships alert.json.
+     rubrics — the assertions are the guard hook's checklist
+  4. rewrite llms.txt link targets to the kebab-cased filenames
 
-    python3 scripts/sync_registry.py <fork-root>   # e.g. ~/…/designsystemet/fork
+    python3 scripts/sync_registry.py <fork-root>
 """
 import json
 import re

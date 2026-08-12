@@ -45,11 +45,8 @@ def render(root):
     )
     lines.append("")
 
-    # Inline set: the form/validation cluster — the components the guard hook checks and
-    # the pattern twins compose. Everything else is served on demand by get_component;
-    # inlining every component produced a 57 KB skill body, which taxes every session
-    # for knowledge most tasks never touch. Pass --all to inline everything (for
-    # diffing/audit). Matched on SLUG: names carry EXPERIMENTAL_ prefixes, slugs don't.
+    # Only the form/validation cluster is inlined; everything else is served on
+    # demand by get_component. Matched on slug — names carry EXPERIMENTAL_ prefixes.
     INLINE = {"alert", "validation-message", "error-summary", "textfield", "suggestion",
               "toggle-group", "field", "fieldset", "label", "button"}
     inline_all = "--all" in sys.argv
