@@ -14,7 +14,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 SERVER = HERE.parent / "mcp" / "twins_server.py"
-DEFAULT_TWINS = Path.home() / "Documents/dev/work/Digdir/designsystemet/twins"
+DEFAULT_TWINS = HERE.parent / "registry"
 
 
 def twins():
@@ -45,6 +45,7 @@ MSGS = [
     call(11, "get_component", {"slug": "../../etc/passwd"}),
     call(12, "get_component", {"slug": "date-picker"}),
     {"jsonrpc": "2.0", "id": 13, "method": "tools/call", "params": {"name": "nope", "arguments": {}}},
+    call(14, "find_equivalent", {"term": "select"}),
 ]
 
 
@@ -87,6 +88,10 @@ EXPECT = {
          and "no DatePicker" in body_of(r["result"])["note"]),
     13: ("unknown tool is a protocol error",
          lambda r: r.get("error", {}).get("code") == -32602),
+    14: ("a DS component's own name is not hijacked by an alias (select is not Suggestion)",
+         lambda r: "select" in {m["slug"] for m in body_of(r["result"])["matches"]}
+         and not any(m["slug"] == "suggestion" and m["confidence"] == "alias"
+                     for m in body_of(r["result"])["matches"])),
 }
 
 

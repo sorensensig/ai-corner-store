@@ -75,7 +75,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/fieldset/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "rule": "Avoid repeating the same text in both label and legend",
@@ -89,7 +89,7 @@
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/fieldset/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "component": "Radio",
@@ -103,7 +103,7 @@
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/fieldset/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "rule": "Start with a legend explaining what the fields below relate to",
@@ -113,6 +113,6 @@
       }
     ]
   },
-  "reviewedAgainst": null,
-  "needsReview": true
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
 }

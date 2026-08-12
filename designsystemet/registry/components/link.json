@@ -71,7 +71,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/link/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "rule": "Put trigger words early in link text; vague phrases must not be the entire link text",
@@ -113,7 +113,7 @@
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/link/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "component": "Button",
@@ -141,7 +141,7 @@
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/link/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "rule": "A link is often used inline as part of a text",
@@ -169,6 +169,6 @@
       }
     ]
   },
-  "reviewedAgainst": null,
-  "needsReview": true
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
 }

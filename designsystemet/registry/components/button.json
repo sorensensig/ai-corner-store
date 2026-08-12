@@ -90,7 +90,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/button/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "rule": "An icon-only button needs an accessible label",
@@ -111,7 +111,7 @@
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/button/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "component": "Link",
@@ -125,7 +125,7 @@
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/button/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "rule": "Only one primary button per page",
@@ -135,6 +135,6 @@
       }
     ]
   },
-  "reviewedAgainst": null,
-  "needsReview": true
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
 }

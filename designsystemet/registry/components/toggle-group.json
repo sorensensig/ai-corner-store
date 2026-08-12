@@ -101,7 +101,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/toggle-group/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "rule": "Icon-only toggles need a tooltip to convey meaning",
@@ -115,7 +115,7 @@
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/toggle-group/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "component": "Radio",
@@ -136,7 +136,7 @@
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/toggle-group/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "rule": "At least two options, few enough to fit on one line",
@@ -152,6 +152,6 @@
       }
     ]
   },
-  "reviewedAgainst": null,
-  "needsReview": true
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
 }

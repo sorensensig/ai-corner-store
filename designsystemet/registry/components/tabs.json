@@ -76,7 +76,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/tabs/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "rule": "Icons used in tabs must be intuitive and have descriptive titles for screen readers.",
@@ -132,13 +132,13 @@
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/tabs/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": null
   },
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/tabs/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "rule": "Use tabs when content needs structuring without loading a new page, when information benefits from being divided into clearly labelled sections, and when navigation becomes easier without viewing all content at once.",
@@ -208,6 +208,6 @@
       }
     ]
   },
-  "reviewedAgainst": null,
-  "needsReview": true
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
 }

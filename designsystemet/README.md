@@ -11,7 +11,7 @@ the evidence note at the bottom):
 | Piece | What it does |
 |---|---|
 | **Skill** | Injects the form/validation cluster's quote-verified rules (the part agents miss most) and points at the rest. |
-| **Twins registry (bundled)** | 45 component + 2 pattern contracts: extracted layer regenerated from source, authored layer quote-verified against designsystemet.no and human-reviewed (`reviewedAgainst: 1.18.0`). Served by the `designsystemet-twins` MCP server (`list_twins`, `get_component`, `get_pattern`, `find_equivalent`). |
+| **Twins registry (bundled)** | 44 component + 3 pattern contracts: extracted layer regenerated from source, authored layer quote-verified against designsystemet.no and human-reviewed (`reviewedAgainst: 1.18.0`; 5 twins touched by the 2026-08-12 docs drift carry `needsReview` until re-ratified). Served by the `designsystemet-twins` MCP server (`list_twins`, `get_component`, `get_pattern`, `find_equivalent`). |
 | **Guard hook** | PreToolUse deny on writes that break a contract — invented props, raw hex for tokens, deprecated imports, validation UI without its accessibility wiring. The reason is fed back so the model fixes it. |
 | **/ds-check** | Explicit audit of an existing codebase against the contracts; surfaces the `tokens` and `migrate` CLIs. |
 
@@ -63,7 +63,7 @@ reading the docs did not correct. Ledger: sorensensig/claude-stack#74.
 
 ## Status
 
-- v0.1.x — interim home in ai-corner-store; moves to kihub when it can take
+- v0.2.x — interim home in ai-corner-store; moves to kihub when it can take
   contributions. Registry pinned at 1.18.0.
 - Roadmap (tracked on the ledger): non-React twin tracks (web components / CSS-only —
   real consumer: Mattilsynet's CSS-layer sub-system), update-checker in `/ds-check`,

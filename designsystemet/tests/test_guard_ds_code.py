@@ -3,7 +3,7 @@
 
     python3 tests/test_guard_ds_code.py [--twins <path>]
 
-Twin root: --twins, else $DESIGNSYSTEMET_TWINS, else the workspace default.
+Twin root: --twins, else $DESIGNSYSTEMET_TWINS, else the bundled registry.
 Exit 1 on any row that does not match. Stdlib only.
 """
 
@@ -15,7 +15,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 HOOK = HERE.parent / "hooks" / "guard-ds-code.py"
-DEFAULT_TWINS = Path.home() / "Documents/dev/work/Digdir/designsystemet/twins"
+DEFAULT_TWINS = HERE.parent / "registry"
 
 
 def twins():
@@ -82,7 +82,7 @@ CASES = [
      e("/x/A.tsx", '<Alert variant="danger">Feil</Alert>\nimport "@digdir/designsystemet-react";'), True),
     ("Edit fragment: no composition check",
      e("/x/A.tsx", DS_IMPORT + '<ValidationMessage>Feil</ValidationMessage>'), False),
-    ("v2: Paragraph-rendered error without aria-invalid denied — the 24-trial miss",
+    ("v2: Paragraph-rendered error without aria-invalid denied",
      w("/x/F.tsx", DS_IMPORT + """
 function Skjema() {
   const [errors, setErrors] = useState({});

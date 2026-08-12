@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 """twins_server.py — MCP server over the Designsystemet structured twins.
 
-Serves the `.json` contract twins (the level-2 relational contract) to an agent
-that has the plugin installed. Situation 1 in the control gradient; the same
-twins are what a cold-crawling agent fetches over HTTP in situation 2.
-
     MCP client (Claude Code)
         <── JSON-RPC 2.0 / newline-delimited stdio ──>
     THIS SCRIPT
@@ -13,9 +9,7 @@ twins are what a cold-crawling agent fetches over HTTP in situation 2.
 
 Tools: list_twins, get_component, get_pattern, find_equivalent.
 
-Dependency-free on purpose: stdlib only, Python 3.9+. The A/B harness treats a
-failed server start as a void trial, so the server must not depend on a pip
-install being present in whatever environment a sub-agent runs in.
+Stdlib only, Python 3.9+ — must start in any environment without a pip install.
 
 Twin root resolution, first hit wins:
   1. --twins <path>
@@ -31,7 +25,7 @@ from pathlib import Path
 
 PROTOCOL_VERSION = "2025-06-18"
 SERVER_NAME = "designsystemet-twins"
-SERVER_VERSION = "0.1.0"
+SERVER_VERSION = "0.2.2"  # kept in step with .claude-plugin/plugin.json
 
 TRANSLATION_RULE = (
     "Map each element to its Designsystemet equivalent and emit that component's real "
@@ -237,10 +231,13 @@ def tool_find_equivalent(args):
         add(slug, None, "Resolved %r as a Designsystemet registry reference." % term, "exact")
 
     # 2 · authored alias table (foreign design systems, generic UI vocabulary, Norwegian).
+    #     The alias must equal the term or appear inside it — never the reverse:
+    #     matching the term inside the alias sent "select" to Suggestion (via
+    #     "react select") while Designsystemet's own Select never came up.
     for target, aliases in equiv.get("aliases", {}).items():
         for alias in aliases:
             a = normalise(alias)
-            if a and (a == norm or a in norm or norm in a):
+            if a and (a == norm or a in norm):
                 add(target, "component", "%r is the Designsystemet equivalent of %r." % (target, alias), "alias")
                 break
 
@@ -258,9 +255,8 @@ def tool_find_equivalent(args):
                     ]
                 )
             )
-            # All content words must appear as whole words — any-substring matched
-            # "thing" inside "something" across half the corpus once it grew past
-            # the pilot three (found 2026-08-11 by test 10).
+            # Whole words only — substring matching false-positives across a
+            # corpus this size ("thing" inside "something").
             if words and all(re.search(r"\b%s\b" % re.escape(w), hay) for w in words):
                 add(tslug, twin.get("kind"), "Matched %r in the twin's own text." % term, "weak")
 
@@ -292,12 +288,13 @@ TOOLS = [
     {
         "name": "get_component",
         "description": (
-            "Get the full contract twin for one Designsystemet component: real prop names and "
-            "types, the real import/export name, the --dsc-* to --ds-* token mapping, the "
-            "accessibility requirements the component does NOT enforce for you, and its "
-            "relations to other components. Read this before writing any code that uses the "
-            "component — its prop surface is not what a general React prior predicts "
-            "(the variant mechanism is data-color, and some exports are prefixed EXPERIMENTAL_)."
+            "Get the full contract twin for one Designsystemet component: the real import/export "
+            "name, the emitted DOM and data attributes, the --dsc-* to --ds-* token mapping, the "
+            "accessibility requirements the component does NOT enforce for you, its relations to "
+            "other components, and links to the docs pages that carry the full prop tables. Read "
+            "this before writing any code that uses the component — its API is not what a general "
+            "React prior predicts (the variant mechanism is data-color, and some exports are "
+            "prefixed EXPERIMENTAL_)."
         ),
         "inputSchema": {
             "type": "object",

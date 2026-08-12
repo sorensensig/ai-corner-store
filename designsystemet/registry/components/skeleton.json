@@ -67,7 +67,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/skeleton/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "rule": "When prefers-reduced-motion is set to reduce, skeleton still animates (at a slower 1.6s duration) rather than disabling the animation, since it is not decorative.",
@@ -88,7 +88,7 @@
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/skeleton/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "component": "Spinner",
@@ -109,7 +109,7 @@
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/skeleton/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "rule": "Choose the skeleton variant based on the type of content being loaded, such as headings, text blocks or images.",
@@ -125,6 +125,6 @@
       }
     ]
   },
-  "reviewedAgainst": null,
-  "needsReview": true
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
 }

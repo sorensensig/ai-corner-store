@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """Fill the skill's per-component fact block from the twins.
 
-The skill body must never hand-restate what a twin already says — that is the
-drift the twin exists to abolish, and the skill is where H1 gets dogfooded: one
-source (the twin) feeds both the MCP and the skill.
+The skill body must never hand-restate what a twin already says: one source
+(the twin) feeds both the MCP and the skill, so they cannot drift apart.
 
     generate-skill-facts.py            # rewrite the block in place
     generate-skill-facts.py --check    # exit 1 if the block is stale
 
-Twin root: --twins <path>, else $DESIGNSYSTEMET_TWINS, else ./twins.
+Twin root: --twins <path>, else $DESIGNSYSTEMET_TWINS, else the bundled registry.
 """
 
 import json
@@ -17,8 +16,7 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-PLUGIN_ROOT = HERE.parents[2]  # scripts/ -> designsystemet -> digdir -> domains/work
-SKILL = Path(__file__).resolve().parent.parent / "skills" / "designsystemet" / "SKILL.md"
+SKILL = HERE.parent / "skills" / "designsystemet" / "SKILL.md"
 
 # Deliberately NOT the `<!-- kind:id -->` shape: that belongs to the registry
 # marker mechanic, and scripts/check-registry.sh rejects any such marker whose id
@@ -32,7 +30,7 @@ def twin_root(argv):
         return Path(argv[argv.index("--twins") + 1]).expanduser()
     if os.environ.get("DESIGNSYSTEMET_TWINS"):
         return Path(os.environ["DESIGNSYSTEMET_TWINS"]).expanduser()
-    return Path.cwd() / "twins"
+    return HERE.parent / "registry"
 
 
 def value(twin, field):
@@ -47,30 +45,25 @@ def render(root):
     )
     lines.append("")
 
-    # Only components that carry AUTHORED rules go inline. The rest are served on demand by
-    # get_component. Two reasons: a component with an empty authored layer contributes a name
-    # and nothing else, and the extracted layer it would contribute — props, import name — is
-    # what agents already get right unaided from the TypeScript types. The authored layer is
-    # the part they miss, and it is the only part worth spending context on.
     # Inline set: the form/validation cluster — the components the guard hook checks and
-    # the pattern twins compose. Everything else has authored rules too (45/45 since
-    # 2026-08-11) but is served on demand by get_component; inlining all 38 non-empty
-    # components produced a 57 KB skill body, which taxes every session for knowledge
-    # most tasks never touch. Pass --all to inline everything (for diffing/audit).
-    INLINE = {"Alert", "ValidationMessage", "ErrorSummary", "Textfield", "Suggestion",
-              "ToggleGroup", "Field", "Fieldset", "Label", "Button"}
+    # the pattern twins compose. Everything else is served on demand by get_component;
+    # inlining every component produced a 57 KB skill body, which taxes every session
+    # for knowledge most tasks never touch. Pass --all to inline everything (for
+    # diffing/audit). Matched on SLUG: names carry EXPERIMENTAL_ prefixes, slugs don't.
+    INLINE = {"alert", "validation-message", "error-summary", "textfield", "suggestion",
+              "toggle-group", "field", "fieldset", "label", "button"}
     inline_all = "--all" in sys.argv
-    skipped = 0
+    on_demand = no_rules = 0
     for path in sorted((root / "components").glob("*.json")):
         twin = json.loads(path.read_text(encoding="utf-8"))
         a11y = value(twin, "a11y") or []
         comp = value(twin, "composition") or []
         rel = value(twin, "relations")
         if not (a11y or comp or rel):
-            skipped += 1
+            no_rules += 1
             continue
-        if not inline_all and twin["name"] not in INLINE:
-            skipped += 1
+        if not inline_all and twin["slug"] not in INLINE:
+            on_demand += 1
             continue
 
         lines.append("### %s" % twin["name"])
@@ -86,10 +79,6 @@ def render(root):
         else:
             lines.append("- **Import:** `%s` from `%s`"
                          % (imp or twin["name"], twin["package"]["name"]))
-
-        props = value(twin, "props") or []
-        if props:
-            lines.append("- **Real props:** %s" % ", ".join("`%s`" % p["name"] for p in props))
 
         # relations: a list of {component, note} in generated twins; a dict with a
         # boundaries.never list in the hand-written ones.
@@ -114,10 +103,13 @@ def render(root):
         lines.append("- Full contract: `get_component(\"%s\")`" % twin["slug"])
         lines.append("")
 
-    if skipped:
-        lines.append("%d further components have no authored rules yet — call "
-                     "`list_twins()` to see them and `get_component(slug)` for a contract."
-                     % skipped)
+    if on_demand:
+        lines.append("%d further components carry authored rules served on demand — call "
+                     "`list_twins()` for the inventory and `get_component(slug)` for a contract."
+                     % on_demand)
+        lines.append("")
+    if no_rules:
+        lines.append("%d components have no authored rules yet." % no_rules)
         lines.append("")
 
     for path in sorted((root / "patterns").glob("*.json")):

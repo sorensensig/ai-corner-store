@@ -65,7 +65,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/skip-link/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "rule": "Users must be able to skip repeated content such as menus, links, and page headers when navigating by keyboard",
@@ -121,13 +121,13 @@
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/skip-link/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": null
   },
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/skip-link/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
     "value": [
       {
         "rule": "A skip link should be one of the first elements the keyboard focus reaches when navigating with the keyboard",
@@ -155,6 +155,6 @@
       }
     ]
   },
-  "reviewedAgainst": null,
-  "needsReview": true
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
 }

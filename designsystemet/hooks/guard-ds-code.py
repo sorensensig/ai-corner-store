@@ -3,11 +3,8 @@
 
 Denies writes that break a Designsystemet contract, with the reason fed back so
 the model fixes it rather than the human catching it in review. The checks are
-read from the pattern twin's `assertions` — the same field the A/B scorer reads,
-so the guardrail and the test can never disagree about what "correct" means.
-
-Python rather than the house bash, because the checks are derived from JSON
-assertions at runtime; doing that in bash would hand-restate the twin.
+read from the pattern twin's `assertions` at runtime — one source of truth for
+what "correct" means; nothing here hand-restates a twin.
 
 Scope — it stays silent unless ALL of these hold:
   • the tool writes a .tsx/.jsx/.ts/.js file, and
@@ -33,10 +30,8 @@ import re
 import sys
 from pathlib import Path
 
-# Sentinel prefixing every denial reason. Deliberately not made of ordinary words:
-# the harness scans trial transcripts for it to count denials, and a crawling arm
-# reads the design system's own docs, where a plain marker like "Designsystemet:"
-# matches page headings and invents denials that never happened.
+# Sentinel prefixing every denial reason — deliberately not ordinary words, so
+# log/transcript scans can count denials without matching docs prose.
 DENY = "ds-guard/deny: "
 
 CODE_SUFFIXES = (".tsx", ".jsx", ".ts", ".js")
@@ -111,7 +106,7 @@ def check_invented_props(content, spec):
         DENY + "invented props — %s.\n"
         "The variant mechanism on these components is `data-color` (%s). "
         "Note `Button` genuinely has `variant`; the ban is per component.\n"
-        "Call get_component() on the component for its real prop surface."
+        "Call get_component() for the component's contract and its docs links."
         % ("; ".join(hits), ", ".join(enum[:4]))
     )
 
@@ -148,12 +143,10 @@ def check_hex(content, spec):
 
 VALIDATION_MARKERS = ("ValidationMessage", "aria-invalid", "validation-message")
 
-# --- v2 checks (2026-08-12) ---------------------------------------------------
-# v1's validation checks only fired when the correct markers were ALREADY in the
-# file, so only near-correct code was ever inspected: 24 trials shipped forms
-# whose errors rendered as plain <Paragraph> text and the guard never fired
-# (the guard-does-nothing class, claude-stack#176). These trigger on the
-# ERROR-STATE EVIDENCE instead, however the error is rendered.
+# --- v2 checks ------------------------------------------------------------------
+# These fire on ERROR-STATE EVIDENCE, not on correct markers: a check that keys on
+# ValidationMessage/aria-invalid only ever inspects near-correct code, and a form
+# whose errors render as plain <Paragraph> text sails through unexamined.
 
 FIELD_COMPONENT = re.compile(
     r"<(Textfield|Textarea|Input|Select|Checkbox|Radio|Suggestion|EXPERIMENTAL_Suggestion|Field)\b")

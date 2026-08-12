@@ -23,7 +23,7 @@ recall them.
 | You are about to… | Call | Then |
 |---|---|---|
 | Build a screen, form, or flow | `get_pattern("<slug>")` | The pattern names the components, their order, the timing rules, and the a11y wiring. Components alone will not give you a correct form. |
-| Use a named component | `get_component("<slug>")` | Real prop names and types, the real export name, the token mapping. |
+| Use a named component | `get_component("<slug>")` | The real export name, the a11y rules the component does not enforce, the token mapping, and the docs links carrying the full prop tables. |
 | Port markup from another design system, or resolve a `data-registry` / `ds-*` value off a rendered page | `find_equivalent("<term>")` | Then `get_component` on the match. |
 | Not know what exists | `list_twins()` | Inventory with one-line summaries. |
 
@@ -130,6 +130,14 @@ These hold across every component, so they are worth carrying rather than fetchi
 - **Composition:** Write in plain language; avoid abbreviations and internal terminology
 - Full contract: `get_component("label")`
 
+### EXPERIMENTAL_Suggestion
+
+- **Import:** `EXPERIMENTAL_Suggestion` from `@digdir/designsystemet-react`
+- **Use instead — Radio:** Use Radio or Checkbox when there are only a few options
+- **Composition:** Keep each option short
+- *Authored rules drafted from the docs, not yet human-reviewed.*
+- Full contract: `get_component("suggestion")`
+
 ### Textfield
 
 - **Import:** `Textfield` from `@digdir/designsystemet-react`
@@ -157,7 +165,18 @@ These hold across every component, so they are worth carrying rather than fetchi
 - **A11y (WCAG 3.3.1):** Messages should be placed close to the field they relate to
 - Full contract: `get_component("validation-message")`
 
-35 further components have no authored rules yet — call `list_twins()` to see them and `get_component(slug)` for a contract.
+28 further components carry authored rules served on demand — call `list_twins()` for the inventory and `get_component(slug)` for a contract.
+
+6 components have no authored rules yet.
+
+### Pattern · Field guidance — placeholders, descriptions and input purpose
+
+- How a form field tells the user what to enter: guidance before the field, never placeholder-only; descriptions (help text) for difficult content such as expected formats; autocomplete attributes where the field's purpose is predefined.
+  - `Textfield` — carries label, description and error in one composition
+  - `Field` — links label, description, validation message and counter for assistive technology
+- **Composition:** Use a description (help text) to explain difficult content — legal terms, specialist language, expected formats
+- **Composition:** Only use descriptions where needed, to reduce cognitive load
+- Full contract incl. timing + a11y: `get_pattern("field-guidance")`
 
 ### Pattern · Required and optional form fields
 
