@@ -1,0 +1,170 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Tag",
+  "slug": "tag",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/tag/tag.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/tag/overview",
+    "code": "https://designsystemet.no/en/components/docs/tag/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/tag/tag.tsx",
+    "value": "Tag"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/tag/tag.tsx (JSDoc)",
+    "value": "Use `Tag` to display categories or statuses."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/tag/tag.tsx (JSDoc @example)",
+    "value": "<Tag>Melk</Tag>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/tag/tag.tsx",
+    "value": {
+      "class": "ds-tag",
+      "dataAttributes": [
+        "data-variant"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/tag.css",
+    "value": [
+      "--ds-body-sm-font-size",
+      "--ds-border-radius-sm",
+      "--ds-border-width-default",
+      "--ds-color-border-subtle",
+      "--ds-color-surface-tinted",
+      "--ds-color-text-default",
+      "--ds-line-height-sm",
+      "--ds-size-2",
+      "--ds-size-8",
+      "--dsc-tag-background",
+      "--dsc-tag-border-color",
+      "--dsc-tag-border-radius",
+      "--dsc-tag-border-style",
+      "--dsc-tag-border-width",
+      "--dsc-tag-color",
+      "--dsc-tag-min-height",
+      "--dsc-tag-padding"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": [
+      {
+        "slug": "required-and-optional-fields",
+        "name": "Required and optional form fields",
+        "docs": "https://designsystemet.no/en/patterns/required-and-optional-fields"
+      }
+    ]
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": [
+      "Fieldset",
+      "Label",
+      "Textfield",
+      "ToggleGroup"
+    ]
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/tag/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Group multiple Tags in a list so assistive tech announces them as a list, not one sentence",
+        "wcag": null,
+        "quote": "If you are displaying several Tag components together, we recommend using a <ul> list with one <li> per Tag . This ensures that they are announced as a list rather than as one continuous sentence, providing a better experience for users of assistive technologies.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tag/accessibility"
+      },
+      {
+        "rule": "Place multiple tags in a <ul>/<li> structure so screen readers announce them as a list",
+        "wcag": null,
+        "quote": "When using multiple tags together, place them in a <ul> with <li> elements so screen readers announce them as a list.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tag/overview"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/tag/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Link",
+        "note": "Use Link instead of Tag when linking to another page",
+        "quote": "linking to another page, use link instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tag/overview"
+      },
+      {
+        "component": "Button",
+        "note": "Use Button instead of Tag when the element triggers an action",
+        "quote": "the element triggers an action, use button instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tag/overview"
+      },
+      {
+        "component": "Chip",
+        "note": "Use Chip instead of Tag when the user needs to filter content",
+        "quote": "the user needs to filter content, use chip instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tag/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/tag/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Tag should generally be placed after the title or name of the related element",
+        "quote": "Tag should generally be placed after the title or name of the related element.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tag/overview"
+      },
+      {
+        "rule": "Avoid placing tags next to buttons, as this can confuse users",
+        "quote": "Avoid placing tags next to buttons, as this can confuse users.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tag/overview"
+      },
+      {
+        "rule": "Icons can be used inside a tag to add additional visual information",
+        "quote": "Icons can be used inside a tag to add additional visual information.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tag/overview"
+      },
+      {
+        "rule": "Keep the padding on tag equal to the icon's margin when combining icon and text",
+        "quote": "We recommend keeping the padding on tag equal to the icon\u2019s margin .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tag/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

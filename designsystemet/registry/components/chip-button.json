@@ -1,0 +1,131 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "ChipButton",
+  "slug": "chip",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/chip/chips.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/chip/overview",
+    "code": "https://designsystemet.no/en/components/docs/chip/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/chip/chips.tsx",
+    "value": "ChipButton"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/chip/chips.tsx (JSDoc)",
+    "value": "Chip.Radio used for single selection"
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/chip/chips.tsx (JSDoc @example)",
+    "value": "<Chip.Radio name=\"language\" value=\"nynorsk\">Nynorsk</Chip.Radio>\n<Chip.Radio name=\"language\" value=\"bokm\u00e5l\">Bokm\u00e5l</Chip.Radio>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/chip/chips.tsx",
+    "value": {
+      "class": "ds-chip",
+      "dataAttributes": [
+        "data-color",
+        "data-size",
+        "data-wrap"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/chip.css",
+    "value": [
+      "--ds-body-sm-font-size",
+      "--ds-border-radius-md",
+      "--ds-border-radius-sm",
+      "--ds-border-width-default",
+      "--ds-color-base-active",
+      "--ds-color-base-contrast-default",
+      "--ds-color-base-default",
+      "--ds-color-base-hover",
+      "--ds-color-border-subtle",
+      "--ds-color-surface-active",
+      "--ds-color-surface-hover",
+      "--ds-color-surface-tinted",
+      "--ds-color-text-default",
+      "--ds-color-text-subtle",
+      "--ds-icon-size",
+      "--ds-line-height-sm",
+      "--ds-opacity-disabled",
+      "--ds-size-3",
+      "--ds-size-5",
+      "--ds-size-8",
+      "--dsc-chip-background",
+      "--dsc-chip-background--active",
+      "--dsc-chip-background--checked",
+      "--dsc-chip-background--checked--active",
+      "--dsc-chip-background--checked--hover",
+      "--dsc-chip-background--hover",
+      "--dsc-chip-border-color",
+      "--dsc-chip-border-color--checked",
+      "--dsc-chip-border-radius",
+      "--dsc-chip-border-radius--checkbox",
+      "--dsc-chip-border-radius--checkbox-input",
+      "--dsc-chip-border-style",
+      "--dsc-chip-border-width",
+      "--dsc-chip-color",
+      "--dsc-chip-height",
+      "--dsc-chip-icon-size",
+      "--dsc-chip-icon-url",
+      "--dsc-chip-input-accent-color",
+      "--dsc-chip-input-color",
+      "--dsc-chip-input-size",
+      "--dsc-chip-input-stroke-color",
+      "--dsc-chip-padding-inline",
+      "--dsc-chip-spacing",
+      "--dsc-input-accent-color",
+      "--dsc-input-background",
+      "--dsc-input-border-color",
+      "--dsc-input-outline-width--hover",
+      "--dsc-input-size--toggle",
+      "--dsc-input-stroke-color"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/chip-button/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/chip-button/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/chip-button/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

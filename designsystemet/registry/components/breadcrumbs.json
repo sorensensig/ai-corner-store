@@ -1,0 +1,203 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Breadcrumbs",
+  "slug": "breadcrumbs",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/breadcrumbs/breadcrumbs.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/breadcrumbs/overview",
+    "code": "https://designsystemet.no/en/components/docs/breadcrumbs/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/breadcrumbs/breadcrumbs.tsx",
+    "value": "Breadcrumbs"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/breadcrumbs/breadcrumbs.tsx (JSDoc)",
+    "value": "`Breadcrumbs` is a component that displays a list of breadcrumbs."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/breadcrumbs/breadcrumbs.tsx (JSDoc @example)",
+    "value": "<Breadcrumbs aria-label='Du er her:' {...args}>\n <Breadcrumbs.Link href='#' aria-label='Tilbake til Niv\u00e5 1'>\n   Niv\u00e5 1\n </Breadcrumbs.Link>\n <Breadcrumbs.List>\n   <Breadcrumbs.Item>\n     <Breadcrumbs.Link href='#'>Niv\u00e5 1</Breadcrumbs.Link>\n   </Breadcrumbs.Item>\n   <Breadcrumbs.Item>\n     <Breadcrumbs.Link href='#'>Niv\u00e5 2</Breadcrumbs.Link>\n   </Breadcrumbs.Item>\n </Breadcrumbs.List>\n</Breadcrumbs>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/breadcrumbs/breadcrumbs.tsx",
+    "value": {
+      "class": "ds-breadcrumbs",
+      "dataAttributes": []
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/breadcrumbs.css",
+    "value": [
+      "--ds-color-text-subtle",
+      "--ds-icon-size",
+      "--ds-size-2",
+      "--dsc-breadcrumbs-color",
+      "--dsc-breadcrumbs-icon-size",
+      "--dsc-breadcrumbs-icon-url",
+      "--dsc-breadcrumbs-label",
+      "--dsc-breadcrumbs-spacing"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/breadcrumbs/overview",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "value": [
+      {
+        "rule": "Breadcrumbs must be handled so that the trail does not become too long on small screens; if it becomes too long, it should be replaced with a back link.",
+        "wcag": "1.4.10",
+        "quote": "Breadcrumbs must be handled so that it does not become too long on small screens. Check that the breadcrumb trail does not extend beyond the visible area at a narrow viewport or high zoom. If the trail becomes too long, it should be replaced with a back link.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/accessibility"
+      },
+      {
+        "rule": "Skip link must bypass breadcrumbs and go directly to the main content, so users can skip repeated content without navigating through the breadcrumbs.",
+        "wcag": "2.4.1",
+        "quote": "Skip link must bypass breadcrumbs and go directly to the main content. Users should be able to skip repeated content without navigating through the breadcrumbs.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/accessibility"
+      },
+      {
+        "rule": "Link text in breadcrumbs must be understandable; avoid generic names or unclear abbreviations.",
+        "wcag": "2.4.4",
+        "quote": "The link text in breadcrumbs must be understandable. Avoid generic names or unclear abbreviations.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/accessibility"
+      },
+      {
+        "rule": "Breadcrumbs must be consistently placed and structured across pages, appearing in the same location and following the same order everywhere they are used.",
+        "wcag": "3.2.3",
+        "quote": "Breadcrumbs must be consistently placed and structured across pages. The breadcrumb trail should appear in the same location and follow the same order on all pages where it is used.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/accessibility"
+      },
+      {
+        "rule": "Breadcrumbs must not be the only way to navigate; users should have multiple ways to navigate to content.",
+        "wcag": "2.4.5",
+        "quote": "Breadcrumbs must not be the only way to navigate. Users should have multiple ways to navigate to content.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/accessibility"
+      },
+      {
+        "rule": "The last link should correspond to the current page and be coded as a link with aria-current=\"page\" so screen readers get correct information without other users mistaking it for a clickable link.",
+        "wcag": null,
+        "quote": "The last link should correspond to the current page. It looks like regular text, but is coded as a link with aria-current=\"page\" . This way, screen readers get the correct information about which page the user is on, without other users mistakenly perceiving it as a clickable link.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/accessibility"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/breadcrumbs/overview",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "value": null
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/breadcrumbs/overview",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "value": [
+      {
+        "rule": "Use breadcrumbs when users may want to navigate back to previous levels.",
+        "quote": "Use breadcrumbs when users may want to navigate back to previous levels",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
+      },
+      {
+        "rule": "Use breadcrumbs when users need help understanding where they are in the structure.",
+        "quote": "users need help understanding where they are in the structure",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
+      },
+      {
+        "rule": "Avoid breadcrumbs when the navigation is linear, for example across steps in a workflow or a form.",
+        "quote": "Avoid breadcrumbs when the navigation is linear, for example across steps in a workflow or a form",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
+      },
+      {
+        "rule": "On mobile or with a long trail, show only a link to the nearest parent page",
+        "quote": "On mobile, or when the breadcrumb trail becomes long, you can show only a link to the nearest parent page.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
+      },
+      {
+        "rule": "Be consistent: use either the back-link variant or the full breadcrumb trail, not both",
+        "quote": "Be consistent in your approach, and use either this variant or the full breadcrumb trail, not both.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
+      },
+      {
+        "rule": "Stay consistent in your service and use either the back button or the path, not both.",
+        "quote": "It is important that you are consistent in your service, and use either the back button or the path, not both.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/code"
+      },
+      {
+        "rule": "Breadcrumbs are only needed when there are three or more levels on a website.",
+        "quote": "Breadcrumbs are only needed when there are three or more levels on a website.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
+      },
+      {
+        "rule": "Breadcrumbs should always be placed at the top left of the page when using left-to-right text.",
+        "quote": "Breadcrumbs should always be placed at the top left of the page when using left-to-right text.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
+      },
+      {
+        "rule": "Breadcrumbs should appear below the menu and main navigation, but above the page title.",
+        "quote": "They should appear below the menu and main navigation, but above the page title.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
+      },
+      {
+        "rule": "For deep navigation, the component can be configured to show only the first and last parts of the trail on mobile, automatically on screens narrower than 650px.",
+        "quote": "For deep navigation, you can configure the component to show only the first and last parts of the trail on mobile. This can happen automatically on screens narrower than 650px, where only the link one level down is shown.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
+      },
+      {
+        "rule": "Link text in breadcrumbs must be understandable; avoid generic names and unclear abbreviations",
+        "quote": "The link text in breadcrumbs must be understandable. Avoid generic names or unclear abbreviations.",
+        "wcag": "2.4.4",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/accessibility"
+      },
+      {
+        "rule": "The text should match the page headings or navigation labels so that each level is easy to recognise.",
+        "quote": "The text should match the page headings or navigation labels so that each level is easy to recognise.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": null,
+  "needsReview": true
+}

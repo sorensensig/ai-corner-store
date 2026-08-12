@@ -1,0 +1,201 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Popover",
+  "slug": "popover",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/popover/popover.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/popover/overview",
+    "code": "https://designsystemet.no/en/components/docs/popover/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/popover/popover.tsx",
+    "value": "Popover"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/popover/popover.tsx (JSDoc)",
+    "value": "Popover component, used to display content in a popover over an element."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/popover/popover.tsx (JSDoc @example)",
+    "value": "<Popover.TriggerContext>\n  <Popover.Trigger>Open Popover</Popover.Trigger>\n  <Popover>\n    Content\n  </Popover>\n</Popover.TriggerContext>\n\n@example without TriggerContext\n<Button popovertarget=\"my-popover\">Open Popover</Button>\n<Popover id=\"my-popover\">\n  Content\n</Popover>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/popover/popover.tsx",
+    "value": {
+      "class": "ds-popover",
+      "dataAttributes": [
+        "data-placement",
+        "data-variant"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/popover.css",
+    "value": [
+      "--ds-border-radius-md",
+      "--ds-border-width-default",
+      "--ds-color-border-default",
+      "--ds-color-surface-default",
+      "--ds-color-surface-tinted",
+      "--ds-color-text-default",
+      "--ds-shadow-md",
+      "--ds-size-3",
+      "--ds-size-4",
+      "--dsc-popover-arrow-size",
+      "--dsc-popover-background",
+      "--dsc-popover-border-color",
+      "--dsc-popover-border-radius",
+      "--dsc-popover-border-style",
+      "--dsc-popover-border-width",
+      "--dsc-popover-box-shadow",
+      "--dsc-popover-color",
+      "--dsc-popover-max-width",
+      "--dsc-popover-padding",
+      "--dsc-popover-placement"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/popover/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Popover has built-in accessibility support for open/closed states and keyboard navigation via the native Popover API",
+        "wcag": null,
+        "quote": "There is built-in accessibility in the Popover API (mozilla.org) for open and closed states and for keyboard navigation.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/popover/accessibility"
+      },
+      {
+        "rule": "Enter or Space opens or closes the popover",
+        "wcag": null,
+        "quote": "Enter or Space opens or closes",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/popover/accessibility"
+      },
+      {
+        "rule": "Esc closes the popover",
+        "wcag": null,
+        "quote": "Esc closes",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/popover/accessibility"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/popover/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Tooltip",
+        "note": "Popover should be used instead of tooltip when the explanation needs more space than a short tooltip provides, e.g. definitions or detailed instructions",
+        "quote": "you need to provide additional explanations that require more space than a short tooltip , such as definitions or detailed instructions",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/popover/overview"
+      },
+      {
+        "component": "Tooltip",
+        "note": "Avoid popover to describe a symbol or keyboard shortcut; use tooltip instead",
+        "quote": "you need to describe a symbol or keyboard shortcut; use tooltip instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/popover/overview"
+      },
+      {
+        "component": "Dropdown",
+        "note": "Avoid popover when the purpose is navigation or choosing between options; use dropdown instead",
+        "quote": "the purpose is navigation or choosing between options; use dropdown instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/popover/overview"
+      },
+      {
+        "component": "Tooltip",
+        "note": "Popover can be used as an extended solution when tooltip is not sufficient for the content",
+        "quote": "It can be used as an extended solution when a tooltip is not sufficient.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/popover/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/popover/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Popover is opened through an intentional user click and may contain text, links and simple form elements",
+        "quote": "Popover is opened through an intentional user click and may contain text, links and simple form elements.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/popover/overview"
+      },
+      {
+        "rule": "Popover content should be short, relevant, and not critical for completing the task",
+        "quote": "The content should be short, relevant, and not critical for completing the task.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/popover/overview"
+      },
+      {
+        "rule": "Popover may contain buttons and other interactive elements",
+        "quote": "Popover may contain buttons and other interactive elements.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/popover/overview"
+      },
+      {
+        "rule": "Popover can be used inline within text, marked with a dotted underline, e.g. to explain a term",
+        "quote": "You can use popover inline within text, marked with a dotted underline, for example when explaining a term.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/popover/overview"
+      },
+      {
+        "rule": "Popover displays more detailed or interactive supplementary information without taking the user out of context",
+        "quote": "Popover is used to display more detailed or interactive supplementary information without taking the user out of context.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/popover/overview"
+      },
+      {
+        "rule": "Popover placement is automatic and stays within the visible browser area",
+        "quote": "Popover can be placed as needed, and will automatically stay within the visible browser area.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/popover/overview"
+      },
+      {
+        "rule": "Automatic placement behaviour can be disabled using autoPlacement",
+        "quote": "This behaviour can be disabled using autoPlacement .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/popover/overview"
+      },
+      {
+        "rule": "Avoid long texts and complex explanations in a popover; link to another page for more detailed information instead",
+        "quote": "Avoid long texts and complex explanations. In some cases, it may be better to link to another page with more detailed information on the topic.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/popover/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

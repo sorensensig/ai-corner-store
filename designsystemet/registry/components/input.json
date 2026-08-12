@@ -1,0 +1,194 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Input",
+  "slug": "input",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/input/input.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/input/overview",
+    "code": "https://designsystemet.no/en/components/docs/input/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/input/input.tsx",
+    "value": "Input"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/input/input.tsx (JSDoc)",
+    "value": "Input renders a native `input` element."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/input/input.tsx (JSDoc @example)",
+    "value": "<Input />"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/input/input.tsx",
+    "value": {
+      "class": "ds-input",
+      "dataAttributes": []
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/input.css",
+    "value": [
+      "--ds-border-radius-full",
+      "--ds-border-radius-md",
+      "--ds-border-radius-sm",
+      "--ds-border-width-default",
+      "--ds-color-base-contrast-default",
+      "--ds-color-base-default",
+      "--ds-color-danger-base-contrast-default",
+      "--ds-color-danger-text-subtle",
+      "--ds-color-neutral-border-default",
+      "--ds-color-neutral-border-subtle",
+      "--ds-color-neutral-surface-default",
+      "--ds-color-neutral-surface-tinted",
+      "--ds-color-neutral-text-default",
+      "--ds-line-height-md",
+      "--ds-opacity-disabled",
+      "--ds-size-1",
+      "--ds-size-12",
+      "--ds-size-2",
+      "--ds-size-3",
+      "--ds-size-6",
+      "--dsc-input-accent-color",
+      "--dsc-input-accent-color--invalid",
+      "--dsc-input-background",
+      "--dsc-input-background--readonly",
+      "--dsc-input-border-color",
+      "--dsc-input-border-color--readonly",
+      "--dsc-input-border-radius",
+      "--dsc-input-border-style",
+      "--dsc-input-border-width",
+      "--dsc-input-border-width--toggle",
+      "--dsc-input-color",
+      "--dsc-input-color--readonly",
+      "--dsc-input-color-placeholder",
+      "--dsc-input-font-size",
+      "--dsc-input-line-height",
+      "--dsc-input-outline-color--hover",
+      "--dsc-input-outline-color--toggle--hover",
+      "--dsc-input-outline-style--hover",
+      "--dsc-input-outline-width--hover",
+      "--dsc-input-padding",
+      "--dsc-input-padding-block",
+      "--dsc-input-padding-inline",
+      "--dsc-input-size",
+      "--dsc-input-size--toggle",
+      "--dsc-input-stroke-color",
+      "--dsc-input-stroke-color--invalid",
+      "--dsc-input-stroke-width"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/input/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Avoid using the disabled state where possible; use readOnly instead",
+        "wcag": null,
+        "quote": "Avoid using disabled where possible. Consider using readOnly instead.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/input/overview"
+      },
+      {
+        "rule": "The disabled prop should be avoided if possible for accessibility purposes",
+        "wcag": null,
+        "quote": "@note Avoid using if possible for accessibility purposes",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/input/code"
+      },
+      {
+        "rule": "Even when visually hidden, the label must still be written meaningfully since it is announced by screen readers, via aria-label or aria-labelledby",
+        "wcag": null,
+        "quote": "Even when the label is visually hidden, it must still be written in a meaningful way, as it will be announced by screen readers. This can be done using aria-label or aria-labelledby .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/input/overview"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/input/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Textfield",
+        "note": "Use Textfield instead of Input when you need a complete form field with label, description and validation message",
+        "quote": "Avoid input when you need a complete form field with label, description and validation message, use textfield instead the field requires additional logic already provided by higher-level components such as textfield",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/input/overview"
+      },
+      {
+        "component": "Textfield",
+        "note": "Refer to Textfield's guidelines for general usage guidance on Input",
+        "quote": "See the guidelines for textfield .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/input/overview"
+      },
+      {
+        "component": "Textfield",
+        "note": "Refer to Textfield for accessibility best practice",
+        "quote": "For best practice, see Textfield .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/input/accessibility"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/input/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "The label and any description should always be placed above the text field, so they remain visible on small screens and aren't hidden by validation messages",
+        "quote": "The label and any description should always be placed above the text field. This makes them easier to see on small screens and prevents them from being hidden by validation messages.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/input/overview"
+      },
+      {
+        "rule": "The label may be visually hidden in special cases, such as tables where the field receives its label from the table header",
+        "quote": "In special cases, the label may be visually hidden by not using label. This may be appropriate in tables, for example, when the field receives its label from the table header.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/input/overview"
+      },
+      {
+        "rule": "Input is used as a building block for other components, such as Textfield",
+        "quote": "This component is used as a building block for other components, such as textfield.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/input/overview"
+      },
+      {
+        "rule": "For a valid form element, use ds-field together with a label",
+        "quote": "For a valid form element, we recommend using <ds-field> together with a <label> .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/input/code"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

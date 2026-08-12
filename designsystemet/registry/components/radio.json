@@ -1,0 +1,247 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Radio",
+  "slug": "radio",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/radio/radio.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/radio/overview",
+    "code": "https://designsystemet.no/en/components/docs/radio/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/radio/radio.tsx",
+    "value": "Radio"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/radio/radio.tsx (JSDoc)",
+    "value": "Radio used to select multiple options."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/radio/radio.tsx (JSDoc @example)",
+    "value": "<Radio label=\"I agree\" value=\"agree\" />"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/radio/radio.tsx",
+    "value": {
+      "class": null,
+      "dataAttributes": [
+        "data-field",
+        "data-position",
+        "data-size",
+        "data-variant"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/radio.css",
+    "value": []
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/radio/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Ensure enough spacing around each radio button so it is easy to select, including on touch devices",
+        "wcag": null,
+        "quote": "Make sure there is enough spacing around each radio button so that it is easy to select, including on touch devices.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/accessibility"
+      },
+      {
+        "rule": "Avoid placing radio buttons next to each other, as it makes them harder to read and problematic for users who need to zoom",
+        "wcag": null,
+        "quote": "Avoid placing radio buttons next to each other. This makes them harder to read and creates problems for users who need to zoom a webpage or app to see clearly.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/accessibility"
+      },
+      {
+        "rule": "Avoid disabled states if possible due to low colour contrast",
+        "wcag": null,
+        "quote": "Avoid disabled states if possible. They have low colour contrast, which can be problematic for some users.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/accessibility"
+      },
+      {
+        "rule": "Disabled radios cannot meet contrast requirements without causing confusion about interactivity",
+        "wcag": null,
+        "quote": "disabled cannot meet contrast requirements, because if the contrast were higher, users might think the element is active, try to select it, and not understand why nothing happens.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/accessibility"
+      },
+      {
+        "rule": "Radio uses arrow keys (not Tab) to move between options within a group",
+        "wcag": null,
+        "quote": "Note that we use the arrow keys to select options in the Radio component, not the Tab key.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/accessibility"
+      },
+      {
+        "rule": "A group of radio options should always have a legend and option labels",
+        "wcag": null,
+        "quote": "A group with multiple options should always have a legend and option labels .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      },
+      {
+        "rule": "In horizontal layouts, it must be clear which text belongs to which button",
+        "wcag": null,
+        "quote": "When using a horizontal layout, it must be clear which text belongs to which button.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/radio/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Checkbox",
+        "note": "Use checkbox instead of radio when the user should be able to choose more than one option",
+        "quote": "Avoid radio when the user should be able to choose more than one option, use checkbox instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      },
+      {
+        "component": "Fieldset",
+        "note": "Use fieldset to group multiple radio choices together",
+        "quote": "Use fieldset for grouping multiple choices.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/code"
+      },
+      {
+        "component": "Suggestion",
+        "note": "Consider suggestion instead of radio when users need more choices than a radio group comfortably supports",
+        "quote": "If users need more choices, consider using suggestion or select .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      },
+      {
+        "component": "Select",
+        "note": "Consider select instead of radio when users need more choices than a radio group comfortably supports",
+        "quote": "If users need more choices, consider using suggestion or select .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      },
+      {
+        "component": "Switch",
+        "note": "A switch may be more suitable than radio when there is only a single choice to make",
+        "quote": "If there is only one choice to make, a switch or a checkbox may be more suitable.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/radio/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "There should not be more than seven options in one radio group",
+        "quote": "There should not be more than seven options in one group.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      },
+      {
+        "rule": "Sort options alphabetically unless there is a clear reason not to",
+        "quote": "Sort options alphabetically unless there is a clear reason not to.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      },
+      {
+        "rule": "Be careful about placing the most common option first when the question is personal or value-based",
+        "quote": "Be careful about placing the most common option first if the question is personal or value-based, such as sexual orientation or political affiliation.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      },
+      {
+        "rule": "Place radio buttons vertically whenever possible to make the list easier to scan and read",
+        "quote": "Place radio buttons vertically whenever possible. This makes the list easier to scan and the options easier to read.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      },
+      {
+        "rule": "Horizontal layout is acceptable only for two short-label options or rating scales",
+        "quote": "You can use a horizontal layout when there are only two options with short labels, such as \u201cYes\u201d and \u201cNo\u201d, or in a rating scale ranging from \u201cstrongly disagree\u201d to \u201cstrongly agree\u201d.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      },
+      {
+        "rule": "Radio can be positioned horizontally with flex, but should generally be placed vertically",
+        "quote": "Radio can be positioned horizontally with flex , but should generally be placed vertically .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/code"
+      },
+      {
+        "rule": "Consider whether a preselected option is appropriate for the context",
+        "quote": "Consider whether a preselected option is appropriate for the context.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      },
+      {
+        "rule": "A preselected option can influence informed choice and may be perceived as manipulative or discriminatory",
+        "quote": "A preselected option can influence the user's ability to make an informed choice, and some users may experience it as manipulative or discriminatory.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      },
+      {
+        "rule": "Place a description meant to inform the choice directly after the legend",
+        "quote": "When the description is intended to help users understand the question and provide necessary information before they make a choice, it should be placed directly after the legend.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      },
+      {
+        "rule": "Answer options should be as short as possible and follow the same linguistic form",
+        "quote": "Answer options should be as short as possible, and each option should follow the same linguistic form.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      },
+      {
+        "rule": "An error message for an unanswered required group should apply to the entire group of options",
+        "quote": "If the user attempts to continue without answering a required question, the error message should apply to the entire group of options.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/overview"
+      },
+      {
+        "rule": "For a valid form element, use ds-field together with a label",
+        "quote": "For a valid form element, we recommend using <ds-field> together with a <label> .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/code"
+      },
+      {
+        "rule": "Radio is a composite component built from field, label, validation message, and input",
+        "quote": "Radio is a composite component that uses field , label , validation message , and input to create a radio.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/radio/code"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

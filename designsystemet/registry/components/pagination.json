@@ -1,0 +1,136 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Pagination",
+  "slug": "pagination",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/pagination/pagination.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/pagination/overview",
+    "code": "https://designsystemet.no/en/components/docs/pagination/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/pagination/pagination.tsx",
+    "value": "Pagination"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/pagination/pagination.tsx (JSDoc)",
+    "value": "Pagination component, used to navigate through a list of items."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/pagination/pagination.tsx (JSDoc @example)",
+    "value": "<Pagination>\n  <Pagination.List>\n    <Pagination.Item>\n      <Pagination.Button aria-label='Forrige side'>Forrige</Pagination.Button>\n    </Pagination.Item>\n    <Pagination.Item>\n      <Pagination.Button aria-label='Side 1'>1</Pagination.Button>\n    </Pagination.Item>\n    <Pagination.Item>\n      <Pagination.Button aria-label='Side 2'>2</Pagination.Button>\n    </Pagination.Item>\n  </Pagination.List>\n</Pagination>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/pagination/pagination.tsx",
+    "value": {
+      "class": null,
+      "dataAttributes": []
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/pagination.css",
+    "value": [
+      "--ds-color-base-active",
+      "--ds-color-base-contrast-default",
+      "--ds-color-base-default",
+      "--ds-color-base-hover",
+      "--ds-color-surface-active",
+      "--ds-color-surface-hover",
+      "--ds-color-text-subtle",
+      "--ds-icon-size",
+      "--ds-size-12",
+      "--ds-size-2",
+      "--dsc-button-background",
+      "--dsc-button-background--active",
+      "--dsc-button-background--hover",
+      "--dsc-button-color",
+      "--dsc-button-color--active",
+      "--dsc-button-color--hover",
+      "--dsc-pagination-ellipsis",
+      "--dsc-pagination-gap",
+      "--dsc-pagination-icon-size",
+      "--dsc-pagination-icon-url",
+      "--dsc-pagination-label"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/pagination/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/pagination/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/pagination/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Use pagination when content must be divided across multiple pages, users need to know their position within the set, and loading everything at once would hurt performance",
+        "quote": "Use pagination when search results or large amounts of data need to be divided across multiple pages users need to understand where they are within a larger set of content loading the entire dataset at once would be too heavy or result in poor performance",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/pagination/overview"
+      },
+      {
+        "rule": "Avoid pagination when content fits on a single page, when paging a form, or when progress needs to be shown",
+        "quote": "Avoid pagination when the total amount of content is small enough to fit on a single page you want to divide a form into several pages progress needs to be displayed",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/pagination/overview"
+      },
+      {
+        "rule": "On mobile, show fewer page buttons and drop the previous/next text labels",
+        "quote": "On mobile devices, you can show fewer pages and remove the text for previous/next.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/pagination/overview"
+      },
+      {
+        "rule": "Use pagination when content is too large for one page and users need to navigate back and forth",
+        "quote": "Use pagination when content is too large for a single page, such as search results or long lists, and the user needs to navigate back and forth.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/pagination/overview"
+      },
+      {
+        "rule": "Only split content across multiple pages if doing so improves loading time or usability",
+        "quote": "Content should only be split across multiple pages if it improves loading time or usability.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/pagination/overview"
+      },
+      {
+        "rule": "Use the fixed text pattern \"Previous\"/\"Next\"; avoid alternate wordings like \"Previous page\", \"Go back\", \"Continue\"",
+        "quote": "We use a fixed pattern for pagination with the words \u201cPrevious\u201d and \u201cNext\u201d. Avoid \u201cPrevious page\u201d, \u201cNext page\u201d, \u201cGo back\u201d, \u201cGo forward\u201d, \u201cContinue\u201d and \u201cBack\u201d.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/pagination/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

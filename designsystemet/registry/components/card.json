@@ -1,0 +1,200 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Card",
+  "slug": "card",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/card/card.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/card/overview",
+    "code": "https://designsystemet.no/en/components/docs/card/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/card/card.tsx",
+    "value": "Card"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/card/card.tsx (JSDoc)",
+    "value": "Card component to present content in a structured way."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/card/card.tsx (JSDoc @example)",
+    "value": "<Card>\n <Card.Block>Header</Card.Block>\n <Card.Block>Content</Card.Block>\n <Card.Block>Footer</Card.Block>\n</Card>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/card/card.tsx",
+    "value": {
+      "class": "ds-card",
+      "dataAttributes": [
+        "data-variant"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/card.css",
+    "value": [
+      "--ds-border-radius-lg",
+      "--ds-border-width-default",
+      "--ds-color-border-subtle",
+      "--ds-color-surface-active",
+      "--ds-color-surface-default",
+      "--ds-color-surface-hover",
+      "--ds-color-surface-tinted",
+      "--ds-color-text-default",
+      "--ds-size-3",
+      "--ds-size-6",
+      "--dsc-card-background",
+      "--dsc-card-background--active",
+      "--dsc-card-background--hover",
+      "--dsc-card-block-border-color",
+      "--dsc-card-block-border-style",
+      "--dsc-card-block-border-width",
+      "--dsc-card-border-color",
+      "--dsc-card-border-radius",
+      "--dsc-card-border-style",
+      "--dsc-card-border-width",
+      "--dsc-card-color",
+      "--dsc-card-content-margin-block",
+      "--dsc-card-padding"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/card/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Link text in a card must clearly describe where the link goes; avoid generic text like 'Read more'",
+        "wcag": "2.4.4",
+        "quote": "Link text in card must clearly describe where the link goes. Use a clear title or link text that explains the destination. Avoid generic text such as \u201cRead more\u201d or \u201cClick here\u201d.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/card/accessibility"
+      },
+      {
+        "rule": "The accessible name must match the visible text, even if overridden with aria-label or similar",
+        "wcag": "2.5.3",
+        "quote": "The accessible name must match the visible text. If you use aria-label or other techniques that override the accessible name, it must still match the visible text.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/card/accessibility"
+      },
+      {
+        "rule": "Images in link cards must be decorative, with an empty alt attribute",
+        "wcag": "1.1.1",
+        "quote": "Images in link cards must be decorative. If the entire card is a link with an image, the image must not be informative and should have an empty alt attribute.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/card/accessibility"
+      },
+      {
+        "rule": "Headings in a card must use the correct level relative to the rest of the page; do not skip heading levels",
+        "wcag": "1.3.1",
+        "quote": "Headings in card must use the correct level relative to the rest of the page. Do not skip heading levels (for example from h1 to h3 ).",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/card/accessibility"
+      },
+      {
+        "rule": "When Card renders as a button, its content loses all semantics, so this must be used carefully",
+        "wcag": null,
+        "quote": "When the card is a button, the content inside loses all semantics, so use this carefully.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/card/overview"
+      },
+      {
+        "rule": "Use <a> as the outermost element so screen readers read the whole card as one continuous link",
+        "wcag": null,
+        "quote": "The entire card can be used as a link by using <a> as the outermost element. This is useful when you want all text and content in Card to be read by screen readers as one continuous link.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/card/code"
+      },
+      {
+        "rule": "Use data-clickdelegatefor to make a card with multiple interactive elements fully clickable while retaining the semantics of those elements",
+        "wcag": null,
+        "quote": "If you have a card with multiple interactive elements, such as links or buttons, you can use data-clickdelegatefor to make the entire card clickable while retaining the semantics of the interactive elements.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/card/code"
+      },
+      {
+        "rule": "Prefer placing a link in the card's title over making the whole card a link, since screen reader users get a better experience",
+        "wcag": null,
+        "quote": "If the card should link to another page, you can place a link in the card's title. The entire card then becomes clickable, but screen reader users get a better experience than if the whole card were a link (adrianroselli.com) .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/card/code"
+      },
+      {
+        "rule": "The keyboard focus ring should surround only the link text, not the entire card, so it matches the focus area for assistive technology users",
+        "wcag": null,
+        "quote": "Note that with keyboard navigation, the focus ring only surrounds the text in the link, not the entire card. This is because link cards can also contain multiple clickable elements (secondary actions), and it is less confusing for users of assistive technology, such as voice control or screen readers, if the link text matches the focus area.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/card/code"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/card/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Alert",
+        "note": "Use Alert instead of Card for presenting important messages",
+        "quote": "important messages should be presented as alerts (use Alert instead)",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/card/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/card/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Card can be divided into sections separated by dividers, which may include images or video extending to the edge",
+        "quote": "You can divide the card into sections. These get dividers between them and may include images or video that extend to the edge.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/card/overview"
+      },
+      {
+        "rule": "When using ds-card__block to create sections, all content must be placed inside block elements rather than directly in Card",
+        "quote": "If you need sections in the card, use ds-card__block if you want to divide the card with dividers or add images or video that extend to the edge. Note that when you use ds-card__block , all content must be placed inside elements with ds-card__block - not placed directly in Card .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/card/code"
+      },
+      {
+        "rule": "Card blocks can be arranged horizontally by switching to flex or grid display",
+        "quote": "You can switch between display: flex and display: grid to place Card.Block next to each other:",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/card/code"
+      },
+      {
+        "rule": "data-clickdelegatefor is automatically added when Card finds a link inside its heading, for cards with text or media that navigate to another page",
+        "quote": "When Card finds an <a> inside the heading element, data-clickdelegatefor will automatically be added to the card. This is useful when Card contains text or media and should navigate to another page.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/card/code"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

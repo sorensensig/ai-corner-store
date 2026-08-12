@@ -1,0 +1,112 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "ValidationMessage",
+  "slug": "validation-message",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/validation-message/validation-message.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/validation-message/overview",
+    "code": "https://designsystemet.no/en/components/docs/validation-message/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/validation-message/validation-message.tsx",
+    "value": "ValidationMessage"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/validation-message/validation-message.tsx (JSDoc)",
+    "value": "Use `ValidationMessage` to display validation text"
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/validation-message/validation-message.tsx (JSDoc @example)",
+    "value": "<ValidationMessage>This is a danger validation message</ValidationMessage>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/validation-message/validation-message.tsx",
+    "value": {
+      "class": "ds-validation-message",
+      "dataAttributes": [
+        "data-field"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/validation-message.css",
+    "value": [
+      "--ds-color-danger-text-subtle",
+      "--ds-color-info-text-subtle",
+      "--ds-color-success-text-subtle",
+      "--ds-color-warning-text-subtle",
+      "--ds-icon-size",
+      "--ds-size-2",
+      "--dsc-validation-message-color",
+      "--dsc-validation-message-icon-size",
+      "--dsc-validation-message-icon-url",
+      "--dsc-validation-message-spacing"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": [
+      {
+        "slug": "skjema-validering",
+        "name": "Skjemavalidering (form validation and errors)",
+        "docs": "https://designsystemet.no/en/patterns/errors/"
+      }
+    ]
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": [
+      "alert",
+      "error-summary",
+      "field",
+      "fieldset",
+      "suggestion"
+    ]
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/validation-message/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Messages should be placed close to the field they relate to",
+        "wcag": [
+          "3.3.1"
+        ],
+        "quote": "Messages should be placed close to the field they relate to, so that both visual users and users of assistive technologies can easily understand the connection.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/validation-message/overview"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/validation-message/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/validation-message/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

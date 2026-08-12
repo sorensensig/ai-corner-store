@@ -1,0 +1,91 @@
+{
+  "_note": "Alias table for find_equivalent: maps foreign component names, generic UI vocabulary and Norwegian terms to Designsystemet slugs. not_in_package lists names agents look for that the pinned package does not ship, with what to use instead.",
+  "aliases": {
+    "alert": [
+      "mui alert",
+      "material alert",
+      "bootstrap alert",
+      "chakra alert",
+      "antd alert",
+      "banner",
+      "callout",
+      "notice",
+      "flash message",
+      "infobox",
+      "info box",
+      "notification banner",
+      "govuk notification banner",
+      "varsel",
+      "melding"
+    ],
+    "suggestion": [
+      "autocomplete",
+      "mui autocomplete",
+      "material autocomplete",
+      "combobox",
+      "combo box",
+      "typeahead",
+      "type ahead",
+      "react select",
+      "select2",
+      "downshift",
+      "searchable select",
+      "filterable select",
+      "datalist",
+      "accessible autocomplete",
+      "kombinasjonsboks",
+      "sokefelt med forslag",
+      "designsystemet combobox"
+    ],
+    "error-summary": [
+      "error summary",
+      "govuk error summary",
+      "validation summary",
+      "error list",
+      "form errors",
+      "feiloppsummering"
+    ],
+    "validation-message": [
+      "helper text",
+      "form helper text",
+      "error text",
+      "field error",
+      "invalid feedback",
+      "form text",
+      "hint error",
+      "feilmelding"
+    ],
+    "field": [
+      "form group",
+      "form control",
+      "form field",
+      "input wrapper",
+      "form item"
+    ],
+    "fieldset": [
+      "field set",
+      "radio group",
+      "checkbox group",
+      "form section",
+      "gruppe"
+    ],
+    "skjema-validering": [
+      "form validation",
+      "form validation pattern",
+      "error pattern",
+      "validation pattern",
+      "how to show errors",
+      "skjemavalidering",
+      "validering"
+    ],
+    "date-picker": [
+      "datepicker",
+      "date picker",
+      "datovelger",
+      "MUI DatePicker"
+    ]
+  },
+  "not_in_package": {
+    "date-picker": "Documented on designsystemet.no, but @digdir/designsystemet-react 1.18.0 ships no DatePicker export — do not import one. Compose Textfield or a native date input; see the skjema-validering pattern for form wiring."
+  }
+}

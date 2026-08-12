@@ -1,0 +1,182 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Badge",
+  "slug": "badge",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/badge/badge.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/badge/overview",
+    "code": "https://designsystemet.no/en/components/docs/badge/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/badge/badge.tsx",
+    "value": "Badge"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/badge/badge.tsx (JSDoc)",
+    "value": "`Badge` is a non-interactive component for displaying status with or without numbers."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/badge/badge.tsx (JSDoc @example)",
+    "value": "<Badge count={5} maxCount={10} />\n\n@example with children\n<Badge count={5} maxCount={10}>\n  <Icon />\n</Badge>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/badge/badge.tsx",
+    "value": {
+      "class": "ds-badge",
+      "dataAttributes": [
+        "data-count",
+        "data-variant"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/badge.css",
+    "value": [
+      "--ds-border-radius-full",
+      "--ds-color-base-contrast-default",
+      "--ds-color-base-default",
+      "--ds-color-surface-tinted",
+      "--ds-color-text-default",
+      "--ds-font-size-minus-1",
+      "--ds-line-height-sm",
+      "--ds-size-1",
+      "--ds-size-3",
+      "--dsc-badge-background",
+      "--dsc-badge-bottom",
+      "--dsc-badge-color",
+      "--dsc-badge-left",
+      "--dsc-badge-padding",
+      "--dsc-badge-right",
+      "--dsc-badge-size",
+      "--dsc-badge-top"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/badge/overview",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "value": [
+      {
+        "rule": "Badge used without text inside it must have accompanying text next to it",
+        "wcag": null,
+        "quote": "Badge can be used without text inside it, but it must then have accompanying text next to it.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/badge/overview"
+      },
+      {
+        "rule": "Information should not be communicated through colour or shape alone",
+        "wcag": null,
+        "quote": "Information should not be communicated through colour or shape alone.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/badge/overview"
+      },
+      {
+        "rule": "A badge showing important information must be included in the interactive element's accessible name",
+        "wcag": "1.3.1",
+        "quote": "Badge that shows important information must be included in the interactive element\u2019s accessible name.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/badge/accessibility"
+      },
+      {
+        "rule": "A badge that changes value must be announced to screen readers",
+        "wcag": "4.1.3",
+        "quote": "Badge that changes value (for example 1 \u2192 2) must be announced to screen readers",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/badge/accessibility"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/badge/overview",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "value": [
+      {
+        "component": "Tag",
+        "note": "Use Tag instead of Badge when you want to display text rather than a number",
+        "quote": "Use tag if you want text instead of a number.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/badge/overview"
+      },
+      {
+        "component": "Tag",
+        "note": "Avoid Badge when text is needed; use Tag instead",
+        "quote": "Avoid badge when text is needed, use tag instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/badge/overview"
+      },
+      {
+        "component": "Chip",
+        "note": "Avoid Badge when interactive actions are required; use Chip instead",
+        "quote": "interactive actions are required, use chip or button instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/badge/overview"
+      },
+      {
+        "component": "Button",
+        "note": "Avoid Badge when interactive actions are required; use Button instead",
+        "quote": "interactive actions are required, use chip or button instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/badge/overview"
+      },
+      {
+        "component": "Tag",
+        "note": "Badge is not intended for text; use Tag to display words or short phrases",
+        "quote": "This component is not intended for text. If you need to display words or short phrases, use Tag instead.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/badge/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/badge/overview",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "value": [
+      {
+        "rule": "Badge can be placed next to other text or components",
+        "quote": "Badge can be placed next to other text or components.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/badge/overview"
+      },
+      {
+        "rule": "Badge can be placed floating above other elements",
+        "quote": "Badge can be placed floating above other elements.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/badge/overview"
+      },
+      {
+        "rule": "To float a badge, the ds-badge--position class must be used on a wrapper around the element the badge is placed over",
+        "quote": "If you want it to be floating, the class ds-badge--position must be used on a wrapper around the element that the badge is to be placed over.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/badge/code"
+      }
+    ]
+  },
+  "reviewedAgainst": null,
+  "needsReview": true
+}

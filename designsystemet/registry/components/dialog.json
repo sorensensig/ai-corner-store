@@ -1,0 +1,226 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Dialog",
+  "slug": "dialog",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/dialog/dialog.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/dialog/overview",
+    "code": "https://designsystemet.no/en/components/docs/dialog/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/dialog/dialog.tsx",
+    "value": "Dialog"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/dialog/dialog.tsx (JSDoc)",
+    "value": "Dialog component, used to display a dialog dialog."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/dialog/dialog.tsx (JSDoc @example)",
+    "value": "<Dialog.TriggerContext>\n  <Dialog.Trigger>Open Dialog</Dialog.Trigger>\n  <Dialog>\n    <Dialog.Block>\n      Content\n    </Dialog.Block>\n  </Dialog>\n</Dialog.TriggerContext>\n\n@example without TriggerContext\nconst dialogRef = useRef<HTMLDialogElement>(null);\n\n...\n\n<Button command=\"show-modal\" commandfor=\"my-dialog\">Open Dialog</Button>\n<Dialog id=\"my-dialog\">\n  Content\n</Dialog>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/dialog/dialog.tsx",
+    "value": {
+      "class": "ds-dialog",
+      "dataAttributes": [
+        "data-color",
+        "data-command",
+        "data-modal",
+        "data-placement"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/dialog.css",
+    "value": [
+      "--ds-border-radius-lg",
+      "--ds-border-width-default",
+      "--ds-color-neutral-border-subtle",
+      "--ds-color-neutral-surface-default",
+      "--ds-color-neutral-text-default",
+      "--ds-icon-size",
+      "--ds-shadow-xl",
+      "--ds-size-3",
+      "--ds-size-6",
+      "--dsc-dialog-backdrop-background",
+      "--dsc-dialog-background",
+      "--dsc-dialog-border-color",
+      "--dsc-dialog-border-style",
+      "--dsc-dialog-border-width",
+      "--dsc-dialog-color",
+      "--dsc-dialog-divider-border-color",
+      "--dsc-dialog-divider-border-style",
+      "--dsc-dialog-divider-border-width",
+      "--dsc-dialog-icon-size",
+      "--dsc-dialog-icon-spacing",
+      "--dsc-dialog-icon-url",
+      "--dsc-dialog-max-height",
+      "--dsc-dialog-max-width",
+      "--dsc-dialog-placement-block-max-width",
+      "--dsc-dialog-placement-inline-max-width",
+      "--dsc-dialog-spacing",
+      "--dsc-dialog-transition-duration"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/dialog/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Make sure elements receiving focus are not hidden behind the dialog",
+        "wcag": null,
+        "quote": "Note: Make sure that elements receiving focus are not hidden behind the dialog .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/overview"
+      },
+      {
+        "rule": "Add aria-haspopup=\"dialog\" to the element that opens the dialog so screen reader users know it will open a dialog",
+        "wcag": null,
+        "quote": "The attribute aria-haspopup=\"dialog\" should be added to the element that opens the dialog to make it clear to screen reader users that it will open a dialog.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/code"
+      },
+      {
+        "rule": "Always provide a visible and simple way to close a dialog",
+        "wcag": null,
+        "quote": "Always ensure that users have a visible and simple way to close a dialog.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/overview"
+      },
+      {
+        "rule": "The close button (X) should stay visible even when the dialog's content requires scrolling",
+        "wcag": null,
+        "quote": "The most common approach is a close button (X) in the top right corner. It should remain visible even when the dialog contains a lot of content and the user needs to scroll.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/overview"
+      },
+      {
+        "rule": "In non-modal dialogs, elements receiving keyboard focus must not end up hidden behind the dialog",
+        "wcag": "2.4.11",
+        "quote": "When using non-modal dialogs, you must ensure that elements receiving focus through keyboard navigation do not end up behind the dialog and become hidden. See criteria 2.4.11 (w3.org) (AA) and 2.4.12 (w3.org) (AAA).",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/accessibility"
+      },
+      {
+        "rule": "Focusable elements must never be completely covered by the dialog during Tab navigation",
+        "wcag": null,
+        "quote": "Ensure that focusable elements are never completely covered by the dialog when users navigate the page using the Tab key.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/accessibility"
+      },
+      {
+        "rule": "Focus order must be logical and focus must always be visible",
+        "wcag": null,
+        "quote": "Ensure that the focus order is logical and that focus is always visible, so users navigating with a keyboard or screen reader can understand where focus is located.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/accessibility"
+      },
+      {
+        "rule": "Esc closes the dialog and returns focus to the trigger",
+        "wcag": null,
+        "quote": "Esc closes the dialog (focus returns to the trigger)",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/accessibility"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/dialog/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "component": "Alert",
+        "note": "Use alert instead of a modal dialog when notifying users of something that does not require action",
+        "quote": "you need to notify users about something that does not require action. Use alert or a non-modal dialog instead",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/overview"
+      },
+      {
+        "component": "Popover",
+        "note": "Use popover instead of a modal dialog for short, optional information",
+        "quote": "you want to provide short, optional information, use popover",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/overview"
+      },
+      {
+        "component": "System notifications pattern",
+        "note": "Consult the system notifications pattern for guidance on when a modal dialog should be used",
+        "quote": "See also the system notifications pattern for more guidance on when a modal dialog should be used.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/overview"
+      }
+    ]
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/dialog/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Using the placement prop, a dialog can behave like a drawer positioned from a given side",
+        "quote": "Using placement , dialog can behave like a so-called \u201cdrawer\u201d from the position you specify.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/overview"
+      },
+      {
+        "rule": "Use multiple ds-dialog__block elements to divide the dialog with dividers into separate areas",
+        "quote": "Use multiple ds-dialog__block if you want to divide the dialog with dividers into, for example, a top and bottom area.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/code"
+      },
+      {
+        "rule": "Content cannot be placed directly in the dialog if ds-dialog__block is used; all content must then be inside a block",
+        "quote": "Note that content cannot be placed directly in dialog if you use ds-dialog__block ; then all content should be inside one of the dialog's ds-dialog__block sections.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/code"
+      },
+      {
+        "rule": "A close button that is the dialog's first direct child floats to the top right",
+        "quote": "If the button is a direct child of the dialog and the first element, it will float to the top right.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/code"
+      },
+      {
+        "rule": "Use Dialog.TriggerContext together with Dialog.Trigger so the dialog and trigger can communicate without id/commandfor",
+        "quote": "Use Dialog.TriggerContext and Dialog.Trigger together, so Dialog can communicate without having to use id and commandfor .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/code"
+      },
+      {
+        "rule": "Use buttons in the dialog to give users a clear path forward",
+        "quote": "Use buttons to give users a clear path forward.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dialog/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

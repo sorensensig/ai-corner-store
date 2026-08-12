@@ -1,0 +1,66 @@
+# Designsystemet — machine-readable index
+
+> @digdir/designsystemet-react 1.18.0. Structured contracts for every component and pattern.
+> Fetch the contract instead of scraping the rendered documentation.
+
+Designsystemet ships as npm packages. The stylesheet, the theme and the Inter font are
+all part of the documented setup, and markup that carries the right `ds-*` class names
+without the stylesheet behind it looks nothing like Designsystemet:
+https://designsystemet.no/en/fundamentals/code/setup
+
+## Patterns
+
+- [Required and optional form fields](patterns/required-and-optional-fields.json): https://designsystemet.no/en/patterns/required-and-optional-fields
+- [Skjemavalidering (form validation and errors)](patterns/skjema-validering.json): https://designsystemet.no/en/patterns/errors/
+- [Field guidance — placeholders, descriptions and input purpose](patterns/field-guidance.json): https://designsystemet.no/en/best-practices/content-work/questions
+
+## Components
+
+- [Alert](components/alert.json)
+- [Avatar](components/avatar.json)
+- [Badge](components/badge.json)
+- [BadgePosition](components/badge-position.json)
+- [Breadcrumbs](components/breadcrumbs.json)
+- [Button](components/button.json)
+- [Card](components/card.json)
+- [Checkbox](components/checkbox.json)
+- [ChipButton](components/chip-button.json)
+- [Details](components/details.json)
+- [Dialog](components/dialog.json)
+- [Divider](components/divider.json)
+- [Dropdown](components/dropdown.json)
+- [EXPERIMENTAL_AvatarStack](components/avatar-stack.json)
+- [EXPERIMENTAL_Suggestion](components/suggestion.json)
+- [ErrorSummary](components/error-summary.json)
+- [Field](components/field.json)
+- [FieldAffixes](components/field-affixes.json)
+- [Fieldset](components/fieldset.json)
+- [FileUpload](components/file-upload.json)
+- [Heading](components/heading.json)
+- [Input](components/input.json)
+- [Label](components/label.json)
+- [Link](components/link.json)
+- [ListUnordered](components/list-unordered.json)
+- [Pagination](components/pagination.json)
+- [Paragraph](components/paragraph.json)
+- [Popover](components/popover.json)
+- [Radio](components/radio.json)
+- [Search](components/search.json)
+- [Select](components/select.json)
+- [Skeleton](components/skeleton.json)
+- [SkipLink](components/skip-link.json)
+- [Spinner](components/spinner.json)
+- [Switch](components/switch.json)
+- [Table](components/table.json)
+- [Tabs](components/tabs.json)
+- [Tag](components/tag.json)
+- [Textarea](components/textarea.json)
+- [Textfield](components/textfield.json)
+- [ToggleGroup](components/toggle-group.json)
+- [ToggleGroup.Item](components/toggle-group-item.json)
+- [Tooltip](components/tooltip.json)
+- [ValidationMessage](components/validation-message.json)
+
+## Human documentation
+
+https://designsystemet.no

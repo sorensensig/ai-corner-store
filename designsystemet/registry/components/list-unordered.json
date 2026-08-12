@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "ListUnordered",
+  "slug": "list",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/list/lists.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/list/overview",
+    "code": "https://designsystemet.no/en/components/docs/list/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/list/lists.tsx",
+    "value": "ListUnordered"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/list/lists.tsx (JSDoc)",
+    "value": "ListOrdered component, used to display a list of items. Renders a native `ol` element."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/list/lists.tsx (JSDoc @example)",
+    "value": "<ListOrdered>\n  <ListItem>Item 1</ListItem>\n  <ListItem>Item 2</ListItem>\n</ListOrdered>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/list/lists.tsx",
+    "value": {
+      "class": "ds-list",
+      "dataAttributes": []
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/list.css",
+    "value": [
+      "--ds-size-2",
+      "--ds-size-3",
+      "--ds-size-6",
+      "--dsc-list-margin-top",
+      "--dsc-list-margin-top-nested",
+      "--dsc-list-padding-inline"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/list-unordered/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/list-unordered/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/list-unordered/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

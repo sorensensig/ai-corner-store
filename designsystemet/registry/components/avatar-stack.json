@@ -1,0 +1,88 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "EXPERIMENTAL_AvatarStack",
+  "slug": "avatar-stack",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/avatar-stack/avatar-stack.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/avatar-stack/overview",
+    "code": "https://designsystemet.no/en/components/docs/avatar-stack/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/avatar-stack/avatar-stack.tsx",
+    "value": "EXPERIMENTAL_AvatarStack"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/avatar-stack/avatar-stack.tsx (JSDoc)",
+    "value": "Use `AvatarStack` to constrain Avatars into a stack."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/avatar-stack/avatar-stack.tsx (JSDoc @example)",
+    "value": "<EXPERIMENTAL_AvatarStack>\n  <Avatar aria-label='name'>\n    <img src={cat1} alt='' />\n  </Avatar>\n  <Avatar aria-label='name'>\n    <BriefcaseIcon />\n  </Avatar>\n  <Avatar aria-label='name' initials='sm' />\n</EXPERIMENTAL_AvatarStack>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/avatar-stack/avatar-stack.tsx",
+    "value": {
+      "class": "ds-avatar-stack",
+      "dataAttributes": [
+        "data-expandable",
+        "data-suffix"
+      ]
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/avatar-stack.css",
+    "value": [
+      "--ds-size-12",
+      "--dsc-avatar-count",
+      "--dsc-avatar-font-size",
+      "--dsc-avatar-size",
+      "--dsc-avatar-stack-gap",
+      "--dsc-avatar-stack-overlap",
+      "--dsc-avatar-stack-size"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/e-x-p-e-r-i-m-e-n-t-a-l_-avatar-stack/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/e-x-p-e-r-i-m-e-n-t-a-l_-avatar-stack/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/e-x-p-e-r-i-m-e-n-t-a-l_-avatar-stack/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}

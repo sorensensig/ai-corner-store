@@ -1,0 +1,213 @@
+{
+  "$schema": "../../schema/twin.schema.json",
+  "schemaVersion": "0.1.0",
+  "kind": "component",
+  "name": "Tabs",
+  "slug": "tabs",
+  "package": {
+    "name": "@digdir/designsystemet-react",
+    "semver": "1.18.0"
+  },
+  "generated": {
+    "generator": "scripts/generate-twins.mjs",
+    "from": "packages/react/src/components/tabs/tabs.tsx"
+  },
+  "links": {
+    "docs": "https://designsystemet.no/en/components/docs/tabs/overview",
+    "code": "https://designsystemet.no/en/components/docs/tabs/code"
+  },
+  "importName": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/tabs/tabs.tsx",
+    "value": "Tabs"
+  },
+  "summary": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/tabs/tabs.tsx (JSDoc)",
+    "value": "Display a group of tabs that can be toggled between."
+  },
+  "example": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/tabs/tabs.tsx (JSDoc @example)",
+    "value": "<Tabs onChange={(value) => console.log(value)}>\n  <Tabs.List>\n    <Tabs.Tab value='1'>Tab 1</Tabs.Tab>\n    <Tabs.Tab value='2'>Tab 2</Tabs.Tab>\n    <Tabs.Tab value='3'>Tab 3</Tabs.Tab>\n  </Tabs.List>\n  <Tabs.Panel value='1'>content 1</Tabs.Panel>\n  <Tabs.Panel value='2'>content 2</Tabs.Panel>\n  <Tabs.Panel value='3'>content 3</Tabs.Panel>\n</Tabs>"
+  },
+  "emitted": {
+    "provenance": "extracted",
+    "source": "packages/react/src/components/tabs/tabs.tsx",
+    "value": {
+      "class": "ds-tabs",
+      "dataAttributes": []
+    }
+  },
+  "tokens": {
+    "provenance": "extracted",
+    "source": "packages/css/src/tabs.css",
+    "value": [
+      "--ds-border-width-default",
+      "--ds-color-neutral-border-subtle",
+      "--ds-color-neutral-text-default",
+      "--ds-color-neutral-text-subtle",
+      "--ds-color-text-subtle",
+      "--ds-line-height-sm",
+      "--ds-size-1",
+      "--ds-size-3",
+      "--ds-size-4",
+      "--ds-size-5",
+      "--dsc-tabs-content-padding",
+      "--dsc-tabs-list-border-bottom-style",
+      "--dsc-tabs-list-border-bottom-width",
+      "--dsc-tabs-list-border-color",
+      "--dsc-tabs-tab-color",
+      "--dsc-tabs-tab-color--hover",
+      "--dsc-tabs-tab-color--selected",
+      "--dsc-tabs-tab-padding"
+    ]
+  },
+  "patterns": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "usedWith": {
+    "provenance": "extracted",
+    "source": "twins/patterns/*.json (inverted)",
+    "value": []
+  },
+  "a11y": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/tabs/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Icons used in tabs must be intuitive and have descriptive titles for screen readers.",
+        "wcag": null,
+        "quote": "Ensure that the icons are intuitive and have descriptive titles for screen readers.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/overview"
+      },
+      {
+        "rule": "When icons are combined with text, the icons should be decorative and marked with aria-hidden.",
+        "wcag": null,
+        "quote": "Icons should be decorative and marked with aria-hidden .",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/overview"
+      },
+      {
+        "rule": "Use the ds-tabs component rather than building a custom tabs implementation, to ensure good accessibility and functionality.",
+        "wcag": null,
+        "quote": "We recommend using <ds-tabs> , and not building your own tabs from scratch, to ensure good accessibility and functionality.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/code"
+      },
+      {
+        "rule": "Each tab must have a unique title.",
+        "wcag": null,
+        "quote": "Each tab must have a unique title",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/accessibility"
+      },
+      {
+        "rule": "Icons used in tabs must be decorative (aria-hidden) or have descriptive titles.",
+        "wcag": null,
+        "quote": "When using icons, ensure they are decorative ( aria-hidden ) or have descriptive titles",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/accessibility"
+      },
+      {
+        "rule": "If a tab panel has no focusable elements, the panel itself receives focus.",
+        "wcag": null,
+        "quote": "If a tab panel does not contain any focusable elements, the panel itself receives focus",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/accessibility"
+      },
+      {
+        "rule": "Tabs support keyboard navigation with arrow keys.",
+        "wcag": null,
+        "quote": "Tabs supports keyboard navigation with arrow keys",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/accessibility"
+      }
+    ]
+  },
+  "relations": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/tabs/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": null
+  },
+  "composition": {
+    "provenance": "authored",
+    "source": "https://designsystemet.no/en/components/docs/tabs/overview",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "value": [
+      {
+        "rule": "Use tabs when content needs structuring without loading a new page, when information benefits from being divided into clearly labelled sections, and when navigation becomes easier without viewing all content at once.",
+        "quote": "Use tabs when content needs to be structured without loading a new page information benefits from being divided into clearly labelled sections navigation becomes easier when users do not need to view all content at once",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/overview"
+      },
+      {
+        "rule": "Avoid tabs when an immediate overview is needed, when information must be compared across sections, for step-by-step processes where order matters, for large amounts of content, or when the content could be shown on a single page or spread across several pages.",
+        "quote": "Avoid using tabs when it is important to give an immediate overview of the content information needs to be compared across sections users must go through a step-by-step process where the order matters large amounts of content may slow down the page the content could just as well be shown on a single page or spread across several pages",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/overview"
+      },
+      {
+        "rule": "Before choosing tabs, consider simplifying content, distributing it across pages, keeping it on a single page with clear headings, or using a table of contents.",
+        "quote": "Before choosing tabs, consider whether it might be better to: simplify and reduce the amount of content distribute the content across several pages keep everything on a single page with clear headings use a table of contents for easier navigation",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/overview"
+      },
+      {
+        "rule": "Limit the number of tabs, since too many make it hard to get an overview, especially on small screens.",
+        "quote": "Limit the number of tabs - too many make it difficult to get an overview, especially on small screens",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/overview"
+      },
+      {
+        "rule": "Use clear, descriptive tab names since tabs hide content and it must be obvious what each section contains.",
+        "quote": "Use clear, descriptive names - tabs hide content, so it must be obvious what each section contains",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/overview"
+      },
+      {
+        "rule": "Place the most important content first, organising tabs according to users' needs.",
+        "quote": "Place the most important content first - organise tabs according to users' needs",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/overview"
+      },
+      {
+        "rule": "Keep tabs on a single line, since long labels or too many tabs make navigation harder.",
+        "quote": "Keep tabs on a single line - long labels or too many tabs make navigation harder",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/overview"
+      },
+      {
+        "rule": "Avoid disabled tabs; remove them or explain why they contain no content.",
+        "quote": "Avoid disabled tabs - remove them or explain why they contain no content",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/overview"
+      },
+      {
+        "rule": "Tab labels should be short and descriptive so users understand what they will find when clicking.",
+        "quote": "Tabs labels should be short and descriptive so users can easily understand what they will find when clicking.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/overview"
+      },
+      {
+        "rule": "Difficulty creating clear tab labels may indicate the content is not well structured.",
+        "quote": "If it is difficult to create clear labels, it may indicate that the content is not well structured.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/overview"
+      },
+      {
+        "rule": "If additional context is needed, a shared heading can be placed above the tabs component.",
+        "quote": "If additional context is needed, a shared heading can be placed above the tabs component.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/tabs/overview"
+      }
+    ]
+  },
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
+}
