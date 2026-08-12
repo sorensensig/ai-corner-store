@@ -83,10 +83,18 @@ means every rubric check passes *and* the code compiles. 8–9 trials per arm,
 | Live documentation | 3/8 | Agents that read designsystemet.no still shipped inaccessible validation, stale APIs, and invented props. |
 | Twins registry (this plugin) | 9/9 | Correct on the first attempt (Fisher p = 0.009), at equal or lower cost per conforming solution. |
 
-A separate crawl scenario — an agent exploring a site *built with*
-Designsystemet — showed twins reach the same correctness as well-signposted
-docs at roughly half the retrieval tokens. This plugin targets the first
-scenario: an agent writing Designsystemet code in your repository. A guard-hook
-finding shaped v2: agents rendered validation errors as plain paragraph text,
-which pattern-matching on correct markers never catches — the hook now fires
-on error-state evidence instead.
+### The three situations an agent can be in
+
+The same contracts serve all three — this plugin is one part of a broader
+effort to make Designsystemet AI-ready:
+
+- **Working in your repository** *(what this plugin is for)*: the agent writes
+  Designsystemet code with the contracts one tool call away and the guard hook
+  enforcing the rules that can be enforced.
+- **Crawling the documentation**: an agent with no plugin discovers the hosted
+  registry through `llms.txt` and fetches the same twins over HTTP. In trials
+  this matched well-signposted docs on correctness at roughly half the
+  retrieval tokens.
+- **Landing on a built site**: an agent asked to copy or extend a page built
+  with Designsystemet identifies the system from its rendered `ds-*` markup
+  and can trace its way back to the contracts.
