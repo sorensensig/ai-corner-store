@@ -3,7 +3,7 @@
   "description": "Experimental. Build with Digdir's Designsystemet correctly on the first attempt: quote-verified component contracts (twins), a WCAG guard hook, and the /ds-check audit command.",
   "version": "0.3.0",
   "author": {
-    "name": "Sigurd Sorensen (Digdir)",
+    "name": "Sigurd Sæther Sørensen",
     "email": "sorensensig@gmail.com"
   },
   "mcpServers": {

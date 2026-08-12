@@ -71,8 +71,22 @@ version its rules were reviewed against.
 
 ## Research
 
-The design is evidence-driven: each piece exists because pre-registered A/B
-trials on complex form tasks showed agents fail without it — including the
-finding that reading the live documentation alone still ships inaccessible
-validation. Twins raised first-attempt conformance from roughly half to all
-trials at equal-or-lower cost per correct solution.
+The design comes out of a pre-registered A/B programme (2026-08). The task in
+every trial: build a complex Norwegian public-sector form — text field,
+filtering suggestion field, validation, error states — where **conforming**
+means every rubric check passes *and* the code compiles. 8–9 trials per arm,
+`claude-sonnet-5`.
+
+| Arm | Conforming | What it showed |
+|---|---|---|
+| No cue at all | 0/8 | Unprompted, agents never reach for Designsystemet. Discovery has to be engineered; "the model already knows it" is false. |
+| Live documentation | 3/8 | Agents that read designsystemet.no still shipped inaccessible validation, stale APIs, and invented props. |
+| Twins registry (this plugin) | 9/9 | Correct on the first attempt (Fisher p = 0.009), at equal or lower cost per conforming solution. |
+
+A separate crawl scenario — an agent exploring a site *built with*
+Designsystemet — showed twins reach the same correctness as well-signposted
+docs at roughly half the retrieval tokens. This plugin targets the first
+scenario: an agent writing Designsystemet code in your repository. A guard-hook
+finding shaped v2: agents rendered validation errors as plain paragraph text,
+which pattern-matching on correct markers never catches — the hook now fires
+on error-state evidence instead.
