@@ -12,6 +12,7 @@ https://designsystemet.no/en/fundamentals/code/setup
 
 - [Required and optional form fields](patterns/required-and-optional-fields.json): https://designsystemet.no/en/patterns/required-and-optional-fields
 - [Skjemavalidering (form validation and errors)](patterns/skjema-validering.json): https://designsystemet.no/en/patterns/errors/
+- [Field guidance — placeholders, descriptions and input purpose](patterns/field-guidance.json): https://designsystemet.no/en/best-practices/content-work/questions
 
 ## Components
 
