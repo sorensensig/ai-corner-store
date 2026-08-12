@@ -556,6 +556,14 @@
       "expected_refs": [
         "69-playing-politics"
       ]
+    },
+    {
+      "id": "ceo-signoff-nobody-understood",
+      "prompt": "watched our CTO approve a two-year platform migration last week. the team had spent months on the evaluation — a proper comparison doc, every dimension covered. he got a fifteen-minute readout and signed. afterwards someone asked him in the corridor why we picked that vendor and he genuinely couldn't say. now he owns the outcome and the four people who actually understand the trade-offs own nothing. it feels absurd but i can't tell if i'm being unfair to him.",
+      "should_trigger": true,
+      "expected_refs": [
+        "70-the-blind-decision"
+      ]
     }
   ]
 }
