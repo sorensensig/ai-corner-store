@@ -77,7 +77,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/dropdown/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": [
       {
         "rule": "Dropdown does not create a semantic menu itself; it provides the foundation for building one yourself",
@@ -115,39 +115,32 @@
         "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
       },
       {
-        "rule": "Dropdown does not include built-in keyboard handling because usage patterns vary.",
+        "rule": "When building a menu on Dropdown, follow the W3C Menu and Menubar Pattern",
         "wcag": null,
-        "quote": "Because of the different usage patterns for Dropdown , we do not include built-in keyboard handling.",
+        "quote": "Read the \"Menu and Menubar Pattern\" on w3.org for more information on how to create accessible menus.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/overview"
+      },
+      {
+        "rule": "Dropdown has built-in accessibility via the Popover API: open/closed state and Enter/Space/Esc keyboard handling",
+        "wcag": null,
+        "quote": "There is built-in accessibility in the Popover API for open and closed state, as well as keyboard navigation.",
         "verified": true,
         "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
       },
       {
-        "rule": "If building a menu, you must implement your own keyboard interactions for navigation within it.",
+        "rule": "Combine Dropdown with focusgroup to enable arrow-key navigation between items",
         "wcag": null,
-        "quote": "If you are creating a menu, you must implement your own keyboard interactions to enable navigation within the menu.",
+        "quote": "You can combine Dropdown with focusgroup to enable arrow navigation between items.",
         "verified": true,
-        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
-      },
-      {
-        "rule": "Refer to the W3C Menu and Menubar Pattern for accessible menu implementation.",
-        "wcag": null,
-        "quote": "See the \"Menu and Menubar Pattern\" at W3C .",
-        "verified": true,
-        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
-      },
-      {
-        "rule": "Without custom logic, Dropdown.List items are Tab-navigable and the dropdown closes with Escape.",
-        "wcag": null,
-        "quote": "If you use Dropdown without adding your own logic, any focusable elements inside Dropdown.List can be navigated using the Tab key, and you can close the Dropdown with the Escape key.",
-        "verified": true,
-        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/code"
       }
     ]
   },
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/dropdown/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": [
       {
         "component": "Button",
@@ -161,13 +154,13 @@
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/dropdown/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": [
       {
-        "rule": "Dropdown is built internally on top of Popover.",
-        "quote": "Dropdown uses Popover internally.",
+        "rule": "Dropdown builds on the Popover API",
+        "quote": "There is built-in accessibility in the Popover API for open and closed state, as well as keyboard navigation.",
         "verified": true,
-        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/code"
+        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
       },
       {
         "rule": "Use Dropdown to offer multiple secondary options compactly, that should still remain easily accessible.",
@@ -198,15 +191,9 @@
         "quote": "Avoid multiple levels of dropdowns (nested menus)",
         "verified": true,
         "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/overview"
-      },
-      {
-        "rule": "RovingFocus is offered as a utility component for keyboard navigation",
-        "quote": "We offer RovingFocus , which is a utility component for keyboard navigation.",
-        "verified": true,
-        "sourcePage": "https://designsystemet.no/en/components/docs/dropdown/accessibility"
       }
     ]
   },
-  "reviewedAgainst": "1.18.0",
-  "needsReview": false
+  "reviewedAgainst": null,
+  "needsReview": true
 }

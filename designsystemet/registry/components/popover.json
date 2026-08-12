@@ -81,7 +81,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/popover/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": [
       {
         "rule": "Popover has built-in accessibility support for open/closed states and keyboard navigation via the native Popover API",
@@ -109,7 +109,7 @@
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/popover/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": [
       {
         "component": "Tooltip",
@@ -144,7 +144,7 @@
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/popover/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": [
       {
         "rule": "Popover is opened through an intentional user click and may contain text, links and simple form elements",
@@ -196,6 +196,6 @@
       }
     ]
   },
-  "reviewedAgainst": "1.18.0",
-  "needsReview": false
+  "reviewedAgainst": null,
+  "needsReview": true
 }

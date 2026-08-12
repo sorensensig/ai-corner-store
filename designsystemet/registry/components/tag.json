@@ -88,7 +88,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/tag/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": [
       {
         "rule": "Group multiple Tags in a list so assistive tech announces them as a list, not one sentence",
@@ -109,7 +109,7 @@
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/tag/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": [
       {
         "component": "Link",
@@ -137,7 +137,7 @@
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/tag/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": [
       {
         "rule": "Tag should generally be placed after the title or name of the related element",
@@ -165,6 +165,6 @@
       }
     ]
   },
-  "reviewedAgainst": "1.18.0",
-  "needsReview": false
+  "reviewedAgainst": null,
+  "needsReview": true
 }

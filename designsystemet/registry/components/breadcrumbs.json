@@ -66,7 +66,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/breadcrumbs/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": [
       {
         "rule": "Breadcrumbs must be handled so that the trail does not become too long on small screens; if it becomes too long, it should be replaced with a back link.",
@@ -115,13 +115,13 @@
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/breadcrumbs/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": null
   },
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/breadcrumbs/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": [
       {
         "rule": "Use breadcrumbs when users may want to navigate back to previous levels.",
@@ -142,14 +142,14 @@
         "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
       },
       {
-        "rule": "Using only a back button can be helpful on mobile or on pages with deep navigation.",
-        "quote": "Using only a back button can be helpful on mobile or on pages with deep navigation.",
+        "rule": "On mobile or with a long trail, show only a link to the nearest parent page",
+        "quote": "On mobile, or when the breadcrumb trail becomes long, you can show only a link to the nearest parent page.",
         "verified": true,
         "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
       },
       {
-        "rule": "Stay consistent and use either a back button or a breadcrumb trail, not both.",
-        "quote": "It is important to stay consistent in your solution and use either a back button or a breadcrumb trail, not both.",
+        "rule": "Be consistent: use either the back-link variant or the full breadcrumb trail, not both",
+        "quote": "Be consistent in your approach, and use either this variant or the full breadcrumb trail, not both.",
         "verified": true,
         "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
       },
@@ -184,10 +184,11 @@
         "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
       },
       {
-        "rule": "Use short and clear names in the breadcrumb trail so that users can quickly understand where they are.",
-        "quote": "Use short and clear names in the breadcrumb trail so that users can quickly understand where they are.",
+        "rule": "Link text in breadcrumbs must be understandable; avoid generic names and unclear abbreviations",
+        "quote": "The link text in breadcrumbs must be understandable. Avoid generic names or unclear abbreviations.",
+        "wcag": "2.4.4",
         "verified": true,
-        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
+        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/accessibility"
       },
       {
         "rule": "The text should match the page headings or navigation labels so that each level is easy to recognise.",
@@ -197,6 +198,6 @@
       }
     ]
   },
-  "reviewedAgainst": "1.18.0",
-  "needsReview": false
+  "reviewedAgainst": null,
+  "needsReview": true
 }

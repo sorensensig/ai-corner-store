@@ -88,7 +88,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/heading/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": [
       {
         "rule": "Use correct heading levels (h1-h6) for proper semantic structure",
@@ -179,13 +179,13 @@
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/heading/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": null
   },
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/heading/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": [
       {
         "rule": "Heading is used to establish structure and hierarchy in content",
@@ -207,6 +207,6 @@
       }
     ]
   },
-  "reviewedAgainst": "1.18.0",
-  "needsReview": false
+  "reviewedAgainst": null,
+  "needsReview": true
 }

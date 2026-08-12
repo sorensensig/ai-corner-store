@@ -111,21 +111,49 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/file-upload/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
-    "value": null
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "value": [
+      {
+        "rule": "FileUpload must have a visible label associated with it via ds-field so screen readers can announce what should be uploaded.",
+        "wcag": null,
+        "quote": "File upload must always have a visible <label> associated with it through <ds-field> , so that screen readers can communicate what should be uploaded.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/file-upload/accessibility"
+      },
+      {
+        "rule": "Use the description field to state allowed file formats and sizes before the user uploads.",
+        "wcag": null,
+        "quote": "Use <p data-field=\"description\"> to describe allowed file formats and sizes, so the user receives this information before uploading.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/file-upload/accessibility"
+      }
+    ]
   },
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/file-upload/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": null
   },
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/file-upload/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
-    "value": null
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "value": [
+      {
+        "rule": "Place FileUpload inside a Field with a Label so the upload area gets an accessible label.",
+        "quote": "Place File upload inside a field with a label so the upload area gets an accessible label.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/file-upload/code"
+      },
+      {
+        "rule": "For advanced file handling with per-file upload status, build this functionality yourself around the component.",
+        "quote": "If you need advanced file handling with per-file upload status, you must build this yourself around the component.",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/file-upload/overview"
+      }
+    ]
   },
-  "reviewedAgainst": "1.18.0",
-  "needsReview": false
+  "reviewedAgainst": null,
+  "needsReview": true
 }

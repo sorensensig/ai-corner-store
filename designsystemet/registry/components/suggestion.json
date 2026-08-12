@@ -145,22 +145,37 @@
   },
   "a11y": {
     "provenance": "authored",
-    "source": "https://designsystemet.no/en/components/docs/e-x-p-e-r-i-m-e-n-t-a-l_-suggestion/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
+    "source": "https://designsystemet.no/en/components/docs/suggestion/overview",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
     "value": null
   },
   "relations": {
     "provenance": "authored",
-    "source": "https://designsystemet.no/en/components/docs/e-x-p-e-r-i-m-e-n-t-a-l_-suggestion/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
-    "value": null
+    "source": "https://designsystemet.no/en/components/docs/suggestion/overview",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "value": [
+      {
+        "component": "Radio",
+        "note": "Use Radio or Checkbox when there are only a few options",
+        "quote": "users need to choose between only a few options",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/suggestion/overview"
+      }
+    ]
   },
   "composition": {
     "provenance": "authored",
-    "source": "https://designsystemet.no/en/components/docs/e-x-p-e-r-i-m-e-n-t-a-l_-suggestion/overview",
-    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-11 (batch 2: agent first-pass, ratified)",
-    "value": null
+    "source": "https://designsystemet.no/en/components/docs/suggestion/overview",
+    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "value": [
+      {
+        "rule": "Keep each option short",
+        "quote": "Each option should be short",
+        "verified": true,
+        "sourcePage": "https://designsystemet.no/en/components/docs/suggestion/overview"
+      }
+    ]
   },
-  "reviewedAgainst": "1.18.0",
-  "needsReview": false
+  "reviewedAgainst": null,
+  "needsReview": true
 }
