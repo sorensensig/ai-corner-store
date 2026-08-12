@@ -82,6 +82,32 @@ CASES = [
      e("/x/A.tsx", '<Alert variant="danger">Feil</Alert>\nimport "@digdir/designsystemet-react";'), True),
     ("Edit fragment: no composition check",
      e("/x/A.tsx", DS_IMPORT + '<ValidationMessage>Feil</ValidationMessage>'), False),
+    ("v2: Paragraph-rendered error without aria-invalid denied — the 24-trial miss",
+     w("/x/F.tsx", DS_IMPORT + """
+function Skjema() {
+  const [errors, setErrors] = useState({});
+  const onSubmit = (e) => { e.preventDefault(); setErrors(validate()); };
+  return (<form onSubmit={onSubmit}>
+    <Textfield label="Fullt navn" />
+    {errors.navn && <Paragraph>Feltet m\u00e5 fylles ut</Paragraph>}
+    <Button type="submit">Send</Button>
+  </form>);
+}"""), True),
+    ("v2: same form correctly wired passes",
+     w("/x/F.tsx", DS_IMPORT + """
+function Skjema() {
+  const [errors, setErrors] = useState({});
+  const onSubmit = (e) => { e.preventDefault(); setErrors(validate()); };
+  return (<form onSubmit={onSubmit}>
+    <ErrorSummary>{...}</ErrorSummary>
+    <Textfield label="Fullt navn" required aria-invalid={!!errors.navn} error={errors.navn} />
+    <Button type="submit">Send</Button>
+  </form>);
+}"""), False),
+    ("v2: required marking in text without required attr denied",
+     w("/x/F.tsx", DS_IMPORT + '<Textfield label="Fullt navn (obligatorisk)" />'), True),
+    ("v2: required marking with required attr passes",
+     w("/x/F.tsx", DS_IMPORT + '<Textfield label="Fullt navn (obligatorisk)" required />'), False),
 ]
 
 

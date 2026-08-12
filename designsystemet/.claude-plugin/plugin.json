@@ -1,7 +1,7 @@
 {
   "name": "designsystemet",
   "description": "Build with Digdir's Designsystemet correctly on the first attempt: quote-verified component contracts (twins), a WCAG guard hook, and the /ds-check audit command.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "Sigurd Sorensen (Digdir)",
     "email": "sorensensig@gmail.com"
@@ -9,7 +9,11 @@
   "mcpServers": {
     "designsystemet-twins": {
       "command": "python3",
-      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/twins_server.py", "--twins", "${CLAUDE_PLUGIN_ROOT}/registry"]
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/mcp/twins_server.py",
+        "--twins",
+        "${CLAUDE_PLUGIN_ROOT}/registry"
+      ]
     }
   }
 }

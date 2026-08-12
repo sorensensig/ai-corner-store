@@ -72,8 +72,17 @@ def deny(reason):
 
 
 def assertions(root):
-    twin = json.loads((root / "patterns" / (PATTERN_SLUG + ".json")).read_text(encoding="utf-8"))
-    return {a["id"]: a for a in (twin.get("assertions") or {}).get("value", [])}
+    """Merged assertion specs from every bundled pattern twin; the primary pattern
+    (skjema-validering) wins on id collision."""
+    merged = {}
+    for slug in ("required-and-optional-fields", PATTERN_SLUG):
+        try:
+            twin = json.loads((root / "patterns" / (slug + ".json")).read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        for a in (twin.get("assertions") or {}).get("value", []):
+            merged[a["id"]] = a
+    return merged
 
 
 def tags_of(body, component):
@@ -138,6 +147,63 @@ def check_hex(content, spec):
 
 
 VALIDATION_MARKERS = ("ValidationMessage", "aria-invalid", "validation-message")
+
+# --- v2 checks (2026-08-12) ---------------------------------------------------
+# v1's validation checks only fired when the correct markers were ALREADY in the
+# file, so only near-correct code was ever inspected: 24 trials shipped forms
+# whose errors rendered as plain <Paragraph> text and the guard never fired
+# (the guard-does-nothing class, claude-stack#176). These trigger on the
+# ERROR-STATE EVIDENCE instead, however the error is rendered.
+
+FIELD_COMPONENT = re.compile(
+    r"<(Textfield|Textarea|Input|Select|Checkbox|Radio|Suggestion|EXPERIMENTAL_Suggestion|Field)\b")
+ERROR_TEXT = re.compile(
+    r"feilmelding|ugyldig|m\u00e5 fylles|kan ikke v\u00e6re tom|fyll ut|is required|"
+    r"required field|invalid|error", re.IGNORECASE)
+SUBMIT_HINT = re.compile(r"onSubmit|handleSubmit|preventDefault|setErrors?\b|validate", re.IGNORECASE)
+REQUIRED_VOCAB = re.compile(r"obligatorisk|valgfri|\boptional\b|\brequired\b|m\u00e5 fylles ut", re.IGNORECASE)
+REQUIRED_ATTR = re.compile(r"\brequired\b(?![\w-])|aria-required")
+
+
+def check_error_state_wiring(content, spec):
+    """A form with error-state evidence must carry aria-invalid — however the
+    error text is rendered. Fires on evidence, not on markers."""
+    if not FIELD_COMPONENT.search(content):
+        return None
+    if not SUBMIT_HINT.search(content):
+        return None
+    if not ERROR_TEXT.search(content):
+        return None
+    if "aria-invalid" in content:
+        return None
+    return (
+        DENY + "this form renders validation errors, but no field carries aria-invalid.\n"
+        "However the error text is displayed (ValidationMessage, Paragraph, anything), the "
+        "invalid FIELD must be marked programmatically: aria-invalid={true} when invalid, "
+        "and the error text linked with aria-describedby (Textfield's `error` prop does "
+        "both for you). Screen readers announce the state from the attribute, not from "
+        "nearby text. WCAG 3.3.1.\n"
+        "Call get_pattern(\"skjema-validering\") for the full wiring."
+    )
+
+
+def check_required_programmatic(content, spec):
+    """Required/optional MARKING vocabulary without programmatic required state."""
+    if not FIELD_COMPONENT.search(content):
+        return None
+    if not REQUIRED_VOCAB.search(content):
+        return None
+    if REQUIRED_ATTR.search(content):
+        return None
+    return (
+        DENY + "fields are marked required/optional in text, but no field carries the "
+        "required attribute (or aria-required).\n"
+        "The marking must be programmatic as well as visible: assistive technology reads "
+        "the attribute, not the label suffix. Add required to the required fields; keep "
+        "the visible word (the pattern forbids bare asterisks).\n"
+        "Call get_pattern(\"required-and-optional-fields\") for the composition rules."
+    )
+# ------------------------------------------------------------------------------
 
 
 def check_error_summary(content):
@@ -210,6 +276,13 @@ def main():
             deny(reason)
 
     if tool == "Write":
+        for aid, fn in (("aria-invalid-present", check_error_state_wiring),
+                        ("required-programmatic", check_required_programmatic)):
+            a = asserts.get(aid)
+            if a:
+                reason = fn(content, a.get("spec") or {})
+                if reason:
+                    deny(reason)
         reason = check_error_summary(content)
         if reason:
             deny(reason)
