@@ -78,7 +78,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/badge/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-12 (batch 3: ratified)",
     "value": [
       {
         "rule": "Badge used without text inside it must have accompanying text next to it",
@@ -113,22 +113,8 @@
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/badge/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-12 (batch 3: ratified)",
     "value": [
-      {
-        "component": "Tag",
-        "note": "Use Tag instead of Badge when you want to display text rather than a number",
-        "quote": "Use tag if you want text instead of a number.",
-        "verified": true,
-        "sourcePage": "https://designsystemet.no/en/components/docs/badge/overview"
-      },
-      {
-        "component": "Tag",
-        "note": "Avoid Badge when text is needed; use Tag instead",
-        "quote": "Avoid badge when text is needed, use tag instead",
-        "verified": true,
-        "sourcePage": "https://designsystemet.no/en/components/docs/badge/overview"
-      },
       {
         "component": "Chip",
         "note": "Avoid Badge when interactive actions are required; use Chip instead",
@@ -155,17 +141,11 @@
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/badge/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-12 (batch 3: ratified)",
     "value": [
       {
         "rule": "Badge can be placed next to other text or components",
         "quote": "Badge can be placed next to other text or components.",
-        "verified": true,
-        "sourcePage": "https://designsystemet.no/en/components/docs/badge/overview"
-      },
-      {
-        "rule": "Badge can be placed floating above other elements",
-        "quote": "Badge can be placed floating above other elements.",
         "verified": true,
         "sourcePage": "https://designsystemet.no/en/components/docs/badge/overview"
       },
@@ -177,6 +157,6 @@
       }
     ]
   },
-  "reviewedAgainst": null,
-  "needsReview": true
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
 }
