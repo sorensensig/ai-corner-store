@@ -111,7 +111,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/file-upload/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-12 (batch 3: ratified)",
     "value": [
       {
         "rule": "FileUpload must have a visible label associated with it via ds-field so screen readers can announce what should be uploaded.",
@@ -132,13 +132,13 @@
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/file-upload/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-12 (batch 3: ratified)",
     "value": null
   },
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/file-upload/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-12 (batch 3: ratified)",
     "value": [
       {
         "rule": "Place FileUpload inside a Field with a Label so the upload area gets an accessible label.",
@@ -154,6 +154,6 @@
       }
     ]
   },
-  "reviewedAgainst": null,
-  "needsReview": true
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
 }

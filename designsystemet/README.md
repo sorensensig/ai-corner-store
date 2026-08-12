@@ -18,7 +18,7 @@ agent's hands and blocks the mistakes that can be blocked.
 | Piece | What it does |
 |---|---|
 | **Skill** | Teaches the form/validation rules agents miss most; points at the lookup tools for everything else. |
-| **Registry + MCP server** | A contract ("twin") for every component and pattern, served by four tools: `list_twins`, `get_component`, `get_pattern`, `find_equivalent`. |
+| **Registry + MCP server** | A contract ("twin") for every component and pattern — all human-reviewed against 1.18.0 — served by four tools: `list_twins`, `get_component`, `get_pattern`, `find_equivalent`. |
 | **Guard hook** | Blocks writes that break a contract — invented props, raw hex instead of tokens, error states without `aria-invalid` — and feeds the reason back so the agent fixes it. |
 | **/ds-check** | On-demand audit of existing code against the contracts. |
 

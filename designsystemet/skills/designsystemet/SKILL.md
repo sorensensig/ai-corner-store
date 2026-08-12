@@ -134,7 +134,6 @@ These hold across every component, so they are worth carrying rather than fetchi
 - **Import:** `EXPERIMENTAL_Suggestion` from `@digdir/designsystemet-react`
 - **Use instead — Radio:** Use Radio or Checkbox when there are only a few options
 - **Composition:** Keep each option short
-- *Authored rules drafted from the docs, not yet human-reviewed.*
 - Full contract: `get_component("suggestion")`
 
 ### Textfield

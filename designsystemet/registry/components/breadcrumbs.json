@@ -66,7 +66,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/breadcrumbs/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-12 (batch 3: ratified)",
     "value": [
       {
         "rule": "Breadcrumbs must be handled so that the trail does not become too long on small screens; if it becomes too long, it should be replaced with a back link.",
@@ -115,13 +115,13 @@
   "relations": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/breadcrumbs/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-12 (batch 3: ratified)",
     "value": null
   },
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/components/docs/breadcrumbs/overview",
-    "method": "drafted from the docs page, quote-verified, NOT yet human-reviewed",
+    "method": "drafted from the docs page, quote-verified, human-reviewed 2026-08-12 (batch 3: ratified)",
     "value": [
       {
         "rule": "Use breadcrumbs when users may want to navigate back to previous levels.",
@@ -154,12 +154,6 @@
         "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
       },
       {
-        "rule": "Stay consistent in your service and use either the back button or the path, not both.",
-        "quote": "It is important that you are consistent in your service, and use either the back button or the path, not both.",
-        "verified": true,
-        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/code"
-      },
-      {
         "rule": "Breadcrumbs are only needed when there are three or more levels on a website.",
         "quote": "Breadcrumbs are only needed when there are three or more levels on a website.",
         "verified": true,
@@ -184,13 +178,6 @@
         "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/overview"
       },
       {
-        "rule": "Link text in breadcrumbs must be understandable; avoid generic names and unclear abbreviations",
-        "quote": "The link text in breadcrumbs must be understandable. Avoid generic names or unclear abbreviations.",
-        "wcag": "2.4.4",
-        "verified": true,
-        "sourcePage": "https://designsystemet.no/en/components/docs/breadcrumbs/accessibility"
-      },
-      {
         "rule": "The text should match the page headings or navigation labels so that each level is easy to recognise.",
         "quote": "The text should match the page headings or navigation labels so that each level is easy to recognise.",
         "verified": true,
@@ -198,6 +185,6 @@
       }
     ]
   },
-  "reviewedAgainst": null,
-  "needsReview": true
+  "reviewedAgainst": "1.18.0",
+  "needsReview": false
 }
