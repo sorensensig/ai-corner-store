@@ -30,6 +30,12 @@ import re
 import sys
 from pathlib import Path
 
+try:
+    from telemetry import log as telemetry_log  # opt-in; see hooks/telemetry.py
+except Exception:  # the guard must work without the telemetry module
+    def telemetry_log(_event):
+        pass
+
 # Sentinel prefixing every denial reason — deliberately not ordinary words, so
 # log/transcript scans can count denials without matching docs prose.
 DENY = "ds-guard/deny: "
@@ -51,7 +57,8 @@ def twin_root():
     return None
 
 
-def deny(reason):
+def deny(reason, check=None):
+    telemetry_log({"event": "guard-deny", "check": check})
     print(
         json.dumps(
             {
@@ -266,7 +273,7 @@ def main():
             continue
         reason = fn(content, a.get("spec") or {})
         if reason:
-            deny(reason)
+            deny(reason, check=aid)
 
     if tool == "Write":
         for aid, fn in (("aria-invalid-present", check_error_state_wiring),
@@ -275,10 +282,10 @@ def main():
             if a:
                 reason = fn(content, a.get("spec") or {})
                 if reason:
-                    deny(reason)
+                    deny(reason, check=aid)
         reason = check_error_summary(content)
         if reason:
-            deny(reason)
+            deny(reason, check="error-summary-present")
 
 
 if __name__ == "__main__":

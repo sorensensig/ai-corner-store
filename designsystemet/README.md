@@ -59,6 +59,19 @@ sign-off). What the docs don't state, the twins don't claim.
 [llms.txt](https://llmstxt.org) convention: one file from which an agent
 discovers every contract instead of scraping rendered documentation.
 
+## Telemetry (opt-in, off by default)
+
+On first run the plugin asks once whether to help the Designsystemet team by
+collecting anonymous usage signals. Collected only after you opt in: which
+contracts are looked up and whether they were found, which guard checks fire,
+plugin version, date, and a random install id. Never collected: your code,
+prompts, file paths, repo or project names, anything identifying.
+
+Nothing is sent anywhere automatically. Data stays in
+`~/.config/designsystemet-plugin/`; `/ds-telemetry report` shows the aggregate
+and only you choose to share it. Opt out any time with `/ds-telemetry off`, or
+hard-disable with `DESIGNSYSTEMET_TELEMETRY=0`.
+
 ## Configuration
 
 | Env var | Default | Meaning |

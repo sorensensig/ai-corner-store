@@ -10,6 +10,27 @@
           }
         ]
       }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "mcp__.*designsystemet-twins.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${DESIGNSYSTEMET_PYTHON:-python3} ${CLAUDE_PLUGIN_ROOT}/hooks/telemetry-log.py"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${DESIGNSYSTEMET_PYTHON:-python3} ${CLAUDE_PLUGIN_ROOT}/hooks/telemetry-consent.py"
+          }
+        ]
+      }
     ]
   }
 }
