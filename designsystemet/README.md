@@ -24,9 +24,30 @@ agent's hands and blocks the mistakes that can be blocked.
 
 ## Install
 
+Add the store as a marketplace once, then install the plugin — pick
+**project** scope to enable it for one repository, or **user** scope for
+everywhere:
+
 ```bash
+/plugin marketplace add sorensensig/ai-corner-store
 /plugin install designsystemet
 ```
+
+**Then restart Claude Code** (exit and start `claude` again in the project).
+The guard hook, the twins MCP server, and `/ds-check` are all loaded at
+session start — in the session where you ran the install, none of them are
+active yet. The same applies when the plugin is enabled through
+`enabledPlugins` in a project's `.claude/settings.json`: the first session
+only installs it; the plugin works from the next session on.
+
+Verify the install in the new session:
+
+1. Ask for the design system twins — the `list_twins` tool should return the
+   full registry.
+2. Run `/ds-check` — the command should exist (a clean report on an empty
+   project is the expected answer).
+3. Ask for a form error rendered as `<Alert>` — the guard hook should refuse
+   the write and explain why.
 
 The MCP server alone works in any MCP client:
 
