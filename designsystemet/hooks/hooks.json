@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${DESIGNSYSTEMET_PYTHON:-python3} ${CLAUDE_PLUGIN_ROOT}/hooks/guard-ds-code.py --twins ${DESIGNSYSTEMET_TWINS:-${CLAUDE_PLUGIN_ROOT}/registry}"
+            "command": "\"${DESIGNSYSTEMET_PYTHON:-python3}\" \"${CLAUDE_PLUGIN_ROOT}/hooks/guard-ds-code.py\" --twins \"${DESIGNSYSTEMET_TWINS:-${CLAUDE_PLUGIN_ROOT}/registry}\""
           }
         ]
       }
