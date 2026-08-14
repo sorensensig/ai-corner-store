@@ -564,6 +564,22 @@
       "expected_refs": [
         "70-the-blind-decision"
       ]
+    },
+    {
+      "id": "laminated-values-nobody-remembers",
+      "prompt": "we did a two-day offsite with an external facilitator last spring and came out with five values — courage, trust, impact, collaboration, excellence. they're on the wall in reception and on every slide template. i asked three people in my team last week to name them and none of them could get past two. leadership is now planning a 'values relaunch' campaign with posters and a video. i think the words are fine, honestly, but something about the whole thing feels fake and i can't articulate why. am i just being cynical?",
+      "should_trigger": true,
+      "expected_refs": [
+        "71-the-values-on-the-wall"
+      ]
+    },
+    {
+      "id": "consultant-added-to-late-team",
+      "prompt": "we were about three weeks behind on a delivery so our manager brought in a contractor. we found out at monday standup when she introduced him. he's competent but he needed environments, access, domain context, someone to pair with — and all of that came out of the two people who were already the bottleneck. a month later we're further behind than when he started and nobody wants to say it out loud because it sounds like we're blaming him. was this always going to happen?",
+      "should_trigger": true,
+      "expected_refs": [
+        "72-hired-from-above"
+      ]
     }
   ]
 }
