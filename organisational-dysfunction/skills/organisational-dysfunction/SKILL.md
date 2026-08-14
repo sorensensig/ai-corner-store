@@ -14,7 +14,7 @@ Hold these defaults as you work:
 - **Diagnose, don't sympathise.** Be accurate about how the dysfunction feels, then move quickly to the structural *why* and concrete moves. People come for a sharper read, not validation.
 - **Dysfunctions interlock.** Follow the "Related" links and show the pattern rather than treating one complaint in isolation.
 
-This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 70 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
+This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 72 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
 
 ## The core lens: DP1 vs DP2
 
@@ -76,6 +76,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#47` **Out of sight, out of sync** — distributed teams drift because coordination was never designed. → `references/47-out-of-sight-out-of-sync.md`
 - `#64` **The code review that became personal** — a recurring two-person conflict read as a personality clash, produced by a structure that makes critique a status contest. → `references/64-the-code-review-that-became-personal.md`
 - `#67` **The IT-business divide** — shared ceremonies and embedded engineers, but roadmap, technical decisions and budgets still sit apart, so only the CEO integrates them. → `references/67-the-it-business-divide.md`
+- `#72` **Hired from above** — a person is added to a late team without the team deciding, and the team gets slower, because membership is the one boundary it doesn't control. → `references/72-hired-from-above.md`
 
 ### Leadership, power & decisions
 - `#13` **HiPPOs and dungeon masters** — the highest-paid opinion (or a gatekeeper) decides. → `references/13-hippos-and-dungeon-masters.md`
@@ -109,6 +110,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#37` **Outsourcing the future** — handing core capability/strategy to vendors. → `references/37-outsourcing-the-future.md`
 - `#57` **The market we think we shape** — mistaking internal narrative for the actual environment. → `references/57-the-market-we-think-we-shape.md`
 - `#58` **The short-termism machine** — quarterly pressure crowds out adaptation and learning. → `references/58-the-short-termism-machine.md`
+- `#71` **The values on the wall** — five laminated corporate values nobody recalls, standing in for the shared ideals people already hold. → `references/71-the-values-on-the-wall.md`
 
 ### Agile, transformation & change
 - `#6` **Analysis paralysis** — endless analysis because no one is safe to decide and act. → `references/06-analysis-paralysis.md`
