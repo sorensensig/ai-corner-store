@@ -11,7 +11,7 @@
   "generated": {
     "fromCommit": "n/a \u2014 pattern authored from docs",
     "at": "2026-08-12T00:00:00Z",
-    "generator": "authored (batch 3, from the 2026-08-10 blinded visual check backlog)"
+    "generator": "authored"
   },
   "links": {
     "docs": "https://designsystemet.no/en/best-practices/content-work/questions"
@@ -38,7 +38,7 @@
   "a11y": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/best-practices/content-work/questions",
-    "method": "drafted from the docs pages, quote-verified 2026-08-12, human review pending (batch 3)",
+    "method": "drafted from the docs pages, quote-verified 2026-08-12, human review pending",
     "value": [
       {
         "rule": "Avoid guidance text inside the input itself (placeholders); give all relevant information before the user fills in the field",
@@ -56,7 +56,7 @@
   "composition": {
     "provenance": "authored",
     "source": "https://designsystemet.no/en/best-practices/content-work/questions",
-    "method": "drafted from the docs pages, quote-verified 2026-08-12, human review pending (batch 3)",
+    "method": "drafted from the docs pages, quote-verified 2026-08-12, human review pending",
     "value": [
       {
         "rule": "Use a description (help text) to explain difficult content \u2014 legal terms, specialist language, expected formats",
