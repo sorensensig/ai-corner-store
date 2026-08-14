@@ -11,7 +11,7 @@
   "generated": {
     "fromCommit": "n/a \u2014 pattern authored from docs + component source",
     "at": "2026-08-05T20:00:00Z",
-    "generator": "pilot-manual"
+    "generator": "authored"
   },
   "links": {
     "docs": "https://designsystemet.no/en/patterns/required-and-optional-fields",
@@ -99,7 +99,7 @@
     "source": "https://designsystemet.no/en/patterns/required-and-optional-fields + https://designsystemet.no/en/components/docs/toggle-group/overview",
     "value": [
       "This pattern governs MARKING, not validation. Error handling belongs to the errors pattern.",
-      "ToggleGroup is for switching between views or a small set of choices; for a form answer the docs direct you to Radio instead. It is used here because the brief asks for it.",
+      "ToggleGroup is for switching between views or a small set of choices; for a form answer the docs direct you to Radio instead.",
       "Do not invent props on ToggleGroup: the documented surface is variant, value, defaultValue, onChange, name (+ ToggleGroup.Item: value, icon)."
     ]
   },

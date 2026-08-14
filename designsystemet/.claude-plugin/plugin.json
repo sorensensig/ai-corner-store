@@ -1,7 +1,7 @@
 {
   "name": "designsystemet",
   "description": "Experimental. Build with Digdir's Designsystemet correctly on the first attempt: quote-verified component contracts (twins), a WCAG guard hook, and the /ds-check audit command.",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "author": {
     "name": "Sigurd S\u00e6ther S\u00f8rensen",
     "email": "sorensensig@gmail.com"
