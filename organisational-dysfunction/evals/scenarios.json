@@ -580,6 +580,14 @@
       "expected_refs": [
         "72-hired-from-above"
       ]
+    },
+    {
+      "id": "war-room-authority-only-in-crisis",
+      "prompt": "we had a payment outage last night and honestly the team was incredible - four of us on a call, found the cause, shipped the fix, done in about 90 minutes, nobody asked permission for anything. now the same engineer wants to make the proper permanent fix and it's been sitting in a change-approval queue for three days. people keep joking that we should just declare an incident whenever we want to get something done. how do I make the argument that the incident way of working should be the normal way?",
+      "should_trigger": true,
+      "expected_refs": [
+        "73-what-the-war-room-proves"
+      ]
     }
   ]
 }
