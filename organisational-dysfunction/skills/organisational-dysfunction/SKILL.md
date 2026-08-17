@@ -14,7 +14,7 @@ Hold these defaults as you work:
 - **Diagnose, don't sympathise.** Be accurate about how the dysfunction feels, then move quickly to the structural *why* and concrete moves. People come for a sharper read, not validation.
 - **Dysfunctions interlock.** Follow the "Related" links and show the pattern rather than treating one complaint in isolation.
 
-This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 72 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
+This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 73 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
 
 ## The core lens: DP1 vs DP2
 
@@ -90,6 +90,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#68` **The bureaucracy that became the work** — reporting, governance and approvals crowd out the actual task, and the apparatus grows regardless of the work. → `references/68-the-bureaucracy-that-became-the-work.md`
 - `#69` **Playing politics** — getting things done runs on who you know and who owes whom, because authority is concentrated and resources are won, not allocated. → `references/69-playing-politics.md`
 - `#70` **The blind decision** — a senior sign-off on a choice the approver never had the knowledge to make, because authority rose and the knowledge stayed put. → `references/70-the-blind-decision.md`
+- `#73` **What the war room proves** — incident mode grants the team full authority and works brilliantly; the same decision takes three days once nothing is on fire. → `references/73-what-the-war-room-proves.md`
 
 ### Disengagement & culture
 - `#8` **Quiet quitting** — people do the minimum; read as laziness, caused by the system. → `references/08-quiet-quitting.md`

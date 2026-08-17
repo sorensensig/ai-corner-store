@@ -5,18 +5,18 @@
 | **Creator** | Sigurd Sæther Sørensen |
 | **Based on** | Trond Hjorteland — *Organisational Dysfunction of the Day* ([full list](https://www.linkedin.com/pulse/organisational-dysfunction-day-full-list-trond-hjorteland-gxrze/)) |
 | **Framework** | Open sociotechnical systems theory (DP1 / DP2) |
-| **Contents** | 1 skill · 72 dysfunctions |
-| **Version** | 0.12.0 |
+| **Contents** | 1 skill · 73 dysfunctions |
+| **Version** | 0.13.0 |
 
 A Claude Code plugin of org-design knowledge for diagnosing the recurring ways organisations and teams get stuck — and what to actually do about them.
 
-It packages **72 named dysfunctions** from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series, all read through the same lens: **open sociotechnical systems theory (OST)** and its DP1 (top-down bureaucracy) vs DP2 (self-managing teams) distinction.
+It packages **73 named dysfunctions** from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series, all read through the same lens: **open sociotechnical systems theory (OST)** and its DP1 (top-down bureaucracy) vs DP2 (self-managing teams) distinction.
 
 ## What's inside
 
 One sharp, cleanly-triggering skill — `organisational-dysfunction` — built on Anthropic's progressive-disclosure pattern:
 
-- **`SKILL.md`** — the always-loaded router. Holds the shared DP1/DP2 lens once, plus an index of all 72 dysfunctions grouped by theme.
+- **`SKILL.md`** — the always-loaded router. Holds the shared DP1/DP2 lens once, plus an index of all 73 dysfunctions grouped by theme.
 - **`references/NN-*.md`** — one lean file per dysfunction: how it shows up, the sociotechnical diagnosis (the *why*), and concrete remedies. Claude reads only the one(s) that match.
 
 ## When it triggers
@@ -107,6 +107,9 @@ Each reference file also notes its source dysfunction number; the corresponding 
 ## Changelog
 
 New entries are appended automatically by the update pipeline (`loop/pipeline.md`) as Trond publishes them, and each version is cut as a [GitHub Release](https://github.com/sorensensig/ai-corner-store/releases) (tagged `organisational-dysfunction-v<version>`). **Installed copies do not auto-update** — click **Watch → Releases** on this repo to be notified of new versions, then re-pull (see [Installation](#installation)). Newest first.
+
+### 0.13.0 — 2026-08-17
+- Added `#73` **What the war room proves** (72 → 73 dysfunctions). Generated via the update pipeline; passed the targeted routing/triggering test.
 
 ### 0.12.0 — 2026-08-14
 - Added `#71` **The values on the wall** and `#72` **Hired from above** (70 → 72 dysfunctions). Generated via the update pipeline; both passed the targeted routing/triggering test.
