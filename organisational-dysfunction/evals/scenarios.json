@@ -588,6 +588,14 @@
       "expected_refs": [
         "73-what-the-war-room-proves"
       ]
+    },
+    {
+      "id": "two-managers-conflicting-priorities",
+      "prompt": "i'm in a setup where i report to an engineering manager for my discipline and to a product owner for delivery. last week my eng manager signed me up for a two-day course starting thursday and the same afternoon my PO told the stakeholders the feature ships friday. neither of them talked to each other about it, and both of them are right in their own way. i ended up doing the course badly and the feature badly. this happens maybe once a month and it always lands on me to pick. HR calls it a matrix organisation. how do i stop being the person who has to choose?",
+      "should_trigger": true,
+      "expected_refs": [
+        "74-matrices"
+      ]
     }
   ]
 }
