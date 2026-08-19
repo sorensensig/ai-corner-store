@@ -596,6 +596,14 @@
       "expected_refs": [
         "74-matrices"
       ]
+    },
+    {
+      "id": "workshop-split-into-parallel-groups",
+      "prompt": "we ran an all-day session with about 20 people from across the department. to get through everything we split into four groups of five, each took one of the big questions, and after 90 minutes every group presented back a summary. it felt really productive on the day. but now a week later i'm finding people only remember whatever their own group discussed - they can't tell me what the other three decided, and two of the decisions are already being argued about again by people who weren't at that table. was our report-back too rushed? should i have written a better summary document afterwards?",
+      "should_trigger": true,
+      "expected_refs": [
+        "75-divided-for-efficiency"
+      ]
     }
   ]
 }
