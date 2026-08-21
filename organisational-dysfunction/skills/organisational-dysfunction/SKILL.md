@@ -14,7 +14,7 @@ Hold these defaults as you work:
 - **Diagnose, don't sympathise.** Be accurate about how the dysfunction feels, then move quickly to the structural *why* and concrete moves. People come for a sharper read, not validation.
 - **Dysfunctions interlock.** Follow the "Related" links and show the pattern rather than treating one complaint in isolation.
 
-This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 76 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
+This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 77 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
 
 ## The core lens: DP1 vs DP2
 
@@ -128,6 +128,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#45` **Fixing the process** — adding process to compensate for a structural fault. → `references/45-fixing-the-process.md`
 - `#50` **The agile scaling trap** — scaling frameworks (SAFe etc.) re-impose DP1 at scale. → `references/50-the-agile-scaling-trap.md`
 - `#61` **Rearranging the furniture** — job-enrichment initiatives that improve individual roles without changing who designs the work. → `references/61-rearranging-the-furniture.md`
+- `#77` **Becoming Teal** — adopting Teal's roles and advice processes while failure is explained by readiness rather than by where control still sits. → `references/77-becoming-teal.md`
 
 ### AI
 - `#21` **Deploying AI into a broken system** — AI amplifies a dysfunctional structure instead of fixing it. → `references/21-deploying-ai-into-a-broken-system.md`
