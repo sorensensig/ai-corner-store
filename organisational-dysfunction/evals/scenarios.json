@@ -604,6 +604,14 @@
       "expected_refs": [
         "75-divided-for-efficiency"
       ]
+    },
+    {
+      "id": "transformed-internally-vendors-unchanged",
+      "prompt": "we spent two years reorganising into cross-functional product teams and honestly internally it's night and day - the teams decide things themselves now and ship weekly. but everything that touches our platform vendor has gotten worse, or at least it feels worse now by comparison. a config change we need is item 140-something on their global roadmap and their product council reviews it quarterly. their support is three tiers of tickets so when our engineer knows exactly which of their engineers could fix it in ten minutes, there is no way for those two to speak. our account manager is lovely and completely powerless. i'm getting asked whether we should put them on a performance improvement plan or find a tougher procurement lead. is that the answer?",
+      "should_trigger": true,
+      "expected_refs": [
+        "76-we-transformed-our-suppliers-didnt"
+      ]
     }
   ]
 }
