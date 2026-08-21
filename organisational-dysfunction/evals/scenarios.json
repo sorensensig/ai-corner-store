@@ -612,6 +612,14 @@
       "expected_refs": [
         "76-we-transformed-our-suppliers-didnt"
       ]
+    },
+    {
+      "id": "teal-adoption-stalled-readiness",
+      "prompt": "our ceo read reinventing organizations two years ago and we went all in on teal. titles became roles, we brought in the advice process instead of sign-off chains, there's a whole page on the wiki about the colours and everyone can talk about it fluently. two of the eight teams are genuinely flying. the rest quietly still ask their old line manager before doing anything, and the managers themselves are the ones pushing back hardest so we've stopped rolling it out any further. our coach keeps telling us the organisation isn't ready yet and needs more inner work before the next wave, and we've now booked another round of consciousness workshops. i'm starting to wonder if we're just not evolved enough as a group, or whether we picked the wrong people to start with?",
+      "should_trigger": true,
+      "expected_refs": [
+        "77-becoming-teal"
+      ]
     }
   ]
 }
