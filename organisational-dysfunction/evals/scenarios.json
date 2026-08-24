@@ -620,6 +620,14 @@
       "expected_refs": [
         "77-becoming-teal"
       ]
+    },
+    {
+      "id": "return-to-office-mandate",
+      "prompt": "we just got an email saying everyone is back in the office five days a week from next month. the reasons given were collaboration, culture and mentoring the juniors. we've been remote for three years and honestly the numbers haven't moved either way — the teams that worked well still work well, the ones that struggled still struggle, and nobody has pointed at anything specific that was failing. half the meetings that got moved back into a room have people dialling in anyway. i'm a team lead and my people are asking me to justify it. how do i think about this?",
+      "should_trigger": true,
+      "expected_refs": [
+        "78-back-to-the-office"
+      ]
     }
   ]
 }
