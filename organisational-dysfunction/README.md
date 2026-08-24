@@ -5,18 +5,18 @@
 | **Creator** | Sigurd Sæther Sørensen |
 | **Based on** | Trond Hjorteland — *Organisational Dysfunction of the Day* ([full list](https://www.linkedin.com/pulse/organisational-dysfunction-day-full-list-trond-hjorteland-gxrze/)) |
 | **Framework** | Open sociotechnical systems theory (DP1 / DP2) |
-| **Contents** | 1 skill · 77 dysfunctions |
-| **Version** | 0.17.0 |
+| **Contents** | 1 skill · 78 dysfunctions |
+| **Version** | 0.18.0 |
 
 A Claude Code plugin of org-design knowledge for diagnosing the recurring ways organisations and teams get stuck — and what to actually do about them.
 
-It packages **77 named dysfunctions** from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series, all read through the same lens: **open sociotechnical systems theory (OST)** and its DP1 (top-down bureaucracy) vs DP2 (self-managing teams) distinction.
+It packages **78 named dysfunctions** from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series, all read through the same lens: **open sociotechnical systems theory (OST)** and its DP1 (top-down bureaucracy) vs DP2 (self-managing teams) distinction.
 
 ## What's inside
 
 One sharp, cleanly-triggering skill — `organisational-dysfunction` — built on Anthropic's progressive-disclosure pattern:
 
-- **`SKILL.md`** — the always-loaded router. Holds the shared DP1/DP2 lens once, plus an index of all 77 dysfunctions grouped by theme.
+- **`SKILL.md`** — the always-loaded router. Holds the shared DP1/DP2 lens once, plus an index of all 78 dysfunctions grouped by theme.
 - **`references/NN-*.md`** — one lean file per dysfunction: how it shows up, the sociotechnical diagnosis (the *why*), and concrete remedies. Claude reads only the one(s) that match.
 
 ## When it triggers
@@ -107,6 +107,9 @@ Each reference file also notes its source dysfunction number; the corresponding 
 ## Changelog
 
 New entries are appended automatically by the update pipeline (`loop/pipeline.md`) as Trond publishes them, and each version is cut as a [GitHub Release](https://github.com/sorensensig/ai-corner-store/releases) (tagged `organisational-dysfunction-v<version>`). **Installed copies do not auto-update** — click **Watch → Releases** on this repo to be notified of new versions, then re-pull (see [Installation](#installation)). Newest first.
+
+### 0.18.0 — 2026-08-24
+- Added `#78` **Back to the office** (77 → 78 dysfunctions). Generated via the update pipeline. Eval scenario added, but the targeted routing/triggering probe could not be executed in the unattended run (the headless `claude` CLI failed to authenticate: `401 OAuth access token has been revoked`) — it is unverified, not passed.
 
 ### 0.17.0 — 2026-08-21
 - Added `#77` **Becoming Teal** (76 → 77 dysfunctions). Generated via the update pipeline. Eval scenario added, but the targeted routing/triggering probe could not be executed in the unattended run (headless `claude` dispatch was gated locally) — it is unverified, not passed.
