@@ -14,7 +14,7 @@ Hold these defaults as you work:
 - **Diagnose, don't sympathise.** Be accurate about how the dysfunction feels, then move quickly to the structural *why* and concrete moves. People come for a sharper read, not validation.
 - **Dysfunctions interlock.** Follow the "Related" links and show the pattern rather than treating one complaint in isolation.
 
-This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 78 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
+This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 79 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
 
 ## The core lens: DP1 vs DP2
 
@@ -116,6 +116,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#58` **The short-termism machine** — quarterly pressure crowds out adaptation and learning. → `references/58-the-short-termism-machine.md`
 - `#71` **The values on the wall** — five laminated corporate values nobody recalls, standing in for the shared ideals people already hold. → `references/71-the-values-on-the-wall.md`
 - `#76` **We transformed, our suppliers didn't** — the internal redesign worked, and then every request that leaves the building hits a vendor backlog or a ticket tier. → `references/76-we-transformed-our-suppliers-didnt.md`
+- `#79` **The adaptation plan nobody owns** — AI assistants scaled everywhere while the green-coding standards predate them, so the consequences belong to no one. → `references/79-the-adaptation-plan-nobody-owns.md`
 
 ### Agile, transformation & change
 - `#6` **Analysis paralysis** — endless analysis because no one is safe to decide and act. → `references/06-analysis-paralysis.md`

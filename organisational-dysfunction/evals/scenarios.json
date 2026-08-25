@@ -628,6 +628,14 @@
       "expected_refs": [
         "78-back-to-the-office"
       ]
+    },
+    {
+      "id": "ai-rollout-no-footprint-owner",
+      "prompt": "we're a fairly green company, iso certified on the environmental side, we publish our own green coding standards and we track component reuse. last quarter we rolled out ai coding assistants to all twelve dev teams and it's gone well, people like them. what's been nagging me is that nobody anywhere is measuring what all that inference actually costs in compute or emissions. the green coding standards were written in 2023 and don't mention ai at all so technically nothing is being breached. i asked around about who owns figuring out the impact and got shrugs — sustainability says it's an engineering tooling decision, engineering says sustainability sets the standards. the only thing we seem to produce on this is the annual disclosure. am i wrong to think this is a real gap, and who should i be pushing?",
+      "should_trigger": true,
+      "expected_refs": [
+        "79-the-adaptation-plan-nobody-owns"
+      ]
     }
   ]
 }
