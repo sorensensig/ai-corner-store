@@ -636,6 +636,14 @@
       "expected_refs": [
         "79-the-adaptation-plan-nobody-owns"
       ]
+    },
+    {
+      "id": "glue-person-left-hire-a-lead",
+      "prompt": "we lost someone in march who i now realise was holding the whole team together. she wasn't a manager, she was a senior dev, but she onboarded every new person, kept our docs actually current, and somehow always caught the friction between two of the guys before it turned into anything. none of that was in her objectives. since she left, onboarding has stalled, two people are barely speaking, and stuff keeps falling between us that used to just get handled. management's answer is that we clearly need a dedicated team lead and they're recruiting externally for a coordinator. my gut says that's not going to work — the new person won't know the domain or any of us — but i can't articulate why beyond a feeling. how should i be thinking about this?",
+      "should_trigger": true,
+      "expected_refs": [
+        "80-when-the-glue-leaves"
+      ]
     }
   ]
 }
