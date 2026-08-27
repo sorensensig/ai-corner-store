@@ -644,6 +644,14 @@
       "expected_refs": [
         "80-when-the-glue-leaves"
       ]
+    },
+    {
+      "id": "tight-loose-tight-corridor-not-field",
+      "prompt": "our leadership rolled out what they call a tight-loose-tight model about a year ago. the idea is they set the direction, we decide how to get there, and then they check the outcome. on paper i liked it. in practice my team keeps discovering walls we didn't know were there — we picked a queue technology and were told to use the standard one, we resequenced two deliverables and that got reversed, we wanted to cut a feature we're pretty sure nobody wants and were told the scope was already committed. nobody can give me a list of what we actually get to decide. the targets come down from the portfolio review and the same review decides whether we hit them. my team has basically stopped proposing anything, and now i'm getting feedback that they seem to lack ownership. what's actually going on here?",
+      "should_trigger": true,
+      "expected_refs": [
+        "81-loose-in-name-only"
+      ]
     }
   ]
 }

@@ -14,7 +14,7 @@ Hold these defaults as you work:
 - **Diagnose, don't sympathise.** Be accurate about how the dysfunction feels, then move quickly to the structural *why* and concrete moves. People come for a sharper read, not validation.
 - **Dysfunctions interlock.** Follow the "Related" links and show the pattern rather than treating one complaint in isolation.
 
-This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 80 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
+This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 81 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
 
 ## The core lens: DP1 vs DP2
 
@@ -95,6 +95,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#73` **What the war room proves** — incident mode grants the team full authority and works brilliantly; the same decision takes three days once nothing is on fire. → `references/73-what-the-war-room-proves.md`
 - `#74` **Matrices** — two reporting lines with equal claim on the same hours, so the person at the intersection absorbs a conflict neither manager has to resolve. → `references/74-matrices.md`
 - `#78` **Back to the office** — a blanket return-to-office mandate that answers no nameable coordination failure, because what remote removed was the stage on which authority is performed. → `references/78-back-to-the-office.md`
+- `#81` **Loose in name only** — "tight–loose–tight" autonomy where the loose middle is a corridor: the team picks the method, someone above still sets the objective and grades the result. → `references/81-loose-in-name-only.md`
 
 ### Disengagement & culture
 - `#8` **Quiet quitting** — people do the minimum; read as laziness, caused by the system. → `references/08-quiet-quitting.md`
