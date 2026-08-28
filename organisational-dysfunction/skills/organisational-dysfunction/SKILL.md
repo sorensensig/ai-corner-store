@@ -14,7 +14,7 @@ Hold these defaults as you work:
 - **Diagnose, don't sympathise.** Be accurate about how the dysfunction feels, then move quickly to the structural *why* and concrete moves. People come for a sharper read, not validation.
 - **Dysfunctions interlock.** Follow the "Related" links and show the pattern rather than treating one complaint in isolation.
 
-This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 81 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
+This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 82 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
 
 ## The core lens: DP1 vs DP2
 
@@ -58,6 +58,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#62` **The agenda that sabotaged itself** — a workshop's agenda silently switches design principle (keynote → group work → leader panel), so the room turns. → `references/62-the-agenda-that-sabotaged-itself.md`
 - `#65` **The facilitator's toolkit** — a flawlessly-run workshop leaves people politely disengaged, because the tools themselves say the facilitator owns it. → `references/65-the-facilitators-toolkit.md`
 - `#75` **Divided for efficiency** — a workshop splits into parallel groups to cover more ground, and afterwards nobody can recall what the other tables decided or why. → `references/75-divided-for-efficiency.md`
+- `#82` **The wrong people in the room** — the workshop on how work flows is staffed from the org chart, so the people who live the handoffs aren't there. → `references/82-the-wrong-people-in-the-room.md`
 
 ### Metrics, money & measurement
 - `#23` **The error factory** — defects treated as individual mistakes to be counted and punished. → `references/23-the-error-factory.md`

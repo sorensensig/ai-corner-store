@@ -652,6 +652,14 @@
       "expected_refs": [
         "81-loose-in-name-only"
       ]
+    },
+    {
+      "id": "workshop-invite-list-from-the-org-chart",
+      "prompt": "i'm running a two-day workshop next month on how work flows end to end across our delivery org — the handoffs between product, dev, test and ops are where everything gets stuck and we want to redesign it properly. my sponsor and i built the invite list last week: the three department directors, our two principal engineers, someone senior from IT operations, the four project managers, and an enterprise architect. twenty people, everyone with real authority to make decisions stick. i've booked a good facilitator and we've got a solid agenda. one of my team asked why none of the people who actually run the handoffs day to day are on the list and i brushed it off — we can't fit everyone and these are the people who can actually change things. now it's nagging at me. is there something wrong with how i've composed this room?",
+      "should_trigger": true,
+      "expected_refs": [
+        "82-the-wrong-people-in-the-room"
+      ]
     }
   ]
 }
