@@ -14,7 +14,7 @@ A small, curated shop of AI skills, plugins, and bundles — each a **self-conta
 
 | Release | What it is | Install path |
 |---|---|---|
-| [`organisational-dysfunction`](./organisational-dysfunction) | Diagnose org & team dysfunction as a problem of structure, not people — 82 named dysfunctions read through open sociotechnical systems theory. | `organisational-dysfunction` |
+| [`organisational-dysfunction`](./organisational-dysfunction) | Diagnose org & team dysfunction as a problem of structure, not people — 83 named dysfunctions read through open sociotechnical systems theory. | `organisational-dysfunction` |
 | [`laws-of-ux`](./laws-of-ux) | Treat human limits — working memory, attention, tolerance for choice — as hard design constraints. 21 psychological laws, applied to interfaces *and* to configs, prompts, CLI output and the options a tool offers. | `laws-of-ux` |
 | [`designsystemet`](./designsystemet) | **Experimental.** Build with Digdir's Designsystemet correctly on the first attempt — quote-verified component contracts (twins), a WCAG guard hook, MCP twins server, and the `/ds-check` audit. Interim home; moves to kihub. | `designsystemet` |
 | _more coming_ | | |

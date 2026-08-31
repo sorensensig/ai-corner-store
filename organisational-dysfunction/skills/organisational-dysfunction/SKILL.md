@@ -14,7 +14,7 @@ Hold these defaults as you work:
 - **Diagnose, don't sympathise.** Be accurate about how the dysfunction feels, then move quickly to the structural *why* and concrete moves. People come for a sharper read, not validation.
 - **Dysfunctions interlock.** Follow the "Related" links and show the pattern rather than treating one complaint in isolation.
 
-This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 82 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
+This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 83 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
 
 ## The core lens: DP1 vs DP2
 
@@ -107,6 +107,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#48` **It's just a job** — meaning stripped out, so people withdraw discretionary effort. → `references/48-its-just-a-job.md`
 - `#53` **Designed to undermine** — structures that systematically erode trust and agency. → `references/53-designed-to-undermine.md`
 - `#56` **Permanent urgency** — everything is a top priority, so nothing can be planned or owned. → `references/56-permanent-urgency.md`
+- `#83` **The wellness programme** — EAP, app and mindfulness sessions bolted onto a DP1 structure; strain is treated, the thing producing it is not. → `references/83-the-wellness-programme.md`
 
 ### Strategy, direction & environment
 - `#10` **The company's strategy is unclear** — teams can't self-direct without a shared, real purpose. → `references/10-the-companys-strategy-is-unclear.md`

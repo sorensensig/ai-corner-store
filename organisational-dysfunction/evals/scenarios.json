@@ -660,6 +660,14 @@
       "expected_refs": [
         "82-the-wrong-people-in-the-room"
       ]
+    },
+    {
+      "id": "wellness-programme-sick-leave-unchanged",
+      "prompt": "we rolled out a whole mental health package about eight months ago — EAP contract, headspace licences for everyone, mindfulness sessions in the big meeting room at lunch on tuesdays, posters in the kitchen about checking in on each other. our CPO talks about work-life balance at every all-hands and we introduced a policy discouraging emails after 6pm. HR is pleased, sign-up on the app is something like 70% and the sessions are well attended. the problem is stress-related sick leave is exactly where it was. flat. same absolute numbers, roughly the same people. i had to present the wellbeing update to the leadership team last week and someone asked whether any of this is actually doing anything, and honestly i don't have an answer. the suggestion on the table now is to invest more in promotion and add resilience training. i'm not convinced but i can't articulate why.",
+      "should_trigger": true,
+      "expected_refs": [
+        "83-the-wellness-programme"
+      ]
     }
   ]
 }

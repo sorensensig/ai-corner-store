@@ -5,18 +5,18 @@
 | **Creator** | Sigurd Sæther Sørensen |
 | **Based on** | Trond Hjorteland — *Organisational Dysfunction of the Day* ([full list](https://www.linkedin.com/pulse/organisational-dysfunction-day-full-list-trond-hjorteland-gxrze/)) |
 | **Framework** | Open sociotechnical systems theory (DP1 / DP2) |
-| **Contents** | 1 skill · 82 dysfunctions |
-| **Version** | 0.22.0 |
+| **Contents** | 1 skill · 83 dysfunctions |
+| **Version** | 0.23.0 |
 
 A Claude Code plugin of org-design knowledge for diagnosing the recurring ways organisations and teams get stuck — and what to actually do about them.
 
-It packages **82 named dysfunctions** from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series, all read through the same lens: **open sociotechnical systems theory (OST)** and its DP1 (top-down bureaucracy) vs DP2 (self-managing teams) distinction.
+It packages **83 named dysfunctions** from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series, all read through the same lens: **open sociotechnical systems theory (OST)** and its DP1 (top-down bureaucracy) vs DP2 (self-managing teams) distinction.
 
 ## What's inside
 
 One sharp, cleanly-triggering skill — `organisational-dysfunction` — built on Anthropic's progressive-disclosure pattern:
 
-- **`SKILL.md`** — the always-loaded router. Holds the shared DP1/DP2 lens once, plus an index of all 82 dysfunctions grouped by theme.
+- **`SKILL.md`** — the always-loaded router. Holds the shared DP1/DP2 lens once, plus an index of all 83 dysfunctions grouped by theme.
 - **`references/NN-*.md`** — one lean file per dysfunction: how it shows up, the sociotechnical diagnosis (the *why*), and concrete remedies. Claude reads only the one(s) that match.
 
 ## When it triggers
@@ -108,13 +108,15 @@ Each reference file also notes its source dysfunction number; the corresponding 
 
 New entries are appended automatically by the update pipeline (`loop/pipeline.md`) as Trond publishes them, and each version is cut as a [GitHub Release](https://github.com/sorensensig/ai-corner-store/releases) (tagged `organisational-dysfunction-v<version>`). **Installed copies do not auto-update** — click **Watch → Releases** on this repo to be notified of new versions, then re-pull (see [Installation](#installation)). Newest first.
 
+### 0.23.0 — 2026-08-31
+- Added `#83` **The wellness programme** (82 → 83 dysfunctions). Generated via the update pipeline. Eval scenario added, but the targeted routing/triggering probe could not be executed in the unattended run (the headless `claude` CLI still fails authentication with a revoked OAuth token) — it is unverified, not passed.
+- 0.20.0 through 0.23.0 all land in the same merge, so only `organisational-dysfunction-v0.23.0` is tagged; the intermediate versions have no tag of their own.
+
 ### 0.22.0 — 2026-08-28
 - Added `#82` **The wrong people in the room** (81 → 82 dysfunctions). Generated via the update pipeline. Eval scenario added, but the targeted routing/triggering probe could not be executed in the unattended run — it is unverified, not passed.
-- 0.20.0, 0.21.0 and 0.22.0 all land in the same merge, so only `organisational-dysfunction-v0.22.0` is tagged.
 
 ### 0.21.0 — 2026-08-27
 - Added `#81` **Loose in name only** (80 → 81 dysfunctions). Generated via the update pipeline. Eval scenario added, but the targeted routing/triggering probe could not be executed in the unattended run (the headless `claude` CLI hung with no output and no error until the timeout, so the harness returned empty) — it is unverified, not passed.
-- 0.20.0 and 0.21.0 land in the same merge, so only `organisational-dysfunction-v0.21.0` is tagged.
 
 ### 0.20.0 — 2026-08-26
 - Added `#80` **When the glue leaves** (79 → 80 dysfunctions). Generated via the update pipeline. Eval scenario added, but the targeted routing/triggering probe could not be executed in the unattended run (the headless `claude` CLI hung with no output and no error until the 120s timeout, so the harness returned empty) — it is unverified, not passed.
