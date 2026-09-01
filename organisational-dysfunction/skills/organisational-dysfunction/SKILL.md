@@ -14,7 +14,7 @@ Hold these defaults as you work:
 - **Diagnose, don't sympathise.** Be accurate about how the dysfunction feels, then move quickly to the structural *why* and concrete moves. People come for a sharper read, not validation.
 - **Dysfunctions interlock.** Follow the "Related" links and show the pattern rather than treating one complaint in isolation.
 
-This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 83 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
+This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 84 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
 
 ## The core lens: DP1 vs DP2
 
@@ -139,6 +139,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 ### AI
 - `#21` **Deploying AI into a broken system** — AI amplifies a dysfunctional structure instead of fixing it. → `references/21-deploying-ai-into-a-broken-system.md`
 - `#43` **The AI we cannot talk about** — shadow/anxious AI use no one will discuss openly. → `references/43-the-ai-we-cannot-talk-about.md`
+- `#84` **Deskilled by AI** — the assistant lands on roles already narrowed to a fragment, completing a deskilling the job design began years earlier. → `references/84-deskilled-by-ai.md`
 
 ### Communication, knowledge & growth
 - `#2` **Passing the buck** — accountability bounces around because ownership is fragmented. → `references/02-passing-the-buck.md`

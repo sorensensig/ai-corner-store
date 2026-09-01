@@ -668,6 +668,14 @@
       "expected_refs": [
         "83-the-wellness-programme"
       ]
+    },
+    {
+      "id": "ai-assistant-developers-reduced-to-prompting",
+      "prompt": "something is bothering me about how our AI rollout has gone and i can't quite name it. we gave the whole engineering org copilot-style assistants about a year ago and the delivery numbers are genuinely up, leadership is delighted. but our developers barely design anything now. they write a prompt, skim the diff, ship it. i used to have people who could hold a whole subsystem in their head and argue with me about the shape of it, and those arguments were where the good decisions came from. now the shape just arrives and nobody pushes back. the juniors we hired this year have never done it any other way. when i raised it with my director he said this is just what modern engineering looks like and i'm being nostalgic, and that if people feel left behind they should upskill. i don't think that's the whole story but i can't argue it properly. is this the tool's fault or ours?",
+      "should_trigger": true,
+      "expected_refs": [
+        "84-deskilled-by-ai"
+      ]
     }
   ]
 }
