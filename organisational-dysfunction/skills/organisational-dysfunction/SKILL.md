@@ -14,7 +14,7 @@ Hold these defaults as you work:
 - **Diagnose, don't sympathise.** Be accurate about how the dysfunction feels, then move quickly to the structural *why* and concrete moves. People come for a sharper read, not validation.
 - **Dysfunctions interlock.** Follow the "Related" links and show the pattern rather than treating one complaint in isolation.
 
-This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 79 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
+This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 84 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
 
 ## The core lens: DP1 vs DP2
 
@@ -58,6 +58,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#62` **The agenda that sabotaged itself** — a workshop's agenda silently switches design principle (keynote → group work → leader panel), so the room turns. → `references/62-the-agenda-that-sabotaged-itself.md`
 - `#65` **The facilitator's toolkit** — a flawlessly-run workshop leaves people politely disengaged, because the tools themselves say the facilitator owns it. → `references/65-the-facilitators-toolkit.md`
 - `#75` **Divided for efficiency** — a workshop splits into parallel groups to cover more ground, and afterwards nobody can recall what the other tables decided or why. → `references/75-divided-for-efficiency.md`
+- `#82` **The wrong people in the room** — the workshop on how work flows is staffed from the org chart, so the people who live the handoffs aren't there. → `references/82-the-wrong-people-in-the-room.md`
 
 ### Metrics, money & measurement
 - `#23` **The error factory** — defects treated as individual mistakes to be counted and punished. → `references/23-the-error-factory.md`
@@ -78,6 +79,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#64` **The code review that became personal** — a recurring two-person conflict read as a personality clash, produced by a structure that makes critique a status contest. → `references/64-the-code-review-that-became-personal.md`
 - `#67` **The IT-business divide** — shared ceremonies and embedded engineers, but roadmap, technical decisions and budgets still sit apart, so only the CEO integrates them. → `references/67-the-it-business-divide.md`
 - `#72` **Hired from above** — a person is added to a late team without the team deciding, and the team gets slower, because membership is the one boundary it doesn't control. → `references/72-hired-from-above.md`
+- `#80` **When the glue leaves** — the person who quietly held the team together resigns, and the org replaces them with a layer above instead of capacity within. → `references/80-when-the-glue-leaves.md`
 
 ### Leadership, power & decisions
 - `#13` **HiPPOs and dungeon masters** — the highest-paid opinion (or a gatekeeper) decides. → `references/13-hippos-and-dungeon-masters.md`
@@ -94,6 +96,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#73` **What the war room proves** — incident mode grants the team full authority and works brilliantly; the same decision takes three days once nothing is on fire. → `references/73-what-the-war-room-proves.md`
 - `#74` **Matrices** — two reporting lines with equal claim on the same hours, so the person at the intersection absorbs a conflict neither manager has to resolve. → `references/74-matrices.md`
 - `#78` **Back to the office** — a blanket return-to-office mandate that answers no nameable coordination failure, because what remote removed was the stage on which authority is performed. → `references/78-back-to-the-office.md`
+- `#81` **Loose in name only** — "tight–loose–tight" autonomy where the loose middle is a corridor: the team picks the method, someone above still sets the objective and grades the result. → `references/81-loose-in-name-only.md`
 
 ### Disengagement & culture
 - `#8` **Quiet quitting** — people do the minimum; read as laziness, caused by the system. → `references/08-quiet-quitting.md`
@@ -104,6 +107,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#48` **It's just a job** — meaning stripped out, so people withdraw discretionary effort. → `references/48-its-just-a-job.md`
 - `#53` **Designed to undermine** — structures that systematically erode trust and agency. → `references/53-designed-to-undermine.md`
 - `#56` **Permanent urgency** — everything is a top priority, so nothing can be planned or owned. → `references/56-permanent-urgency.md`
+- `#83` **The wellness programme** — EAP, app and mindfulness sessions bolted onto a DP1 structure; strain is treated, the thing producing it is not. → `references/83-the-wellness-programme.md`
 
 ### Strategy, direction & environment
 - `#10` **The company's strategy is unclear** — teams can't self-direct without a shared, real purpose. → `references/10-the-companys-strategy-is-unclear.md`
@@ -135,6 +139,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 ### AI
 - `#21` **Deploying AI into a broken system** — AI amplifies a dysfunctional structure instead of fixing it. → `references/21-deploying-ai-into-a-broken-system.md`
 - `#43` **The AI we cannot talk about** — shadow/anxious AI use no one will discuss openly. → `references/43-the-ai-we-cannot-talk-about.md`
+- `#84` **Deskilled by AI** — the assistant lands on roles already narrowed to a fragment, completing a deskilling the job design began years earlier. → `references/84-deskilled-by-ai.md`
 
 ### Communication, knowledge & growth
 - `#2` **Passing the buck** — accountability bounces around because ownership is fragmented. → `references/02-passing-the-buck.md`
