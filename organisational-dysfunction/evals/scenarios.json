@@ -676,6 +676,22 @@
       "expected_refs": [
         "84-deskilled-by-ai"
       ]
+    },
+    {
+      "id": "operating-model-outgrown-within-a-year",
+      "prompt": "we paid for a proper target operating model last year. our enterprise architect did the work and honestly it was good — every capability mapped, clean domain boundaries, the interfaces between them all specified, owners named. the exec team signed it off and everyone agreed it described us accurately. eighteen months on it describes almost nothing. teams have quietly routed around half the boundaries, the handoffs that matter go the wrong way across the interfaces, and when i raise it in the architecture forum the framing is always that the teams have drifted out of compliance and we need tighter governance to pull them back. nobody has suggested the model might be the thing that's wrong. i can't shake the feeling something was missing from it on day one and i still can't name what.",
+      "should_trigger": true,
+      "expected_refs": [
+        "85-the-enterprise-architect"
+      ]
+    },
+    {
+      "id": "flattened-hierarchy-informal-leaders-emerged",
+      "prompt": "we took out our entire middle management layer in january — partly cost, mostly because leadership wanted us to be flatter and faster. teams were told they're self-managing now. six months in and things are slower, not faster. all the stuff those managers did is still there: someone has to decide what we do first when three stakeholders all want something, someone has to go chase the thing stuck in another department, someone has to hold the context. in practice one person on each team has ended up doing it, with no title and no real authority, and if you disagree with them there's no process for that. our director's read is that the teams just aren't mature enough for autonomy yet and we should give it time. i think something else is going on but i'm struggling to argue it.",
+      "should_trigger": true,
+      "expected_refs": [
+        "86-removing-management"
+      ]
     }
   ]
 }
