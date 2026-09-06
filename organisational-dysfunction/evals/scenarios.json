@@ -692,6 +692,14 @@
       "expected_refs": [
         "86-removing-management"
       ]
+    },
+    {
+      "id": "consultant-said-what-we-said-for-two-years",
+      "prompt": "i've been raising the same problem with our onboarding pipeline for about two years now. retros, one-to-ones with my lead, a long slack thread, eventually a document with the drop-off numbers in it because i thought the data would settle it. every time it gets acknowledged and then it sits below the line. in may they brought in a consultancy to do a discovery. four weeks, a workshop, a deck. their headline finding is the onboarding pipeline — same problem, honestly a thinner version of my document, and half their evidence came from interviewing me. leadership were genuinely energised by the presentation and a fix was funded inside a month. nobody in the room seemed to notice. i wasn't asked to help design the fix. i'm not really angry, i've just stopped bothering to raise things, and i can't work out whether that's the correct response or me being petty.",
+      "should_trigger": true,
+      "expected_refs": [
+        "87-it-took-an-outsider-to-say-it"
+      ]
     }
   ]
 }
