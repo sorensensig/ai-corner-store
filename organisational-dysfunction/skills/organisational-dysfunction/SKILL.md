@@ -14,7 +14,7 @@ Hold these defaults as you work:
 - **Diagnose, don't sympathise.** Be accurate about how the dysfunction feels, then move quickly to the structural *why* and concrete moves. People come for a sharper read, not validation.
 - **Dysfunctions interlock.** Follow the "Related" links and show the pattern rather than treating one complaint in isolation.
 
-This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 84 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
+This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 88 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
 
 ## The core lens: DP1 vs DP2
 
@@ -97,6 +97,8 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#74` **Matrices** — two reporting lines with equal claim on the same hours, so the person at the intersection absorbs a conflict neither manager has to resolve. → `references/74-matrices.md`
 - `#78` **Back to the office** — a blanket return-to-office mandate that answers no nameable coordination failure, because what remote removed was the stage on which authority is performed. → `references/78-back-to-the-office.md`
 - `#81` **Loose in name only** — "tight–loose–tight" autonomy where the loose middle is a corridor: the team picks the method, someone above still sets the objective and grades the result. → `references/81-loose-in-name-only.md`
+- `#86` **Removing management** — a layer is deleted and teams declared self-managing, so the coordination nobody redesigned reappears as informal leaders without mandate. → `references/86-removing-management.md`
+- `#88` **The gates they removed** — CAB, architecture review and security sign-off are dropped for a product model, but the authority is never relocated, so the decisions belong to no one. → `references/88-the-gates-they-removed.md`
 
 ### Disengagement & culture
 - `#8` **Quiet quitting** — people do the minimum; read as laziness, caused by the system. → `references/08-quiet-quitting.md`
@@ -121,6 +123,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#71` **The values on the wall** — five laminated corporate values nobody recalls, standing in for the shared ideals people already hold. → `references/71-the-values-on-the-wall.md`
 - `#76` **We transformed, our suppliers didn't** — the internal redesign worked, and then every request that leaves the building hits a vendor backlog or a ticket tier. → `references/76-we-transformed-our-suppliers-didnt.md`
 - `#79` **The adaptation plan nobody owns** — AI assistants scaled everywhere while the green-coding standards predate them, so the consequences belong to no one. → `references/79-the-adaptation-plan-nobody-owns.md`
+- `#85` **The enterprise architect** — a technically correct target operating model that the organisation outgrows within a year, because a diagram is a closed system and an organisation is not. → `references/85-the-enterprise-architect.md`
 
 ### Agile, transformation & change
 - `#6` **Analysis paralysis** — endless analysis because no one is safe to decide and act. → `references/06-analysis-paralysis.md`
@@ -148,3 +151,4 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#55` **The learning organisation that doesn't learn** — learning rituals that never change how work is done. → `references/55-the-learning-organisation-that-doesnt-learn.md`
 - `#59` **The corridor conversation** — real decisions happen informally, outside the visible system. → `references/59-the-corridor-conversation.md`
 - `#66` **Everything is fine** — status stays green all the way up because each hop softens bad news and the level above can't act on it anyway. → `references/66-everything-is-fine.md`
+- `#87` **It took an outsider to say it** — the point raised internally for two years lands the moment a consultant says it, because the channel weights the sender's position, not the content. → `references/87-it-took-an-outsider-to-say-it.md`
