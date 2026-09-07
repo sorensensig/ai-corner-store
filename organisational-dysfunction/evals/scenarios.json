@@ -700,6 +700,14 @@
       "expected_refs": [
         "87-it-took-an-outsider-to-say-it"
       ]
+    },
+    {
+      "id": "gates-removed-nobody-owns-the-decisions",
+      "prompt": "when we moved to a product operating model last year we stripped out a lot of the old governance. the change advisory board is gone, architecture review is advisory only now, and the security and privacy sign-offs came out of the release pipeline. lead time genuinely improved and everyone was pleased. the problem is what happened after. our security lead still expects to be consulted before anything ships and gets frustrated when he isn't, but he doesn't actually have a veto anymore and nobody told him what he does have. meanwhile my team made a call on data retention last month that i'm fairly sure none of us was qualified to make — we just needed an answer and there was no one to ask. we had a near miss two weeks ago and the whole post-incident discussion was people insisting it wasn't their remit. now there's a proposal for a 'product governance forum' which as far as i can tell is the change advisory board with a new name. is the answer really just to put the gates back?",
+      "should_trigger": true,
+      "expected_refs": [
+        "88-the-gates-they-removed"
+      ]
     }
   ]
 }
