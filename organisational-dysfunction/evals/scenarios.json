@@ -708,6 +708,14 @@
       "expected_refs": [
         "88-the-gates-they-removed"
       ]
+    },
+    {
+      "id": "staffed-as-a-java-resource",
+      "prompt": "i work at a consultancy and i've just been put on a three month engagement doing bug fixes and version upgrades on a client's java monolith. i'm not complaining about the client, they asked for two java developers and that's what they got. the thing is i've spent the last five years on resilience in distributed systems, that's the work i'm known for internally, i've spoken at two conferences about it. but my profile says java and i had capacity from monday, so here i am. this is the third assignment in a row like this. when i asked our staffing lead about it she was perfectly reasonable, she said the request came in as two java developers and she filled it, which is true. nobody's done anything wrong as far as i can tell and i'm doing the work fine, but i can feel myself getting further from the thing i'm actually good at, and i don't know whether this is a me problem or something i should be pushing on.",
+      "should_trigger": true,
+      "expected_refs": [
+        "89-we-need-a-resource"
+      ]
     }
   ]
 }
