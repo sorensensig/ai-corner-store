@@ -716,6 +716,22 @@
       "expected_refs": [
         "89-we-need-a-resource"
       ]
+    },
+    {
+      "id": "cross-team-dependency-only-moves-when-i-chase",
+      "prompt": "we did a team topologies style reorg about a year ago and honestly a lot of it worked, my team owns our backlog now and we ship without waiting for a steering committee. but there's something i can't put my finger on. anything that needs the platform team basically doesn't happen unless i personally go and ask, then ask again, then ask a third time. there's a change three of us need and i know for a fact two other teams raised it in their own slack channels and it just died there. i'm not the platform team's manager, i can't tell them what to prioritise, i'm just the person who keeps bringing it up. my lead actually praised me for it in my last one to one which somehow made me feel worse. am i just being impatient about how cross team stuff works, or is something actually wrong here?",
+      "should_trigger": true,
+      "expected_refs": [
+        "90-somebody-has-to-chase-it"
+      ]
+    },
+    {
+      "id": "calendar-full-of-alignment-meetings",
+      "prompt": "i counted it up last week and i'm in coordination meetings about 60% of my working hours. weekly sync with the two teams we depend on, a cross functional check in, a steering group update every fortnight, all hands, and we just added a monthly offsite-ish thing to get everyone aligned. the maddening part is i can't point at any single one and say that's the useless one. they all exist because something real would fall over otherwise. and every meeting seems to spawn another one, we finish a sync and the outcome is that four of us need to book a separate session. we tried a no meeting wednesday and a big calendar cleanup in the spring and within two months it was all back. is there something we're doing wrong with how we run meetings, or is this just what a company this size feels like?",
+      "should_trigger": true,
+      "expected_refs": [
+        "91-endless-alignment-meetings"
+      ]
     }
   ]
 }
