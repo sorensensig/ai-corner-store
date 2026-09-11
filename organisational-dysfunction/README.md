@@ -5,18 +5,18 @@
 | **Creator** | Sigurd Sæther Sørensen |
 | **Based on** | Trond Hjorteland — *Organisational Dysfunction of the Day* ([full list](https://www.linkedin.com/pulse/organisational-dysfunction-day-full-list-trond-hjorteland-gxrze/)) |
 | **Framework** | Open sociotechnical systems theory (DP1 / DP2) |
-| **Contents** | 1 skill · 91 dysfunctions |
-| **Version** | 0.28.0 |
+| **Contents** | 1 skill · 92 dysfunctions |
+| **Version** | 0.29.0 |
 
 A Claude Code plugin of org-design knowledge for diagnosing the recurring ways organisations and teams get stuck — and what to actually do about them.
 
-It packages **91 named dysfunctions** from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series, all read through the same lens: **open sociotechnical systems theory (OST)** and its DP1 (top-down bureaucracy) vs DP2 (self-managing teams) distinction.
+It packages **92 named dysfunctions** from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series, all read through the same lens: **open sociotechnical systems theory (OST)** and its DP1 (top-down bureaucracy) vs DP2 (self-managing teams) distinction.
 
 ## What's inside
 
 One sharp, cleanly-triggering skill — `organisational-dysfunction` — built on Anthropic's progressive-disclosure pattern:
 
-- **`SKILL.md`** — the always-loaded router. Holds the shared DP1/DP2 lens once, plus an index of all 91 dysfunctions grouped by theme.
+- **`SKILL.md`** — the always-loaded router. Holds the shared DP1/DP2 lens once, plus an index of all 92 dysfunctions grouped by theme.
 - **`references/NN-*.md`** — one lean file per dysfunction: how it shows up, the sociotechnical diagnosis (the *why*), and concrete remedies. Claude reads only the one(s) that match.
 
 ## When it triggers
@@ -107,6 +107,9 @@ Each reference file also notes its source dysfunction number; the corresponding 
 ## Changelog
 
 New entries are appended automatically by the update pipeline (`loop/pipeline.md`) as Trond publishes them, and each version is cut as a [GitHub Release](https://github.com/sorensensig/ai-corner-store/releases) (tagged `organisational-dysfunction-v<version>`). **Installed copies do not auto-update** — click **Watch → Releases** on this repo to be notified of new versions, then re-pull (see [Installation](#installation)). Newest first.
+
+### 0.29.0 — 2026-09-11
+- Added `#92` **The change they stopped believing in** (91 → 92 dysfunctions) — repeated transformations that changed the vocabulary but never the design principle, read as cynicism when it is accurate pattern recognition. Generated via the update pipeline. Eval scenario added; see the PR for the targeted routing/triggering result.
 
 ### 0.28.0 — 2026-09-10
 - Added `#90` **Somebody has to chase it** and `#91` **Endless alignment meetings** (89 → 91 dysfunctions) — the two sides of undesigned horizontal coordination. Generated via the update pipeline. Eval scenarios added; see the PR for the targeted routing/triggering result.

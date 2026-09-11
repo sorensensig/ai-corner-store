@@ -732,6 +732,14 @@
       "expected_refs": [
         "91-endless-alignment-meetings"
       ]
+    },
+    {
+      "id": "fourth-transformation-teams-just-quiet",
+      "prompt": "i run internal comms for our new platform strategy rollout and i'm stuck. this is our fourth big change programme in about seven years. we did agile, then devops, then 'product thinking', and now platforms. every time there was a consultancy, a new framework, new role titles, people had to learn new tools and reporting lines got shuffled around. if you actually look at who does what and who signs things off, not much is different from before any of it. this time the ceo is personally sponsoring it and the budget is much bigger, but the teams are just quiet. nobody is pushing back. they fill in the pulse surveys, turn up to the town halls and the workshops, and then carry on exactly as before. one senior engineer told me off the record 'we'll still be here when this one's gone too'. leadership wants me to plan a relaunch with better storytelling to get people excited again. how do i get past this cynicism?",
+      "should_trigger": true,
+      "expected_refs": [
+        "92-the-change-they-stopped-believing-in"
+      ]
     }
   ]
 }
