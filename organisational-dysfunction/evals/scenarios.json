@@ -740,6 +740,14 @@
       "expected_refs": [
         "92-the-change-they-stopped-believing-in"
       ]
+    },
+    {
+      "id": "hackathon-winners-never-heard-of-again",
+      "prompt": "i organise our company's annual hackathon and honestly i'm starting to dread it. the weekend itself is great - people pick their own problems, form teams across departments, build working prototypes, pitch to the exec panel and the winners get prizes. everyone says it's the best two days of the year. but then the winning ideas get 'handed over' to the product portfolio board and go into the intake process, and as far as i can tell not one of them has actually shipped in three years. last year's winning team asked me in june what happened to their idea and i didn't have an answer. sign-ups have dropped from about 140 people to 60. my director thinks we need better prizes and a proper 'innovation champion' to shepherd ideas through the funnel. is that the fix or am i missing something?",
+      "should_trigger": true,
+      "expected_refs": [
+        "93-innovation-theatre"
+      ]
     }
   ]
 }
