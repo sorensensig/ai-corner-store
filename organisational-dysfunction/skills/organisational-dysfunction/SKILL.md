@@ -14,7 +14,7 @@ Hold these defaults as you work:
 - **Diagnose, don't sympathise.** Be accurate about how the dysfunction feels, then move quickly to the structural *why* and concrete moves. People come for a sharper read, not validation.
 - **Dysfunctions interlock.** Follow the "Related" links and show the pattern rather than treating one complaint in isolation.
 
-This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 89 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
+This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 92 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
 
 ## The core lens: DP1 vs DP2
 
@@ -59,6 +59,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#65` **The facilitator's toolkit** — a flawlessly-run workshop leaves people politely disengaged, because the tools themselves say the facilitator owns it. → `references/65-the-facilitators-toolkit.md`
 - `#75` **Divided for efficiency** — a workshop splits into parallel groups to cover more ground, and afterwards nobody can recall what the other tables decided or why. → `references/75-divided-for-efficiency.md`
 - `#82` **The wrong people in the room** — the workshop on how work flows is staffed from the org chart, so the people who live the handoffs aren't there. → `references/82-the-wrong-people-in-the-room.md`
+- `#91` **Endless alignment meetings** — the calendar fills with syncs, check-ins and steering updates, each defensible alone, because the boundaries make coordination a manual job. → `references/91-endless-alignment-meetings.md`
 
 ### Metrics, money & measurement
 - `#23` **The error factory** — defects treated as individual mistakes to be counted and punished. → `references/23-the-error-factory.md`
@@ -81,6 +82,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#72` **Hired from above** — a person is added to a late team without the team deciding, and the team gets slower, because membership is the one boundary it doesn't control. → `references/72-hired-from-above.md`
 - `#80` **When the glue leaves** — the person who quietly held the team together resigns, and the org replaces them with a layer above instead of capacity within. → `references/80-when-the-glue-leaves.md`
 - `#89` **We need a resource** — a person is staffed by a label on a profile and an open slot in a calendar, so the expertise the assignment actually needed never reaches it. → `references/89-we-need-a-resource.md`
+- `#90` **Somebody has to chase it** — the topology gave teams control but never designed the negotiation between them, so cross-team work only moves when one person keeps asking. → `references/90-somebody-has-to-chase-it.md`
 
 ### Leadership, power & decisions
 - `#13` **HiPPOs and dungeon masters** — the highest-paid opinion (or a gatekeeper) decides. → `references/13-hippos-and-dungeon-masters.md`
@@ -139,6 +141,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#50` **The agile scaling trap** — scaling frameworks (SAFe etc.) re-impose DP1 at scale. → `references/50-the-agile-scaling-trap.md`
 - `#61` **Rearranging the furniture** — job-enrichment initiatives that improve individual roles without changing who designs the work. → `references/61-rearranging-the-furniture.md`
 - `#77` **Becoming Teal** — adopting Teal's roles and advice processes while failure is explained by readiness rather than by where control still sits. → `references/77-becoming-teal.md`
+- `#92` **The change they stopped believing in** — the fourth transformation in seven years meets quiet compliance, because each round changed the vocabulary and never the design principle, and the teams have noticed. → `references/92-the-change-they-stopped-believing-in.md`
 
 ### AI
 - `#21` **Deploying AI into a broken system** — AI amplifies a dysfunctional structure instead of fixing it. → `references/21-deploying-ai-into-a-broken-system.md`
