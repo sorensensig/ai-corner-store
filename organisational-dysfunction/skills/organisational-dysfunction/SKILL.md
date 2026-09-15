@@ -14,7 +14,7 @@ Hold these defaults as you work:
 - **Diagnose, don't sympathise.** Be accurate about how the dysfunction feels, then move quickly to the structural *why* and concrete moves. People come for a sharper read, not validation.
 - **Dysfunctions interlock.** Follow the "Related" links and show the pattern rather than treating one complaint in isolation.
 
-This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 93 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
+This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 94 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
 
 ## The core lens: DP1 vs DP2
 
@@ -68,6 +68,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#41` **The performance review** — individual appraisal inside work that is actually collective. → `references/41-the-performance-review.md`
 - `#54` **Pay and reward** — individual bonuses/ratings quietly dismantle the team you built. → `references/54-pay-and-reward.md`
 - `#51` **Budgets are bureaucracy** — annual budgeting locks in plans the org can't adapt. → `references/51-budgets-are-bureaucracy.md`
+- `#94` **The efficiency drive** — a restructuring cuts by visible individual output, removing the connective work that held the whole together and leaving the org measurably less capable. → `references/94-the-efficiency-drive.md`
 
 ### Teams & collaboration
 - `#7` **Individualism** — a "team" that is really individuals optimising their own slice. → `references/07-individualism.md`

@@ -748,6 +748,14 @@
       "expected_refs": [
         "93-innovation-theatre"
       ]
+    },
+    {
+      "id": "restructure-cut-by-visible-output",
+      "prompt": "we went through a big 'efficiency' restructure in the spring - flatter structure, fewer layers, the agile transformation deck. hr and the exec team picked redundancies based on visible output and measurable contribution, which honestly sounded fair at the time. we lost a tech lead who spent half her week helping other teams, a project coordinator, and a couple of long-tenured seniors. everyone who stayed is genuinely productive. but now, six months on, new hires take twice as long to get up to speed, anything that needs two teams just stalls, and nobody can explain why half our systems are set up the way they are. the savings got reported as a win at the board. my vp's answer is to hire a delivery manager to 'fix coordination'. what actually happened here and is that the right move?",
+      "should_trigger": true,
+      "expected_refs": [
+        "94-the-efficiency-drive"
+      ]
     }
   ]
 }
