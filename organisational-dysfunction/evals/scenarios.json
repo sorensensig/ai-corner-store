@@ -756,6 +756,14 @@
       "expected_refs": [
         "94-the-efficiency-drive"
       ]
+    },
+    {
+      "id": "hiring-for-motivation-engagement-flat",
+      "prompt": "i run talent for a ~400 person software org and i'm stuck. we redesigned hiring two years ago specifically to select for motivation and ownership - there's a values interview, we ask for examples of self-driven work, we turn down technically strong people who come across as clock-punchers. we also did the perks properly: flexible hours, a real learning budget, 'we trust you to do the job'. and our engagement scores have not moved a single point. the people who joined most fired up are the ones who've gone flattest, two of our best have left, and the ones still visibly caring are running on fumes. our chro's read is that the screening has gotten sloppy and we should add a structured motivation assessment to the loop. i'm not convinced but i can't articulate why. what's actually going on?",
+      "should_trigger": true,
+      "expected_refs": [
+        "95-the-talent-myth"
+      ]
     }
   ]
 }
