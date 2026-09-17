@@ -764,6 +764,14 @@
       "expected_refs": [
         "95-the-talent-myth"
       ]
+    },
+    {
+      "id": "shared-service-nobody-owns",
+      "prompt": "we have an internal auth/session service that something like seven product teams rely on. it was built about three years ago by a platform team that got dissolved in a reorg. the repo has like eleven contributors and none of them are on the same team anymore. every time it breaks the whole company notices, someone from whichever team is most blocked hacks a fix at midnight, and then it goes quiet again. it's running on a framework version that's out of support and nobody will touch the upgrade. every few months someone posts 'who owns this??' in the eng channel and the answers are 'we just use it' or 'wasn't that the old platform team'. it's not on any roadmap or anyone's okrs. my cto wants to just assign it to the team that complains the most, or set up a RACI. i'm an eng manager on one of the dependent teams - is that going to work?",
+      "should_trigger": true,
+      "expected_refs": [
+        "96-nobody-wants-to-own-this"
+      ]
     }
   ]
 }
