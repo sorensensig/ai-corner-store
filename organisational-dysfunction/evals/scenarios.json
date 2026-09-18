@@ -772,6 +772,14 @@
       "expected_refs": [
         "96-nobody-wants-to-own-this"
       ]
+    },
+    {
+      "id": "org-chart-nobody-opens",
+      "prompt": "onboarded two engineers last month and both told me the same thing: the org chart we show them on day one is useless. within a week they've learned the real map from colleagues — go to this person for infra, this finance guy is the only one who gets our product, and nothing big ships unless an architect in another division is on board. all the actual coordination happens in slack channels that cut across every department. is this just normal, or a sign something is wrong with how we're organised?",
+      "should_trigger": true,
+      "expected_refs": [
+        "97-the-org-chart-nobody-uses"
+      ]
     }
   ]
 }

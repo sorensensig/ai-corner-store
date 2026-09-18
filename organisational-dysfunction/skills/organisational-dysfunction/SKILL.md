@@ -14,7 +14,7 @@ Hold these defaults as you work:
 - **Diagnose, don't sympathise.** Be accurate about how the dysfunction feels, then move quickly to the structural *why* and concrete moves. People come for a sharper read, not validation.
 - **Dysfunctions interlock.** Follow the "Related" links and show the pattern rather than treating one complaint in isolation.
 
-This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 96 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
+This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 97 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
 
 ## The core lens: DP1 vs DP2
 
@@ -85,6 +85,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#89` **We need a resource** — a person is staffed by a label on a profile and an open slot in a calendar, so the expertise the assignment actually needed never reaches it. → `references/89-we-need-a-resource.md`
 - `#90` **Somebody has to chase it** — the topology gave teams control but never designed the negotiation between them, so cross-team work only moves when one person keeps asking. → `references/90-somebody-has-to-chase-it.md`
 - `#96` **Nobody wants to own this** — a service many teams depend on has no owner, because the work was sliced into boxes and the shared thing fell between them; the boundaries are in the wrong place. → `references/96-nobody-wants-to-own-this.md`
+- `#97` **The org chart nobody uses** — the chart groups people by function while the work runs through an informal network that crosses it, so the formal and working structures are two different organisations. → `references/97-the-org-chart-nobody-uses.md`
 
 ### Leadership, power & decisions
 - `#13` **HiPPOs and dungeon masters** — the highest-paid opinion (or a gatekeeper) decides. → `references/13-hippos-and-dungeon-masters.md`
