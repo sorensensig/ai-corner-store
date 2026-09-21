@@ -740,6 +740,46 @@
       "expected_refs": [
         "92-the-change-they-stopped-believing-in"
       ]
+    },
+    {
+      "id": "hackathon-winners-never-heard-of-again",
+      "prompt": "i organise our company's annual hackathon and honestly i'm starting to dread it. the weekend itself is great - people pick their own problems, form teams across departments, build working prototypes, pitch to the exec panel and the winners get prizes. everyone says it's the best two days of the year. but then the winning ideas get 'handed over' to the product portfolio board and go into the intake process, and as far as i can tell not one of them has actually shipped in three years. last year's winning team asked me in june what happened to their idea and i didn't have an answer. sign-ups have dropped from about 140 people to 60. my director thinks we need better prizes and a proper 'innovation champion' to shepherd ideas through the funnel. is that the fix or am i missing something?",
+      "should_trigger": true,
+      "expected_refs": [
+        "93-innovation-theatre"
+      ]
+    },
+    {
+      "id": "restructure-cut-by-visible-output",
+      "prompt": "we went through a big 'efficiency' restructure in the spring - flatter structure, fewer layers, the agile transformation deck. hr and the exec team picked redundancies based on visible output and measurable contribution, which honestly sounded fair at the time. we lost a tech lead who spent half her week helping other teams, a project coordinator, and a couple of long-tenured seniors. everyone who stayed is genuinely productive. but now, six months on, new hires take twice as long to get up to speed, anything that needs two teams just stalls, and nobody can explain why half our systems are set up the way they are. the savings got reported as a win at the board. my vp's answer is to hire a delivery manager to 'fix coordination'. what actually happened here and is that the right move?",
+      "should_trigger": true,
+      "expected_refs": [
+        "94-the-efficiency-drive"
+      ]
+    },
+    {
+      "id": "hiring-for-motivation-engagement-flat",
+      "prompt": "i run talent for a ~400 person software org and i'm stuck. we redesigned hiring two years ago specifically to select for motivation and ownership - there's a values interview, we ask for examples of self-driven work, we turn down technically strong people who come across as clock-punchers. we also did the perks properly: flexible hours, a real learning budget, 'we trust you to do the job'. and our engagement scores have not moved a single point. the people who joined most fired up are the ones who've gone flattest, two of our best have left, and the ones still visibly caring are running on fumes. our chro's read is that the screening has gotten sloppy and we should add a structured motivation assessment to the loop. i'm not convinced but i can't articulate why. what's actually going on?",
+      "should_trigger": true,
+      "expected_refs": [
+        "95-the-talent-myth"
+      ]
+    },
+    {
+      "id": "shared-service-nobody-owns",
+      "prompt": "we have an internal auth/session service that something like seven product teams rely on. it was built about three years ago by a platform team that got dissolved in a reorg. the repo has like eleven contributors and none of them are on the same team anymore. every time it breaks the whole company notices, someone from whichever team is most blocked hacks a fix at midnight, and then it goes quiet again. it's running on a framework version that's out of support and nobody will touch the upgrade. every few months someone posts 'who owns this??' in the eng channel and the answers are 'we just use it' or 'wasn't that the old platform team'. it's not on any roadmap or anyone's okrs. my cto wants to just assign it to the team that complains the most, or set up a RACI. i'm an eng manager on one of the dependent teams - is that going to work?",
+      "should_trigger": true,
+      "expected_refs": [
+        "96-nobody-wants-to-own-this"
+      ]
+    },
+    {
+      "id": "org-chart-nobody-opens",
+      "prompt": "onboarded two engineers last month and both told me the same thing: the org chart we show them on day one is useless. within a week they've learned the real map from colleagues — go to this person for infra, this finance guy is the only one who gets our product, and nothing big ships unless an architect in another division is on board. all the actual coordination happens in slack channels that cut across every department. is this just normal, or a sign something is wrong with how we're organised?",
+      "should_trigger": true,
+      "expected_refs": [
+        "97-the-org-chart-nobody-uses"
+      ]
     }
   ]
 }

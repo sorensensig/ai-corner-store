@@ -5,18 +5,18 @@
 | **Creator** | Sigurd Sæther Sørensen |
 | **Based on** | Trond Hjorteland — *Organisational Dysfunction of the Day* ([full list](https://www.linkedin.com/pulse/organisational-dysfunction-day-full-list-trond-hjorteland-gxrze/)) |
 | **Framework** | Open sociotechnical systems theory (DP1 / DP2) |
-| **Contents** | 1 skill · 92 dysfunctions |
-| **Version** | 0.29.0 |
+| **Contents** | 1 skill · 97 dysfunctions |
+| **Version** | 0.34.0 |
 
 A Claude Code plugin of org-design knowledge for diagnosing the recurring ways organisations and teams get stuck — and what to actually do about them.
 
-It packages **92 named dysfunctions** from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series, all read through the same lens: **open sociotechnical systems theory (OST)** and its DP1 (top-down bureaucracy) vs DP2 (self-managing teams) distinction.
+It packages **97 named dysfunctions** from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series, all read through the same lens: **open sociotechnical systems theory (OST)** and its DP1 (top-down bureaucracy) vs DP2 (self-managing teams) distinction.
 
 ## What's inside
 
 One sharp, cleanly-triggering skill — `organisational-dysfunction` — built on Anthropic's progressive-disclosure pattern:
 
-- **`SKILL.md`** — the always-loaded router. Holds the shared DP1/DP2 lens once, plus an index of all 92 dysfunctions grouped by theme.
+- **`SKILL.md`** — the always-loaded router. Holds the shared DP1/DP2 lens once, plus an index of all 97 dysfunctions grouped by theme.
 - **`references/NN-*.md`** — one lean file per dysfunction: how it shows up, the sociotechnical diagnosis (the *why*), and concrete remedies. Claude reads only the one(s) that match.
 
 ## When it triggers
@@ -107,6 +107,21 @@ Each reference file also notes its source dysfunction number; the corresponding 
 ## Changelog
 
 New entries are appended automatically by the update pipeline (`loop/pipeline.md`) as Trond publishes them, and each version is cut as a [GitHub Release](https://github.com/sorensensig/ai-corner-store/releases) (tagged `organisational-dysfunction-v<version>`). **Installed copies do not auto-update** — click **Watch → Releases** on this repo to be notified of new versions, then re-pull (see [Installation](#installation)). Newest first.
+
+### 0.34.0 — 2026-09-18
+- Added `#97` **The org chart nobody uses** (96 → 97 dysfunctions) — the formal chart, the informal network and the real unit of work as three different organisations; a DP1 grouping by function producing a coordination gap that relationships have to bridge. This is the closing entry in the source series. Generated via the update pipeline. Eval scenario added; see the PR for the targeted routing/triggering result.
+
+### 0.33.0 — 2026-09-17
+- Added `#96` **Nobody wants to own this** (95 → 96 dysfunctions) — a shared service with no owner, read through the boundary location principle: an ownerless dependency means the boundaries were drawn in the wrong place. Generated via the update pipeline. Eval scenario added; see the PR for the targeted routing/triggering result.
+
+### 0.32.0 — 2026-09-16
+- Added `#95` **The talent myth** (94 → 95 dysfunctions) — hiring for motivation against a structure that produces it, read through Emery and Trist's six psychological job requirements. Generated via the update pipeline. Eval scenario added; see the PR for the targeted routing/triggering result.
+
+### 0.31.0 — 2026-09-15
+- Added `#94` **The efficiency drive** (93 → 94 dysfunctions) — a restructuring that selects redundancies by visible individual output, cutting the connective work a DP1 measurement regime cannot see. Generated via the update pipeline. Eval scenario added; see the PR for the targeted routing/triggering result.
+
+### 0.30.0 — 2026-09-14
+- Added `#93` **Innovation theatre** (92 → 93 dysfunctions) — the hackathon that briefly runs as a DP2 structure and returns its ideas to a DP1 one that has no way to act on them. Generated via the update pipeline. Eval scenario added; see the PR for the targeted routing/triggering result.
 
 ### 0.29.0 — 2026-09-11
 - Added `#92` **The change they stopped believing in** (91 → 92 dysfunctions) — repeated transformations that changed the vocabulary but never the design principle, read as cynicism when it is accurate pattern recognition. Generated via the update pipeline. Eval scenario added; see the PR for the targeted routing/triggering result.

@@ -14,7 +14,7 @@ Hold these defaults as you work:
 - **Diagnose, don't sympathise.** Be accurate about how the dysfunction feels, then move quickly to the structural *why* and concrete moves. People come for a sharper read, not validation.
 - **Dysfunctions interlock.** Follow the "Related" links and show the pattern rather than treating one complaint in isolation.
 
-This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 92 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
+This skill is grounded in **open sociotechnical systems theory (OST)** and synthesised from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series (the basis for his 2026 book). The 97 reference files describe individual dysfunctions; this file holds the shared lens they all draw on — read it, then route to the specific one.
 
 ## The core lens: DP1 vs DP2
 
@@ -68,6 +68,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#41` **The performance review** — individual appraisal inside work that is actually collective. → `references/41-the-performance-review.md`
 - `#54` **Pay and reward** — individual bonuses/ratings quietly dismantle the team you built. → `references/54-pay-and-reward.md`
 - `#51` **Budgets are bureaucracy** — annual budgeting locks in plans the org can't adapt. → `references/51-budgets-are-bureaucracy.md`
+- `#94` **The efficiency drive** — a restructuring cuts by visible individual output, removing the connective work that held the whole together and leaving the org measurably less capable. → `references/94-the-efficiency-drive.md`
 
 ### Teams & collaboration
 - `#7` **Individualism** — a "team" that is really individuals optimising their own slice. → `references/07-individualism.md`
@@ -83,6 +84,8 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#80` **When the glue leaves** — the person who quietly held the team together resigns, and the org replaces them with a layer above instead of capacity within. → `references/80-when-the-glue-leaves.md`
 - `#89` **We need a resource** — a person is staffed by a label on a profile and an open slot in a calendar, so the expertise the assignment actually needed never reaches it. → `references/89-we-need-a-resource.md`
 - `#90` **Somebody has to chase it** — the topology gave teams control but never designed the negotiation between them, so cross-team work only moves when one person keeps asking. → `references/90-somebody-has-to-chase-it.md`
+- `#96` **Nobody wants to own this** — a service many teams depend on has no owner, because the work was sliced into boxes and the shared thing fell between them; the boundaries are in the wrong place. → `references/96-nobody-wants-to-own-this.md`
+- `#97` **The org chart nobody uses** — the chart groups people by function while the work runs through an informal network that crosses it, so the formal and working structures are two different organisations. → `references/97-the-org-chart-nobody-uses.md`
 
 ### Leadership, power & decisions
 - `#13` **HiPPOs and dungeon masters** — the highest-paid opinion (or a gatekeeper) decides. → `references/13-hippos-and-dungeon-masters.md`
@@ -113,6 +116,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#53` **Designed to undermine** — structures that systematically erode trust and agency. → `references/53-designed-to-undermine.md`
 - `#56` **Permanent urgency** — everything is a top priority, so nothing can be planned or owned. → `references/56-permanent-urgency.md`
 - `#83` **The wellness programme** — EAP, app and mindfulness sessions bolted onto a DP1 structure; strain is treated, the thing producing it is not. → `references/83-the-wellness-programme.md`
+- `#95` **The talent myth** — hiring for motivation and perks fail to move engagement, because motivation is an output of job and group design, not a trait to select for. → `references/95-the-talent-myth.md`
 
 ### Strategy, direction & environment
 - `#10` **The company's strategy is unclear** — teams can't self-direct without a shared, real purpose. → `references/10-the-companys-strategy-is-unclear.md`
@@ -142,6 +146,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - `#61` **Rearranging the furniture** — job-enrichment initiatives that improve individual roles without changing who designs the work. → `references/61-rearranging-the-furniture.md`
 - `#77` **Becoming Teal** — adopting Teal's roles and advice processes while failure is explained by readiness rather than by where control still sits. → `references/77-becoming-teal.md`
 - `#92` **The change they stopped believing in** — the fourth transformation in seven years meets quiet compliance, because each round changed the vocabulary and never the design principle, and the teams have noticed. → `references/92-the-change-they-stopped-believing-in.md`
+- `#93` **Innovation theatre** — the hackathon runs as a self-managing team for a weekend, then its winning ideas vanish into a structure that keeps design authority above the work. → `references/93-innovation-theatre.md`
 
 ### AI
 - `#21` **Deploying AI into a broken system** — AI amplifies a dysfunctional structure instead of fixing it. → `references/21-deploying-ai-into-a-broken-system.md`
